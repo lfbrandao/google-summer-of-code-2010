@@ -1,0 +1,10 @@
+development:
+    query: select name from websites
+    field1: name
+    field2: address
+    query_suffix: from websites
+test:
+    query: select name from websites
+
+production:
+    query: select name from websites

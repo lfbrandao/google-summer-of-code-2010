@@ -1,0 +1,1297 @@
+
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-24 23:59:12) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: test: select * from test[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: test: select * from test):
+  app/models/website.rb:3:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (92.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWebsites (20100624202143)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWebsites (20100624202143)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "websites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "label" varchar(255), "value" text) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100624202143')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("websites")[0m
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:03:27) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 32ms (View: 27, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:06:41) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:08:24) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: table websites has 4 columns but 3 values were supplied: insert into websites values('xpt','abb','ccc')[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: table websites has 4 columns but 3 values were supplied: insert into websites values('xpt','abb','ccc')):
+  app/models/website.rb:3:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:09:40) [GET]
+  [4;36;1mSQL (2.8ms)[0m   [0;1minsert into websites (name,label,value) values('xpt','abb','ccc')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect * from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `name' for #<SQLite3::ResultSet::HashWithTypes:0x101d6f5b8>) on line #4 of app/views/host_list/all_hosts.html.erb:
+1: <% for host in @all_hosts -%>
+2: 	<div class="entry">
+3: 		<div class="price-line">
+4: 			<span class="price"><%= host.name %></span>
+5: 		</div> 
+6: 	</div>
+7: <% end %>
+
+    app/views/host_list/all_hosts.html.erb:4
+    app/views/host_list/all_hosts.html.erb:1:in `each'
+    app/views/host_list/all_hosts.html.erb:1
+
+Rendered rescues/_trace (98.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:10:11) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `name' for #<SQLite3::ResultSet::HashWithTypes:0x101d6fea0>) on line #4 of app/views/host_list/all_hosts.html.erb:
+1: <% for host in @all_hosts -%>
+2: 	<div class="entry">
+3: 		<div class="price-line">
+4: 			<span class="price"><%= host.name %></span>
+5: 		</div> 
+6: 	</div>
+7: <% end %>
+
+    app/views/host_list/all_hosts.html.erb:4
+    app/views/host_list/all_hosts.html.erb:1:in `each'
+    app/views/host_list/all_hosts.html.erb:1
+
+Rendered rescues/_trace (99.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:10:13) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `name' for #<SQLite3::ResultSet::HashWithTypes:0x101fa3de8>) on line #4 of app/views/host_list/all_hosts.html.erb:
+1: <% for host in @all_hosts -%>
+2: 	<div class="entry">
+3: 		<div class="price-line">
+4: 			<span class="price"><%= host.name %></span>
+5: 		</div> 
+6: 	</div>
+7: <% end %>
+
+    app/views/host_list/all_hosts.html.erb:4
+    app/views/host_list/all_hosts.html.erb:1:in `each'
+    app/views/host_list/all_hosts.html.erb:1
+
+Rendered rescues/_trace (50.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:17:36) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect name from websites[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `result' for Website(id: integer, name: string, label: string, value: text):Class):
+  app/models/website.rb:8:in `get_website'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (108.9ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:18:14) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+
+NoMethodError (undefined method `fetch_row' for [{"name"=>"xpt", 0=>"xpt"}]:Array):
+  app/models/website.rb:8:in `get_website'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (91.3ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:22:22) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+
+NoMethodError (undefined method `free' for [{"name"=>"xpt", 0=>"xpt"}]:Array):
+  app/models/website.rb:9:in `get_website'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (92.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:23:00) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect name from websites[0m
+
+NoMethodError (undefined method `free' for [{"name"=>"xpt", 0=>"xpt"}]:Array):
+  app/models/website.rb:9:in `get_website'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (127.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:23:20) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined local variable or method `host' for #<ActionView::Base:0x101d84940>) on line #1 of app/views/host_list/all_hosts.html.erb:
+1: <span class="price"><%= host.name %></span>
+
+    app/views/host_list/all_hosts.html.erb:1
+
+Rendered rescues/_trace (175.0ms)
+Rendered rescues/_request_and_response (3.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:23:55) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:28:15) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:28:17) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:33:29) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:35:12) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-25 00:37:17) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:35:37) [GET]
+
+ActionController::RoutingError (No route matches "/.well-known/host-meta" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:36:21) [GET]
+
+ActionController::RoutingError (No route matches "/all_hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:36:27) [GET]
+
+ActionController::RoutingError (No route matches "/allhosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:36:32) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:36:49) [GET]
+
+ActionController::RoutingError (No route matches "/allhosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:37:51) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist/allhosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:38:18) [GET]
+
+ActionController::RoutingError (No route matches "/all_hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:39:12) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:39:19) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist/allhosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:40:20) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist/all_hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:40:44) [GET]
+
+ActionController::RoutingError (No route matches "/HostList/all_hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:40:47) [GET]
+
+ActionController::RoutingError (No route matches "/HostList/allhosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:43:57) [GET]
+
+ActionController::RoutingError (No route matches "/HostList/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:44:03) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:54:41) [GET]
+
+ActionController::RoutingError (No route matches "/dataapi/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:54:47) [GET]
+
+ActionController::RoutingError (No route matches "/dataapi/hostlist" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:54:52) [GET]
+
+ActionController::RoutingError (No route matches "/dataapi/hostlist/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-06-30 19:55:07) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 35ms (View: 2, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:55:44) [GET]
+
+ActionController::RoutingError (No route matches "/dataapi/hostlist/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:55:50) [GET]
+
+ActionController::RoutingError (No route matches "/dataapi/hostlist/allhosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:55:54) [GET]
+
+ActionController::RoutingError (No route matches "/data_api/hostlist/allhosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 19:59:30) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist/all_hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-30 20:00:08) [GET]
+
+ActionController::RoutingError (No route matches "/hostlist/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2010-06-30 20:02:04) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: people: SELECT * FROM "people" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: people: SELECT * FROM "people" ):
+  app/controllers/people_controller.rb:5:in `index'
+
+Rendered rescues/_trace (95.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PeopleController#show (for 127.0.0.1 at 2010-06-30 20:04:50) [GET]
+  Parameters: {"id"=>"index"}
+
+ActiveRecord::StatementInvalid (Could not find table 'people'):
+  app/controllers/people_controller.rb:16:in `show'
+
+Rendered rescues/_trace (45.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-06-30 20:07:04) [GET]
+  [4;36;1mHost Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: hosts: SELECT * FROM "hosts" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: hosts: SELECT * FROM "hosts" ):
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (94.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#index (for 127.0.0.1 at 2010-06-30 20:07:54) [GET]
+  [4;35;1mSQL (17.2ms)[0m   [0mselect name from websites[0m
+
+ActionView::MissingTemplate (Missing template host_list/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#index (for 127.0.0.1 at 2010-06-30 20:07:57) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+
+ActionView::MissingTemplate (Missing template host_list/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:08:02) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#index (for 127.0.0.1 at 2010-06-30 20:20:01) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+
+ActionView::MissingTemplate (Missing template host_list/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:20:16) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:20:23) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:20:37) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:20:44) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: name2: select name2 from websites[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: name2: select name2 from websites):
+  app/models/website.rb:3:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (90.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:27:12) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:29:13) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:29:15) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:29:38) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:29:39) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:30:35) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:30:37) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:31:05) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: rname: select rname from websites[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: rname: select rname from websites):
+  app/models/website.rb:3:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (87.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:31:42) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:31:43) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:31:44) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:31:44) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-06-30 20:31:45) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-01 15:02:30) [GET]
+
+ActionController::RoutingError (No route matches "/.well-known/host-meta" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:02:30) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect name from websites[0m
+
+TypeError (can't convert Class into String):
+  app/models/website.rb:4:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:03:34) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+The object is Array
+Rendering host_list/all_hosts
+Completed in 163ms (View: 160, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:03:52) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect name from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:06:42) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect name from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+NoMethodError (undefined method `each_key' for [{"name"=>"xpt", 0=>"xpt"}, {"name"=>"name2", 0=>"name2"}]:Array):
+  app/models/website.rb:6:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:07:09) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+NoMethodError (undefined method `each_key' for #<Array:0x101576820>):
+  app/models/website.rb:6:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:08:00) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+
+Rendering host_list/all_hosts
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:08:28) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:08:29) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:08:32) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:09:36) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+labelabbnamexpt011xpt2abbid1valueccc3ccc 
+labellabel2namename2021name22label2id2valuevalue23value2 
+Rendering host_list/all_hosts
+Completed in 51ms (View: 46, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:09:36) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+labelabbnamexpt011xpt2abbid1valueccc3ccc 
+labellabel2namename2021name22label2id2valuevalue23value2 
+Rendering host_list/all_hosts
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:09:48) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+1 
+2 
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:09:50) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+1 
+2 
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:09:56) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+1 
+2 
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:14:53) [GET]
+  [4;36;1mSQL (32.0ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+Completed in 58ms (View: 20, DB: 32) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:14:54) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+Completed in 36ms (View: 32, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:15:14) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+Completed in 143ms (View: 139, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:15:41) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/website.rb:8: syntax error, unexpected '['
+      logger.debug "#{key.[0]}"
+                           ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/website.rb:8: unterminated string meets end of file):
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:15:55) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+1
+SQLite3::ResultSet::HashWithTypes
+2
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:16:19) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+1 | xpt | abb
+SQLite3::ResultSet::HashWithTypes
+2 | name2 | label2
+Rendering host_list/all_hosts
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:27:52) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+1 | xpt | abb
+SQLite3::ResultSet::HashWithTypes
+2 | name2 | label2
+Rendering host_list/all_hosts
+Completed in 74ms (View: 70, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:28:34) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+ActiveRecord::StatementInvalid (Could not find table 'hosts'):
+  app/models/website.rb:8:in `new'
+  app/models/website.rb:8:in `get_all_websites'
+  app/models/website.rb:7:in `each'
+  app/models/website.rb:7:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (95.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:28:44) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+1 | xpt | abb
+SQLite3::ResultSet::HashWithTypes
+2 | name2 | label2
+Rendering host_list/all_hosts
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:28:44) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+SQLite3::ResultSet::HashWithTypes
+1 | xpt | abb
+SQLite3::ResultSet::HashWithTypes
+2 | name2 | label2
+Rendering host_list/all_hosts
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:29:54) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+ActiveRecord::StatementInvalid (Could not find table 'hosts'):
+  app/models/website.rb:8:in `new'
+  app/models/website.rb:8:in `get_all_websites'
+  app/models/website.rb:7:in `each'
+  app/models/website.rb:7:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:30:19) [GET]
+  [4;35;1mSQL (15.0ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+ActiveRecord::StatementInvalid (Could not find table 'hosts'):
+  app/models/website.rb:8:in `new'
+  app/models/website.rb:8:in `get_all_websites'
+  app/models/website.rb:7:in `each'
+  app/models/website.rb:7:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:30:35) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+ActiveRecord::StatementInvalid (Could not find table 'hosts'):
+  app/models/website.rb:8:in `new'
+  app/models/website.rb:8:in `get_all_websites'
+  app/models/website.rb:7:in `each'
+  app/models/website.rb:7:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (103.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:42:00) [GET]
+  [4;35;1mSQL (29.1ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+ActiveRecord::UnknownAttributeError (unknown attribute: Website):
+  app/models/website.rb:8:in `new'
+  app/models/website.rb:8:in `get_all_websites'
+  app/models/website.rb:7:in `each'
+  app/models/website.rb:7:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:44:34) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:45:06) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:51:57) [GET]
+  [4;36;1mSQL (12.1ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `name' for "1":String) on line #5 of app/views/host_list/all_hosts.html.erb:
+2: <table> 
+3: 	<% for host in @all_hosts %>
+4: 		<tr> 
+5: 			<td><%=h host.name %></td> 
+6: 		</tr>
+7: 	<% end %>
+8: </table>
+
+    app/views/host_list/all_hosts.html.erb:5
+    app/views/host_list/all_hosts.html.erb:3:in `each'
+    app/views/host_list/all_hosts.html.erb:3
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:52:53) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `name' for "1":String) on line #5 of app/views/host_list/all_hosts.html.erb:
+2: <table> 
+3: 	<% for host in @all_hosts %>
+4: 		<tr> 
+5: 			<td><%=h host.name %></td> 
+6: 		</tr>
+7: 	<% end %>
+8: </table>
+
+    app/views/host_list/all_hosts.html.erb:5
+    app/views/host_list/all_hosts.html.erb:3:in `each'
+    app/views/host_list/all_hosts.html.erb:3
+
+Rendered rescues/_trace (109.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:53:21) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `name' for "1":String) on line #5 of app/views/host_list/all_hosts.html.erb:
+2: <table> 
+3: 	<% for host in @all_hosts %>
+4: 		<tr> 
+5: 			<td><%=h host.name %></td> 
+6: 		</tr>
+7: 	<% end %>
+8: </table>
+
+    app/views/host_list/all_hosts.html.erb:5
+    app/views/host_list/all_hosts.html.erb:3:in `each'
+    app/views/host_list/all_hosts.html.erb:3
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:53:49) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+Rendering host_list/all_hosts
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:55:35) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+
+Rendering host_list/all_hosts
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:56:33) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+String
+String
+
+Rendering host_list/all_hosts
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:58:41) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+String
+String
+
+Rendering host_list/all_hosts
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:58:42) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+String
+String
+
+Rendering host_list/all_hosts
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 15:58:43) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+The object is SQLite3::ResultSet::HashWithTypes
+String
+String
+
+Rendering host_list/all_hosts
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 17:55:27) [GET]
+  [4;35;1mSQL (21.0ms)[0m   [0mselect * from websites[0m
+
+NameError (undefined local variable or method `logger' for Host:Class):
+  app/models/host.rb:4:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (316.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 17:55:42) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+NoMethodError (undefined method `name=' for #<Host:0x1022e4c00>):
+  app/models/host.rb:10:in `get_all_websites'
+  app/models/host.rb:8:in `each'
+  app/models/host.rb:8:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:07:49) [GET]
+  [4;35;1mSQL (40.7ms)[0m   [0mselect * from websites[0m
+
+Rendering host_list/all_hosts
+Completed in 66ms (View: 22, DB: 41) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:12:58) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x101893698>) on line #2 of app/views/host_list/all_hosts.html.erb:
+1: <!--<span class="price"><%= @all_hosts %></span>>
+2: <% title "Host" %>
+3: 
+4: <% for host in @all_hosts %>
+5: 	<%= host.name %>
+
+    app/views/host_list/all_hosts.html.erb:2
+
+Rendered rescues/_trace (105.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:13:09) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect * from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `name' for #<SQLite3::ResultSet::HashWithTypes:0x101ea5770>) on line #3 of app/views/host_list/all_hosts.html.erb:
+1: <!--<span class="price"><%= @all_hosts %></span>>
+2: <% for host in @all_hosts %>
+3: 	<%= host.name %>
+4: <% end %>
+5:  
+
+    app/views/host_list/all_hosts.html.erb:3
+    app/views/host_list/all_hosts.html.erb:2:in `each'
+    app/views/host_list/all_hosts.html.erb:2
+
+Rendered rescues/_trace (120.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:14:18) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #2 of app/views/host_list/all_hosts.html.erb:
+1: <!--<span class="price"><%= @all_hosts %></span>>
+2: <% for host in @all_hosts %>
+3: 	<%= host.name %>
+4: <% end %>
+5:  
+
+    app/views/host_list/all_hosts.html.erb:2
+
+Rendered rescues/_trace (47.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:16:34) [GET]
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x101665da8 @name="bbb">) on line #2 of app/views/host_list/all_hosts.html.erb:
+1: <!--<span class="price"><%= @all_hosts %></span>>
+2: <% for host in @all_hosts %>
+3: 	<%= host.name %>
+4: <% end %>
+5:  
+
+    app/views/host_list/all_hosts.html.erb:2
+
+Rendered rescues/_trace (103.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:17:37) [GET]
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x101e9ce40 @name="aaa">) on line #2 of app/views/host_list/all_hosts.html.erb:
+1: <!--<span class="price"><%= @all_hosts %></span>>
+2: <% for host in @all_hosts %>
+3: 	<%= host.name %>
+4: <% end %>
+5:  
+
+    app/views/host_list/all_hosts.html.erb:2
+
+Rendered rescues/_trace (104.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:27:17) [GET]
+Rendering host_list/all_hosts
+Completed in 26ms (View: 23, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:28:37) [GET]
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:29:35) [GET]
+
+NameError (undefined local variable or method `sel' for Host:Class):
+  app/models/host.rb:10:in `get_all_websites'
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (39.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:29:43) [GET]
+  [4;35;1mSQL (17.1ms)[0m   [0mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 21ms (View: 1, DB: 17) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:35:23) [GET]
+  [4;36;1mSQL (30.6ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 35ms (View: 1, DB: 31) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:36:08) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect * from websites[0m
+Rendering host_list/all_hosts
+
+ActionView::TemplateError (undefined method `|' for "xpt":String) on line #3 of app/views/host_list/all_hosts.html.erb:
+1: <!--<span class="price"><%= @all_hosts %></span>>
+2: <% for host in @all_hosts %>
+3: 	<%= host.name | host.id%>
+4: <% end %>
+5:  
+
+    app/views/host_list/all_hosts.html.erb:3
+    app/views/host_list/all_hosts.html.erb:2:in `each'
+    app/views/host_list/all_hosts.html.erb:2
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:36:14) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:36:39) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:36:50) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-01 18:52:02) [GET]
+  [4;35;1mSQL (41.2ms)[0m   [0mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 64ms (View: 20, DB: 41) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-05 16:29:44) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 33ms (View: 9, DB: 1) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:29:44) [GET]
+
+ActionController::RoutingError (No route matches "/.well-known/host-meta" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:29:48) [GET]
+
+ActionController::RoutingError (No route matches "/host_list/all_hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-05 16:31:25) [GET]
+
+ActionController::RoutingError (No route matches "/host_list/all_hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-05 16:31:28) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Rendering host_list/all_hosts
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
