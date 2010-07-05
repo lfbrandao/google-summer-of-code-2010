@@ -1295,3 +1295,357 @@ Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-05 16:31:28) [
   [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
 Rendering host_list/all_hosts
 Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/host_list/all_hosts]
+
+
+Processing HostListController#all_hosts (for 127.0.0.1 at 2010-07-05 16:50:50) [GET]
+
+NoMethodError (undefined method `get_all_websites' for Host:Class):
+  app/controllers/host_list_controller.rb:3:in `all_hosts'
+
+Rendered rescues/_trace (87.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-05 16:51:16) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 84ms (View: 79, DB: 1) | 200 OK [http://localhost/hosts]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 16:51:21) [GET]
+  [4;35;1mSQL (1.0ms)[0m   [0mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (103.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-05 16:56:27) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/hosts]
+
+
+Processing HostsController#show (for 127.0.0.1 at 2010-07-05 16:56:33) [GET]
+  Parameters: {"id"=>"#<Host:0x1022d07c8>"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show (for 127.0.0.1 at 2010-07-05 16:56:38) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (92.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 16:57:57) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:03:22) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (110.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:17:44) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+
+NoMethodError (undefined method `push' for {}:Hash):
+  app/models/host.rb:12:in `all'
+  app/models/host.rb:11:in `each'
+  app/models/host.rb:11:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (98.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:21:31) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-05 17:22:41) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/hosts]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-05 17:24:45) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 83ms (View: 73, DB: 0) | 200 OK [http://localhost/hosts]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:24:47) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:27:31) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (107.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:27:33) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:27:50) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:27:59) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:30:08) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (99.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:35:39) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (44.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:35:41) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (100.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:36:58) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:37:03) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (99.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:37:27) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:37:43) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index to xml (for 127.0.0.1 at 2010-07-05 17:39:09) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/controllers/hosts_controller.rb:14: syntax error, unexpected '}', expecting kEND
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/controllers/hosts_controller.rb:90: syntax error, unexpected $end, expecting '}'):
+  
+
+Rendered rescues/_trace (92.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:40:50) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+
+NameError (undefined local variable or method `logger' for #<Host:0x10219fb10>):
+  app/models/host.rb:26:in `to_xml'
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:41:02) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+NameError (undefined local variable or method `xml' for #<Host:0x10157a678>):
+  app/models/host.rb:26:in `to_xml'
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (108.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:42:38) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:27: unterminated string meets end of file
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:27: syntax error, unexpected $end, expecting ')'):
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:43:12) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:43:14) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:43:43) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:46:28) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:47:07) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:47:27) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:48:08) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-05 17:48:19) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/hosts.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-05 17:48:22) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/hosts]
