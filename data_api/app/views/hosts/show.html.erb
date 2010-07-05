@@ -1,0 +1,18 @@
+<p>
+  <b>Url:</b>
+  <%=h @host.url %>
+</p>
+
+<p>
+  <b>Label:</b>
+  <%=h @host.label %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @host.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_host_path(@host) %> |
+<%= link_to 'Back', hosts_path %>
