@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hosts>
+  <host>
+	<name>Host1</name>	
+	<description>Test host 1</description>	
+    <uri>http://localhost</uri>
+    <type>MySql</type>
+	<query>select * from table1</query>
+  </host>
+  <host>
+   	<name>Host2</name>	
+	<description>Test host 2</description>	
+    <uri>127.0.0.1/host2.xml</uri>
+    <type>REST</type>
+  </host>
+</hosts>

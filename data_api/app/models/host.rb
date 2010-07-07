@@ -1,3 +1,5 @@
+require "rexml/document"
+
 class Host
    attr_reader :id
    attr_reader :url
@@ -15,6 +17,17 @@ class Host
      hosts.map { |host_info| new(host_info)}
    end
 
+   def self.xmltest
+     xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
+     # to-do - validation? schema,dtd
+     doc, hosts = REXML::Document.new(xml), []
+     doc.elements.each('hosts/host') do |element|
+         uri = element.elements['uri'].text
+         type = element.elements['type'].text
+         #query = element.elements['query'].text
+     end
+   end
+   
    def initialize(host_info)
      @id = host_info[0]
      @url = host_info[1]
