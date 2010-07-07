@@ -20,11 +20,16 @@ class Host
    def self.xmltest
      xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
      # to-do - validation? schema,dtd
+     
+     #read xml
      doc, hosts = REXML::Document.new(xml), []
      doc.elements.each('hosts/host') do |element|
-         uri = element.elements['uri'].text
-         type = element.elements['type'].text
-         #query = element.elements['query'].text
+        
+       uri = element.elements['uri'].text
+       type = element.elements['type'].text
+
+       # get the data from each host
+       
      end
    end
    
