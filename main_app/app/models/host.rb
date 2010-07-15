@@ -1,3 +1,5 @@
+require "rexml/document"
+
 class Host
    attr_reader :id
    attr_reader :url
@@ -5,7 +7,7 @@ class Host
    attr_reader :description
 
    def self.all
-     host_list = ActiveRecord::Base.connection.execute("select * " + APP_CONFIG['query_suffix'])
+     host_list = ActiveRecord::Base.connection.execute("select * from websites")
 
      hosts = Array.new
      host_list.each do |host_info|
@@ -16,17 +18,21 @@ class Host
    end
 
    def self.xmltest
-      xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
-      # to-do - validation? schema,dtd
-     
-      #read xml
-      doc, hosts = REXML::Document.new(xml), []
-      doc.elements.each('hosts/host') do |element|
-        
-      uri = element.elements['uri'].text
-      type = element.elements['type'].text
-
-      end
+     xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
+     # to-do - validation? schema,dtd
+     doc, hosts = REXML::Document.new(xml), []
+     doc.elements.each('hosts/host') do |element|
+         uri = element.elements['uri'].text
+         host_info = rest_query(uri)
+         hosts.map { |host_info| new(host_info)}
+         #query = element.elements['query'].text
+     end
+   end
+   
+   def self.xmlsmalltest
+     hosts = rest_query('http://0.0.0.0:3000/hosts.xml')
+     puts hosts.inspect
+     hosts.map { |host_info| new(host_info)}
    end
    
    def initialize(host_info)

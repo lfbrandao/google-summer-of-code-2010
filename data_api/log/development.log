@@ -1649,3 +1649,94 @@ Processing HostsController#index (for 127.0.0.1 at 2010-07-05 17:48:22) [GET]
 Rendering template within layouts/hosts
 Rendering hosts/index
 Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/hosts]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-08 19:27:15) [GET]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 49ms (View: 45, DB: 1) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-08 19:27:17) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mselect * from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mselect * from websites[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:50:58) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:51:23) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:53:14) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:53:30) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:55:37) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:56:34) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:56:59) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect * from websites[0m
+Completed in 55ms (View: 47, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:09:17) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:09:45) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:11:16) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:13:41) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:15:00) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:15:20) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:15:30) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]

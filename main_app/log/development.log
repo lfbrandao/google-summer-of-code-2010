@@ -1,1 +1,978 @@
 
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-08 19:30:56) [GET]
+
+NameError (uninitialized constant REXML::Document):
+  app/models/host.rb:23:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (89.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-08 19:31:23) [GET]
+
+NameError (uninitialized constant REXML::Document):
+  app/models/host.rb:23:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-08 19:32:27) [GET]
+
+NameError (uninitialized constant REXML::Document):
+  app/models/host.rb:23:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (89.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-08 19:33:31) [GET]
+
+NoMethodError (undefined method `rest_query' for Host:Class):
+  app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-08 19:35:54) [GET]
+
+NoMethodError (undefined method `xmltest' for Host:Class):
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (90.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-08 19:37:47) [GET]
+
+NoMethodError (undefined method `rest_query' for Host:Class):
+  app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (113.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-12 11:17:55) [GET]
+
+NoMethodError (undefined method `rest_query' for Host:Class):
+  app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (104.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-12 11:18:17) [GET]
+
+NoMethodError (undefined method `rest_query' for Host:Class):
+  app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-12 12:01:31) [GET]
+
+NoMethodError (undefined method `rest_query' for Host:Class):
+  app/models/host.rb:28:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  app/models/host.rb:26:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (123.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostController#index (for 127.0.0.1 at 2010-07-14 15:25:47) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-14 15:25:50) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: websites: select * from websites[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: websites: select * from websites):
+  app/models/host.rb:13:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (94.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-14 15:28:02) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9:     <td><%= link_to 'Show', host %></td>
+10:     <td><%= link_to 'Edit', edit_host_path(host) %></td>
+11:     <td><%= link_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
+12:   </tr>
+
+    generated code (actionpack (2.3.5) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    (eval):16:in `host_path'
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (149.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-14 15:28:34) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-14 15:29:36) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (124.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-14 15:44:33) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (127.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-14 15:45:29) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (127.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-14 15:45:47) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (70.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-14 15:46:04) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (64.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-14 15:46:10) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9:     <td><%= link_to 'Show', host %></td>
+10:     <td><%= link_to 'Edit', edit_host_path(host) %></td>
+11:     <td><%= link_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
+12:   </tr>
+
+    generated code (actionpack (2.3.5) lib/action_controller/routing/route.rb:160):5:in `generate_raw'
+    (eval):16:in `host_path'
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (133.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-14 15:46:38) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `has_key?' for nil:NilClass) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9:     <td><%= link_to 'Show', host %></td>
+10:     <td><%= link_to 'Edit', edit_host_path(host) %></td>
+11:     <td><%= link_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
+12:   </tr>
+
+    (eval):16:in `host_path'
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (155.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 14:54:58) [GET]
+  [4;35;1mSQL (2.5ms)[0m   [0mselect * from websites[0m
+
+NoMethodError (undefined method `push' for 2162716080:Fixnum):
+  app/models/host.rb:20:in `all'
+  app/models/host.rb:17:in `each'
+  app/models/host.rb:17:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (1125.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 14:55:11) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+NoMethodError (undefined method `push' for 2160235460:Fixnum):
+  app/models/host.rb:20:in `all'
+  app/models/host.rb:17:in `each'
+  app/models/host.rb:17:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (95.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 14:55:51) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect * from websites[0m
+
+NoMethodError (undefined method `push' for 2164781840:Fixnum):
+  app/models/host.rb:20:in `all'
+  app/models/host.rb:17:in `each'
+  app/models/host.rb:17:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 15:04:39) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+
+NoMethodError (undefined method `push' for 2158890980:Fixnum):
+  app/models/host.rb:20:in `all'
+  app/models/host.rb:17:in `each'
+  app/models/host.rb:17:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (103.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 15:05:50) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `url' for Host(Table doesn't exist):Class):
+  app/models/host.rb:21:in `all'
+  app/models/host.rb:17:in `each'
+  app/models/host.rb:17:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:05:57) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `url' for Host(Table doesn't exist):Class):
+  app/models/host.rb:21:in `all'
+  app/models/host.rb:17:in `each'
+  app/models/host.rb:17:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (102.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:06:27) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `label' for Host(Table doesn't exist):Class):
+  app/models/host.rb:23:in `all'
+  app/models/host.rb:18:in `each'
+  app/models/host.rb:18:in `all'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (44.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:06:40) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 244ms (View: 236, DB: 0) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 15:06:51) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect * from websites[0m
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:14:54) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<SQLite3::ResultSet::HashWithTypes:0x101f8ed58>) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (116.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:15:18) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<SQLite3::ResultSet::HashWithTypes:0x10221f180>) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (57.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:45:01) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<SQLite3::ResultSet::HashWithTypes:0x1010898d0>) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (56.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:45:03) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<SQLite3::ResultSet::HashWithTypes:0x10165b2e0>) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (133.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:47:00) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<SQLite3::ResultSet::HashWithTypes:0x101dbbcb0>) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (114.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 15:48:17) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<SQLite3::ResultSet::HashWithTypes:0x101f15778>) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (113.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 15:50:33) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostController#index (for 127.0.0.1 at 2010-07-15 15:50:37) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-15 15:50:40) [GET]
+
+ActionController::RoutingError (No route matches "/host.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:40:25) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 128ms (View: 125, DB: 1) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 17:40:29) [GET]
+  [4;35;1mSQL (3.1ms)[0m   [0mselect * from websites[0m
+Completed in 6ms (View: 1, DB: 3) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:41:48) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 28ms (View: 26, DB: 1) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:42:41) [GET]
+
+NoMethodError (undefined method `rest_query' for Host:Class):
+  /app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:49:22) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:518:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+  /app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:50:07) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:518:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+  /app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (119.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:50:40) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:518:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:30:in `open'
+  /app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:50:58) [GET]
+
+Errno::ENOENT (No such file or directory - 127.0.0.1/host2.xml):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:32:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:32:in `open_uri_original_open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/open-uri.rb:32:in `open'
+  /app/models/host.rb:26:in `xmltest'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:24:in `xmltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (47.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:51:23) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for <host> ... </>:REXML::Element) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:53:14) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for <host> ... </>:REXML::Element) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:53:30) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for <host> ... </>:REXML::Element) on line #9 of app/views/hosts/index.html.erb:
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+11: 	<td><%=h host.description %></td>
+12:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:9
+    app/views/hosts/index.html.erb:7:in `each'
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (58.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:55:37) [GET]
+
+NameError (undefined local variable or method `hosts' for Host:Class):
+  /app/models/host.rb:34:in `xmlsmalltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (108.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:56:34) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x1018438a0>) on line #7 of app/views/hosts/index.html.erb:
+4:   <tr>
+5:   </tr>
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (54.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 17:56:59) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x101843620>) on line #7 of app/views/hosts/index.html.erb:
+4:   <tr>
+5:   </tr>
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (58.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 18:09:17) [GET]
+
+TypeError (can't convert Class into String):
+  /app/models/host.rb:33:in `xmlsmalltest'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (100.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 18:09:45) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x101843508>) on line #7 of app/views/hosts/index.html.erb:
+4:   <tr>
+5:   </tr>
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (54.9ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 18:11:15) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x101843738>) on line #7 of app/views/hosts/index.html.erb:
+4:   <tr>
+5:   </tr>
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 18:13:41) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x101843580>) on line #7 of app/views/hosts/index.html.erb:
+4:   <tr>
+5:   </tr>
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (83.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 18:15:00) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `each' for #<Host:0x10427ce78>) on line #7 of app/views/hosts/index.html.erb:
+4:   <tr>
+5:   </tr>
+6: 
+7: <% @hosts.each do |host| %>
+8:   <tr>
+9: 	<td><%=h host.url %></td>
+10: 	<td><%=h host.label %></td>
+
+    app/views/hosts/index.html.erb:7
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (121.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-15 18:15:20) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 71ms (View: 29, DB: 0) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:15:30) [GET]
+Completed in 95ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]

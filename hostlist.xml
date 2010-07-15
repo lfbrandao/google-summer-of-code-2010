@@ -3,14 +3,8 @@
   <host>
 	<name>Host1</name>	
 	<description>Test host 1</description>	
-    <uri>http://localhost</uri>
+    <uri>http://0.0.0.0:3000/hosts.xml</uri>
     <type>MySql</type>
 	<query>select * from table1</query>
-  </host>
-  <host>
-   	<name>Host2</name>	
-	<description>Test host 2</description>	
-    <uri>127.0.0.1/host2.xml</uri>
-    <type>REST</type>
   </host>
 </hosts>
