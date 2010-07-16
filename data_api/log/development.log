@@ -1740,3 +1740,1435 @@ Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
 Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:15:30) [GET]
   [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
 Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 00:28:17) [GET]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 50ms (View: 45, DB: 1) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 00:28:40) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect * from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 55ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 00:31:30) [GET]
+  [4;36;1mHost Load (0.4ms)[0m   [0;1mSELECT * FROM "websites" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host id: 1, name: "xpt", label: "abb", value: "ccc">) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (60.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 00:32:08) [GET]
+  [4;35;1mHost Load (0.3ms)[0m   [0mSELECT * FROM "websites" [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host id: 1, name: "xpt", label: "abb", value: "ccc">) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (57.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect * from websites[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mselect * from websites[0m
+  [4;36;1mHost Load (0.2ms)[0m   [0;1mSELECT * FROM "websites" [0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 01:59:21) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x101766b58>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 01:59:24) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.to_xml):
+  app/models/host.rb:31:in `to_xml'
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (110.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:00:17) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:00:19) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:00:28) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:00:52) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:01:15) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:02:12) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:02:48) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:03:20) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:03:49) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 54ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:04:15) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:04:31) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 02:05:49) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 02:07:12) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 14:36:34) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x10241e300>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xmç (for 127.0.0.1 at 2010-07-16 14:36:37) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 406 Not Acceptable [http://0.0.0.0/hosts.xm%C3%A7]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 14:36:39) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 15:08:26) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x102334700>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 15:08:29) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 15:16:28) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 59ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 15:16:34) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 15:23:31) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 15:23:37) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 15:24:03) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to json (for 127.0.0.1 at 2010-07-16 15:24:11) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 4ms (View: 1, DB: 0) | 406 Not Acceptable [http://0.0.0.0/hosts.json]
+
+
+Processing HostsController#index to jsn (for 127.0.0.1 at 2010-07-16 15:24:14) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 4ms (View: 1, DB: 0) | 406 Not Acceptable [http://0.0.0.0/hosts.jsn]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 15:33:04) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x101636b98>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#edit (for 127.0.0.1 at 2010-07-16 15:33:10) [GET]
+  Parameters: {"id"=>"1"}
+
+NotImplementedError (NotImplementedError):
+  app/controllers/hosts_controller.rb:37:in `edit'
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: websiteswhere: select id, name, label, value from websiteswhere id[0m
+
+
+Processing HostsController#show (for 127.0.0.1 at 2010-07-16 17:52:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (1.0ms)[0m   [0mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+
+ActionView::TemplateError (undefined method `url' for #<Array:0x102375548>) on line #3 of app/views/hosts/show.html.erb:
+1: <p>
+2:   <b>Url:</b>
+3:   <%=h @host.url %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/hosts/show.html.erb:3
+    app/controllers/hosts_controller.rb:18:in `show'
+
+Rendered rescues/_trace (55.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 17:52:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/1.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 17:52:47) [GET]
+  Parameters: {"url"=>"1"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x1005fce30>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 17:52:51) [GET]
+  Parameters: {"url"=>"1"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml?url=1]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 17:52:59) [GET]
+  Parameters: {"url"=>"www.gggg.com"}
+  [4;35;1mSQL (0.8ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml?url=www.gggg.com]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 17:53:07) [GET]
+  Parameters: {"url"=>"www.gggg.com,www.sapo.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 64ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml?url=www.gggg.com,www.sapo.pt]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 17:53:24) [GET]
+  Parameters: {"url"=>"www.gggg.com,www.sapo.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml?url=www.gggg.com,www.sapo.pt]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 17:53:51) [GET]
+  Parameters: {"url"=>"www.gggg.com,www.sapo.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml?url=www.gggg.com,www.sapo.pt]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 17:54:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/hosts/1.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 17:55:37) [GET]
+  Parameters: {"url"=>"www.sapo.pt", "id"=>"filtered"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filtered.xml?url=www.sapo.pt]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 17:55:48) [GET]
+  Parameters: {"url"=>"www.sapo.pt,www.nytimes.com", "id"=>"filtered"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filtered.xml?url=www.sapo.pt,www.nytimes.com]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 17:59:49) [GET]
+  Parameters: {"url"=>"www.sapo.pt,www.nytimes.com", "id"=>"filtered"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/hosts/filtered.xml?url=www.sapo.pt,www.nytimes.com]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 17:59:50) [GET]
+  Parameters: {"url"=>"www.sapo.pt,www.nytimes.com", "id"=>"filtered"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/filtered.xml?url=www.sapo.pt,www.nytimes.com]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:01:12) [GET]
+  Parameters: {"url"=>"www.sapo.pt,www.nytimes.com", "id"=>"filtered"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filtered.xml?url=www.sapo.pt,www.nytimes.com]
+
+
+Processing HostsController#show (for 127.0.0.1 at 2010-07-16 18:01:14) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+
+ActionView::TemplateError (undefined method `url' for #<Array:0x10218e5b8>) on line #3 of app/views/hosts/show.html.erb:
+1: <p>
+2:   <b>Url:</b>
+3:   <%=h @host.url %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/hosts/show.html.erb:3
+    app/controllers/hosts_controller.rb:20:in `show'
+
+Rendered rescues/_trace (62.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:01:20) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 67ms (View: 63, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:01:24) [GET]
+  Parameters: {"id"=>"find"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/find.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:01:40) [GET]
+  Parameters: {"id"=>"find"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/find.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:01:57) [GET]
+  Parameters: {"id"=>"find"}
+  [4;35;1mSQL (0.7ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/find.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:02:04) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:02:14) [GET]
+  Parameters: {"id"=>"indexe"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/indexe.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:02:35) [GET]
+  Parameters: {"id"=>"indexe"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/hosts/indexe.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:02:37) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:05:16) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:05:17) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:05:18) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 18:05:40) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x101780260>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:8:in `index'
+
+Rendered rescues/_trace (111.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:05:44) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:12:12) [GET]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:12:14) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:12:36) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:12:37) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:13:14) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:13:24) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mSQL (0.7ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:13:51) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:19:09) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/index.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 18:19:26) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x10161f088>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:8:in `index'
+
+Rendered rescues/_trace (56.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:19:31) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/index.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:20:00) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 18:20:04) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x101568540>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:8:in `index'
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:20:07) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/indexer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:20:31) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/indexer" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#find (for 127.0.0.1 at 2010-07-16 18:20:33) [GET]
+
+ActionController::UnknownAction (No action responded to find. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#find to xml (for 127.0.0.1 at 2010-07-16 18:20:36) [GET]
+
+ActionController::UnknownAction (No action responded to find. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:21:27) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/hosts/find.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:24:53) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/hosts/find.xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:24:56) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/finduho.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:25:01) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/finduho" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:25:05) [GET]
+
+ActionController::RoutingError (No route matches "/hostwerwers/finduho" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:25:53) [GET]
+
+ActionController::RoutingError (No route matches "/hostwerwers/finduho" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:25:53) [GET]
+
+ActionController::RoutingError (No route matches "/hostwerwers/finduho" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#404 (for 127.0.0.1 at 2010-07-16 18:25:55) [GET]
+  Parameters: {"controllername"=>"hosts"}
+
+NameError (uninitialized constant PostsController):
+  
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:27:51) [GET]
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:27:57) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-16 18:28:06) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 64ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/find.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:28:53) [GET]
+  Parameters: {"url"=>"aerwerwer,werwerwe"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (44.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:29:00) [GET]
+  Parameters: {"url"=>"aerwerwer,werwerwe"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (88.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:29:43) [GET]
+  Parameters: {"url"=>"aerwerwer,werwerwe"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (91.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:29:47) [GET]
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:29:57) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/filter" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 18:30:00) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/filter.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:30:22) [GET]
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (91.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:30:37) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:30:39) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:31:45) [GET]
+  Parameters: {"url"=>"aeqrwerwer"}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=aeqrwerwer]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:32:19) [GET]
+  Parameters: {"url"=>"aeqrwerwer"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=aeqrwerwer]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:32:55) [GET]
+  Parameters: {"url"=>"aeqrwerwer"}
+
+NoMethodError (undefined method `lentgh' for ["aeqrwerwer"]:Array):
+  app/models/host.rb:28:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (95.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:33:02) [GET]
+  Parameters: {"url"=>"aeqrwerwer"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=aeqrwerwer]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:33:18) [GET]
+  Parameters: {"url"=>"aeqrwerwer"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=aeqrwerwer]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:33:31) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:33:41) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:33:43) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:33:43) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:33:43) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:34:42) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:34:59) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:29: syntax error, unexpected tSTAR
+    if *args.length == 0
+        ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:29: syntax error, unexpected tEQ, expecting tCOLON2 or '[' or '.'
+    if *args.length == 0
+                      ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:66: syntax error, unexpected kEND, expecting $end):
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:35:16) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:36:16) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:37:01) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:38:18) [GET]
+  [4;35;1mSQL (0.8ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:39:08) [GET]
+
+NoMethodError (undefined method `redirect_to' for Host:Class):
+  app/models/host.rb:32:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (104.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:40:05) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.compact!):
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:40:17) [GET]
+
+NameError (undefined local variable or method `params_array' for #<HostsController:0x1015014a8>):
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (100.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:40:32) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:40:50) [GET]
+Redirected to http://0.0.0.0:3000/hosts/index
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/hosts_controller.rb:25:in `filter'
+  app/controllers/hosts_controller.rb:23:in `filter'
+
+Rendered rescues/_trace (116.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:41:32) [GET]
+Redirected to http://0.0.0.0:3000/hosts/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/hosts_controller.rb:25:in `filter'
+  app/controllers/hosts_controller.rb:23:in `filter'
+
+Rendered rescues/_trace (53.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:41:33) [GET]
+Redirected to http://0.0.0.0:3000/hosts/index
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/hosts_controller.rb:25:in `filter'
+  app/controllers/hosts_controller.rb:23:in `filter'
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:41:33) [GET]
+Redirected to http://0.0.0.0:3000/hosts/index
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/hosts_controller.rb:25:in `filter'
+  app/controllers/hosts_controller.rb:23:in `filter'
+
+Rendered rescues/_trace (52.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter (for 127.0.0.1 at 2010-07-16 18:41:36) [GET]
+Redirected to http://0.0.0.0:3000/hosts/index
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/hosts_controller.rb:23:in `filter'
+
+Rendered rescues/_trace (111.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter (for 127.0.0.1 at 2010-07-16 18:42:34) [GET]
+Redirected to http://0.0.0.0:3000/hosts/index
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/hosts/filter]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 18:42:34) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x101de3710>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (117.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 18:42:40) [GET]
+  [4;35;1mSQL (0.7ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 18:42:55) [GET]
+Redirected to http://0.0.0.0:3000/hosts/index
+Completed in 3ms (DB: 0) | 302 Found [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 18:42:55) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x101d8d388>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (117.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-16 19:06:38) [GET]
+  [4;35;1mSQL (24.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Host:0x101fc6118>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: <% @hosts.each do |host| %>
+11:   <tr>
+12:     <td><%=h host.url %></td>
+13:     <td><%=h host.label %></td>
+14:     <td><%=h host.description %></td>
+15:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:10:in `each'
+    app/views/hosts/index.html.erb:10
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (57.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-16 19:17:33) [GET]
+  [4;36;1mSQL (28.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 63ms (View: 30, DB: 29) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:17:38) [GET]
+
+TypeError (can't convert Array into String):
+  app/models/host.rb:30:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (97.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:19:46) [GET]
+
+TypeError (can't convert String into Array):
+  app/models/host.rb:32:in `+'
+  app/models/host.rb:32:in `filter'
+  app/models/host.rb:31:in `each'
+  app/models/host.rb:31:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (45.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:19:55) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/models/host.rb:32:in `filter'
+  app/models/host.rb:31:in `each'
+  app/models/host.rb:31:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (118.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:20:05) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near ",": syntax error: select id, name, label, value from websites where id in(www.nytimes.com,www.sapo.pt,[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ",": syntax error: select id, name, label, value from websites where id in(www.nytimes.com,www.sapo.pt,):
+  app/models/host.rb:38:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:20:19) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: www.sapo.pt: select id, name, label, value from websites where id in(www.nytimes.com,www.sapo.pt)[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: www.sapo.pt: select id, name, label, value from websites where id in(www.nytimes.com,www.sapo.pt)):
+  app/models/host.rb:38:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (114.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:21:12) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:32: syntax error, unexpected tIDENTIFIER, expecting kEND
+      query << '\'' arg + '\','
+                       ^):
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:21:22) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in('www.nytimes.com,www.sapo.pt')[0m
+Completed in 64ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:21:57) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;36;1mSQL (24.6ms)[0m   [0;1mselect id, name, label, value from websites where id in('www.nytimes.com,www.sapo.pt')[0m
+Completed in 29ms (View: 1, DB: 25) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:22:30) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in('www.nytimes.com,www.sapo.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:23:16) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in('www.nytimes.com,www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:23:48) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+
+TypeError (can't convert Array into String):
+  app/models/host.rb:34:in `filter'
+  app/models/host.rb:33:in `each'
+  app/models/host.rb:33:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:23:58) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in('www.nytimes.com','www.sapo.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:28:31) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+
+NoMethodError (undefined method `add_where_to_query' for Host:Class):
+  app/models/host.rb:33:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (59.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:29:17) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+
+NoMethodError (undefined method `add_where_to_query' for Host:Class):
+  app/models/host.rb:33:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (40.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:29:23) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: near ",": syntax error: select id, name, label, value from websites where id in'www.nytimes.com','www.sapo.pt')[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ",": syntax error: select id, name, label, value from websites where id in'www.nytimes.com','www.sapo.pt')):
+  app/models/host.rb:37:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (43.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:29:44) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;35;1mSQL (18.1ms)[0m   [0mselect id, name, label, value from websites where id in ('www.nytimes.com','www.sapo.pt')[0m
+Completed in 22ms (View: 1, DB: 18) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:32:35) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/host.rb:38:in `run_query_and_process_results'
+  app/models/host.rb:38:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (103.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:32:47) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;36;1mSQL (14.7ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.nytimes.com','www.sapo.pt')[0m
+Completed in 22ms (View: 1, DB: 15) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:33:26) [GET]
+  Parameters: {"url"=>"www.nytimes.com,www.sapo.pt"}
+  [4;35;1mSQL (0.9ms)[0m   [0mselect id, name, label, value from websites where id in ('www.nytimes.com','www.sapo.pt')[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.nytimes.com,www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:33:29) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:33:34) [GET]
+  Parameters: {"urewr"=>nil}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?urewr]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:33:45) [GET]
+  Parameters: {"url"=>"ewrwer"}
+  [4;36;1mSQL (0.7ms)[0m   [0;1mselect id, name, label, value from websites where id in ('ewrwer')[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=ewrwer]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:33:52) [GET]
+  Parameters: {"url"=>"ewrwer", "werwe"=>nil}
+  [4;35;1mSQL (14.9ms)[0m   [0mselect id, name, label, value from websites where id in ('ewrwer')[0m
+Completed in 20ms (View: 1, DB: 15) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=ewrwer;werwe]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:34:11) [GET]
+  Parameters: {"url"=>"'www.arerwer wer .com'"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: near "www": syntax error: select id, name, label, value from websites where id in (''www.arerwer wer .com'')[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "www": syntax error: select id, name, label, value from websites where id in (''www.arerwer wer .com'')):
+  app/models/host.rb:41:in `run_query_and_process_results'
+  app/models/host.rb:20:in `filter'
+  app/controllers/hosts_controller.rb:16:in `filter'
+
+Rendered rescues/_trace (101.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-16 19:34:20) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?url=www.sapo.pt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-16 19:39:15) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.json" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#index to json (for 127.0.0.1 at 2010-07-16 19:39:41) [GET]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 20ms (View: 1, DB: 16) | 200 OK [http://0.0.0.0/hosts/index.json]
+
+
+Processing HostsController#filter to json (for 127.0.0.1 at 2010-07-16 19:39:56) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.json]
+
+
+Processing HostsController#filter to json (for 127.0.0.1 at 2010-07-16 19:40:16) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.json]
