@@ -27,9 +27,11 @@ class Host
   def to_xml(options = {})
     xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
     field_names = APP_CONFIG['field_friendly_names']
-    xml.host do
+    xml.host(:uri => @info[APP_CONFIG['uri_field_name']]) do
       field_names.each do |field|
-        eval("xml.#{field}(@info[field])")
+        if field != APP_CONFIG['uri_field_name']
+          eval("xml.#{field}(@info[field])")
+        end
       end
     end
     xml
