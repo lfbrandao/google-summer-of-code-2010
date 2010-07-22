@@ -3172,3 +3172,222 @@ Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.json]
 Processing HostsController#filter to json (for 127.0.0.1 at 2010-07-16 19:40:16) [GET]
   [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
 Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.json]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-20 11:25:20) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-20 11:25:37) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 11:25:47) [GET]
+  [4;36;1mSQL (27.0ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 47ms (View: 16, DB: 27) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 11:26:21) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 50ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 12:09:44) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 12:13:59) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 12:14:27) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 12:16:58) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 12:17:34) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:15:42) [GET]
+  [4;35;1mSQL (1.0ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 14ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:16:01) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:16:03) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:16:16) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:16:17) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:17:01) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:18:34) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:18:36) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:18:37) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:18:38) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:18:38) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:18:38) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:19:27) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:19:29) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:19:48) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:19:50) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:24:08) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:24:10) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:24:31) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:24:52) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:24:53) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 17:24:54) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-20 18:08:55) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-22 15:02:56) [GET]
+  Parameters: {"filter"=>"werwererer"}
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-22 15:03:03) [GET]
+  Parameters: {"filter"=>"werwererer"}
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#filter (for 127.0.0.1 at 2010-07-22 15:05:59) [GET]
+  [4;36;1mSQL (30.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+
+ActionView::MissingTemplate (Missing template hosts/filter.erb in view path app/views):
+  app/controllers/hosts_controller.rb:19:in `filter'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-22 15:06:02) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+
+ActionView::MissingTemplate (Missing template hosts/filter.erb in view path app/views):
+  app/controllers/hosts_controller.rb:21:in `filter'
+  app/controllers/hosts_controller.rb:19:in `filter'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-22 15:06:10) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-22 15:07:09) [GET]
+  [4;35;1mSQL (1.0ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-22 15:07:16) [GET]
+  Parameters: {"uri"=>"erwerwe"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?uri=erwerwe]

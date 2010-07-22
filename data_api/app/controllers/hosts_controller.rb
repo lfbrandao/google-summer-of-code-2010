@@ -18,7 +18,7 @@ class HostsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @host}
+      format.xml  { render :xml => @hosts.to_xml(:root => "hosts")}
       format.json  { render :json => @hosts.to_json}
     end
   end
