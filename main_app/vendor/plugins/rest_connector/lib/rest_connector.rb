@@ -20,23 +20,12 @@ module Berkman
         # Add class methods here
         def rest_query(host_address) 
           require 'open-uri'
-          require "rexml/document"
-
-          hosts = Array.new
-          puts host_address
-          response = open(host_address).read
-          puts response
+  
+          #hosts = Array.new
+          #puts host_address
+          open(host_address).read
+          #puts response
           # to-do - validation? schema,dtd
-
-          #read xml
-          doc, hosts = REXML::Document.new(response), []
-          doc.elements.each('hosts/host') do |element|
-            id = element.elements['id'].text
-            url = element.elements['url'].text
-            hosts.push([id, url, id, url])
-          end
-          puts hosts.inspect
-          hosts
         end
       end
 

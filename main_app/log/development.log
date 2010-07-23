@@ -976,3 +976,1665 @@ Completed in 71ms (View: 29, DB: 0) | 200 OK [http://0.0.0.0/hosts]
 
 Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-15 18:15:30) [GET]
 Completed in 95ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts.xml]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:15:05) [GET]
+
+NoMethodError (undefined method `xmlsmalltest' for Host:Class):
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (98.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:15:42) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for <host> ... </>:REXML::Element) on line #18 of app/views/hosts/index.html.erb:
+15: 
+16: <% @hosts.each do |host| %>
+17:   <tr>
+18: 	<td><%=h host.url %></td>
+19: 	<td><%=h host.label %></td>
+20: 	<td><%=h host.description %></td>
+21:     <td><%= link_to 'Show', host %></td>
+
+    app/views/hosts/index.html.erb:18
+    app/views/hosts/index.html.erb:16:in `each'
+    app/views/hosts/index.html.erb:16
+    app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (122.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:16:01) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 66ms (View: 34, DB: 0) | 200 OK [http://0.0.0.0/hosts/]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:16:03) [GET]
+  Parameters: {"commit"=>"URL", "search"=>"erer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?search=erer&commit=URL]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:16:16) [GET]
+  Parameters: {"commit"=>"URL", "search"=>"erer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts?search=erer&commit=URL]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:16:17) [GET]
+  Parameters: {"commit"=>"URL", "filter"=>""}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 32ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=&commit=URL]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:17:01) [GET]
+  Parameters: {"commit"=>"URL", "filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 146ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer&commit=URL]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:18:34) [GET]
+  Parameters: {"commit"=>"URL", "filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 37ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer&commit=URL]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:18:36) [GET]
+  Parameters: {"commit"=>"URL", "filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 32ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer&commit=URL]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:18:37) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 32ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:18:38) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:18:38) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:18:38) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 86ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:19:27) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 35ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:19:29) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:19:48) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:19:50) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:23:44) [GET]
+  Parameters: {"filter"=>"werwer"}
+
+NoMethodError (undefined method `search' for Host:Class):
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (99.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:24:08) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 102ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:24:10) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 33ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:24:31) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 27ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:24:52) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 32ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:24:53) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 32ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 17:24:54) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 30ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 18:08:55) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 30ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 18:10:29) [GET]
+  Parameters: {"filter"=>"werwererer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwererer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-20 18:10:30) [GET]
+  Parameters: {"filter"=>"werwererer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwererer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-21 23:36:25) [GET]
+  Parameters: {"filter"=>"werwererer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 1258ms (View: 213, DB: 0) | 200 OK [http://0.0.0.0/hosts?filter=werwererer]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-22 15:03:23) [GET]
+
+ActionView::MissingTemplate (Missing template hosts/index.erb in view path app/views):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-22 15:03:30) [GET]
+  Parameters: {"id"=>"filter"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-22 15:03:56) [GET]
+  Parameters: {"id"=>"find"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-22 15:04:08) [GET]
+  Parameters: {"id"=>"filter"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-22 15:04:21) [GET]
+  Parameters: {"id"=>"index"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-22 15:04:57) [GET]
+  Parameters: {"id"=>"index"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show (for 127.0.0.1 at 2010-07-22 15:05:50) [GET]
+  Parameters: {"id"=>"filter"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:44:37) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 143ms (View: 103, DB: 0) | 200 OK [http://0.0.0.0/hosts]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-23 17:44:40) [GET]
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:9:in `index'
+  app/controllers/hosts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (113.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show (for 127.0.0.1 at 2010-07-23 17:45:01) [GET]
+  Parameters: {"id"=>"search"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-23 17:45:06) [GET]
+  Parameters: {"id"=>"search"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-23 17:45:54) [GET]
+  Parameters: {"id"=>"search"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (105.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2010-07-23 17:46:13) [GET]
+  Parameters: {"id"=>"search"}
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:16:in `show'
+
+Rendered rescues/_trace (98.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-23 17:46:29) [GET]
+
+ActionController::UnknownAction (No action responded to search. Actions: index and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-23 17:47:04) [GET]
+
+NoMethodError (undefined method `find' for Host:Class):
+  app/controllers/hosts_controller.rb:25:in `search'
+
+Rendered rescues/_trace (106.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-23 17:47:29) [GET]
+
+RuntimeError (Not all elements respond to to_xml):
+  app/controllers/hosts_controller.rb:29:in `search'
+  app/controllers/hosts_controller.rb:27:in `search'
+
+Rendered rescues/_trace (56.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-23 17:49:54) [GET]
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:27:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-23 17:51:19) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x1044432c0>) on line #3 of app/views/hosts/search.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/search.html.erb:3
+    app/controllers/hosts_controller.rb:27:in `search'
+
+Rendered rescues/_trace (120.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-23 17:51:35) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+ERROR: compiling _run_erb_app47views47hosts47search46html46erb RAISED compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/search.html.erb:3: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+;  form_tag , :method => 'get' do ; @output_buffer.con...
+                        ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/search.html.erb:3: syntax error, unexpected kDO, expecting kEND
+...form_tag , :method => 'get' do ; @output_buffer.concat "\n  ...
+                              ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/search.html.erb:11: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47hosts47search46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hosts</h1>\n\n"
+
+;  form_tag , :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+
+; @output_buffer.concat(( text_field_tag :filter, params[:filter]).to_s); @output_buffer.concat "\t\n\t"
+; @output_buffer.concat(( submit_tag "URL", :name => nil).to_s); @output_buffer.concat "\n</p>\n\n"
+
+
+;  end 
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/search.html.erb:11:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/controllers/hosts_controller.rb:27:in `search'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/search.html.erb:3: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+;  form_tag , :method => 'get' do ; @output_buffer.con...
+                        ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/search.html.erb:3: syntax error, unexpected kDO, expecting kEND
+...form_tag , :method => 'get' do ; @output_buffer.concat "\n  ...
+                              ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/search.html.erb:11: syntax error, unexpected kENSURE, expecting $end) on line #3 of app/views/hosts/search.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag , :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/search.html.erb:11:in `compile!'
+    app/controllers/hosts_controller.rb:27:in `search'
+
+Rendered rescues/_trace (51.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-23 17:55:34) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x10416d3e8>) on line #3 of app/views/hosts/search.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/search.html.erb:3
+    app/controllers/hosts_controller.rb:26:in `search'
+
+Rendered rescues/_trace (53.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:55:40) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+ERROR: compiling _run_erb_app47views47hosts47index46html46erb RAISED compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:19: syntax error, unexpected kENSURE, expecting kEND
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:21: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47hosts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hosts</h1>\n\n"
+
+;  form_tag hosts_path, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+
+; @output_buffer.concat(( text_field_tag :filter, params[:filter]).to_s); @output_buffer.concat "\t\n\t"
+; @output_buffer.concat(( submit_tag "URL", :name => nil).to_s); @output_buffer.concat "\n</p>\n\n<table>\n"
+
+
+
+;  @hosts.each do |host| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((h host.url ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h host.label ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\t\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:21:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/controllers/hosts_controller.rb:6:in `index'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:19: syntax error, unexpected kENSURE, expecting kEND
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:21: syntax error, unexpected $end, expecting kEND) on line #19 of app/views/hosts/index.html.erb:
+16: </table>	
+
+    app/views/hosts/index.html.erb:21:in `compile!'
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:56:18) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+ERROR: compiling _run_erb_app47views47hosts47index46html46erb RAISED compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:15: syntax error, unexpected kENSURE, expecting kEND
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:17: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47hosts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hosts</h1>\n\n"
+
+;  form_tag hosts_path, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+
+; @output_buffer.concat(( text_field_tag :filter, params[:filter]).to_s); @output_buffer.concat "\t\n\t"
+; @output_buffer.concat(( submit_tag "URL", :name => nil).to_s); @output_buffer.concat "\n</p>\n\n"
+
+
+;  @hosts.each do |host| ; @output_buffer.concat "\n  "
+; @output_buffer.concat((h host.url ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:17:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/controllers/hosts_controller.rb:6:in `index'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:15: syntax error, unexpected kENSURE, expecting kEND
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:17: syntax error, unexpected $end, expecting kEND) on line #15 of app/views/hosts/index.html.erb:
+0
+    app/views/hosts/index.html.erb:17:in `compile!'
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (53.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:56:27) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+ERROR: compiling _run_erb_app47views47hosts47index46html46erb RAISED compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:13: syntax error, unexpected kENSURE, expecting kEND
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:15: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47hosts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hosts</h1>\n\n"
+
+;  form_tag hosts_path, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+
+; @output_buffer.concat(( text_field_tag :filter, params[:filter]).to_s); @output_buffer.concat "\t\n\t"
+; @output_buffer.concat(( submit_tag "URL", :name => nil).to_s); @output_buffer.concat "\n</p>\n\n"
+
+
+;  @hosts.each do |host| ; @output_buffer.concat "\n  "
+; @output_buffer.concat((h host.url ).to_s); @output_buffer.concat "\n\n"
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:15:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/controllers/hosts_controller.rb:6:in `index'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:13: syntax error, unexpected kENSURE, expecting kEND
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:15: syntax error, unexpected $end, expecting kEND) on line #13 of app/views/hosts/index.html.erb:
+10:   <%=h host.url %>
+11: 
+12: <% end %>
+
+    app/views/hosts/index.html.erb:15:in `compile!'
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (116.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:56:46) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x10436b870>) on line #3 of app/views/hosts/index.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/index.html.erb:3
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (119.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:57:04) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x1043b6f78>) on line #3 of app/views/hosts/index.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/index.html.erb:3
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (119.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:57:05) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x10440c630>) on line #3 of app/views/hosts/index.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/index.html.erb:3
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (117.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:57:23) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x10449c618>) on line #3 of app/views/hosts/index.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/index.html.erb:3
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (52.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:57:25) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x1044e2500>) on line #3 of app/views/hosts/index.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/index.html.erb:3
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:59:14) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+ERROR: compiling _run_erb_app47views47hosts47index46html46erb RAISED compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:3: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+;  form_tag, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+                       ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:3: syntax error, unexpected kDO, expecting kEND
+;  form_tag, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+                                ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:11: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47hosts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hosts</h1>\n\n"
+
+;  form_tag, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+
+; @output_buffer.concat(( text_field_tag :filter, params[:filter]).to_s); @output_buffer.concat "\t\n\t"
+; @output_buffer.concat(( submit_tag "URL", :name => nil).to_s); @output_buffer.concat "\n</p>\n\n"
+
+
+;  end 
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:11:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/controllers/hosts_controller.rb:6:in `index'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:3: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+;  form_tag, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+                       ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:3: syntax error, unexpected kDO, expecting kEND
+;  form_tag, :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+                                ^
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:11: syntax error, unexpected kENSURE, expecting $end) on line #3 of app/views/hosts/index.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/index.html.erb:11:in `compile!'
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 17:59:44) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 46ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-23 17:59:48) [GET]
+  Parameters: {"filter"=>"rwe"}
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-23 18:02:04) [GET]
+  Parameters: {"filter"=>"rwe"}
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-23 18:02:07) [GET]
+  Parameters: {"filter"=>"rwe"}
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-23 18:02:40) [GET]
+  Parameters: {"filter"=>"rwe"}
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:03:07) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `url' for #<Array:0x1017662c0>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: 
+11: <% @hosts.each do |host| %>
+12:   <%=h host.url %>
+13: <% end %>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (55.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:03:18) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `uri' for #<Array:0x104257f10>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: 
+11: <% @hosts.each do |host| %>
+12:   <%=h host.uri %>
+13: <% end %>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (121.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:04:05) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `uri' for #<Array:0x1042c6960>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: 
+11: <% @hosts.each do |host| %>
+12:   <%=h host.uri %>
+13: <% end %>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (118.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:04:17) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 43ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:04:52) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `name' for #<Array:0x10427eb88>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: 
+11: <% @hosts.each do |host| %>
+12:   <%=h host.name - host.value  %>
+13: <% end %>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (120.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:05:14) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `name' for #<Array:0x1042950b8>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: 
+11: <% @hosts.each do |host| %>
+12:   <%=h host.name  %>
+13: <% end %>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (120.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:06:19) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 93ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:06:42) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 53ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:07:23) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 99ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:07:33) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 44ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 18:07:51) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `name' for "1":String) on line #13 of app/views/hosts/index.html.erb:
+10: 
+11: <% @hosts.each do |host| %>
+12:   <% host.each do |host_prop| %>
+13:   	<%=h host_prop.name  %>
+14:   <% end %>
+15: <% end %>
+
+    app/views/hosts/index.html.erb:13
+    app/views/hosts/index.html.erb:12:in `each'
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (119.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-23 19:21:01) [GET]
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-23 19:21:05) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (undefined local variable or method `hosts_path' for #<ActionView::Base:0x1011fac00>) on line #3 of app/views/hosts/search.html.erb:
+1: <h1>Listing hosts</h1>
+2: 
+3: <% form_tag hosts_path, :method => 'get' do %>
+4:   <p>
+5: 	<%= text_field_tag :filter, params[:filter]%>	
+6: 	<%= submit_tag "URL", :name => nil%>
+
+    app/views/hosts/search.html.erb:3
+    app/controllers/hosts_controller.rb:26:in `search'
+
+Rendered rescues/_trace (55.7ms)
+Rendered rescues/_request_and_response (2.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:21:25) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #13 of app/views/hosts/index.html.erb:
+10: 
+11: <% @hosts.each do |host| %>
+12:   <% host.each do |uri, host_prop| %>
+13:   	<% host_prop.each do |prop| %>
+14: 		<%=h prop.name  %>
+15: 	<% end %>
+16:   <% end %>
+
+    app/views/hosts/index.html.erb:13
+    app/views/hosts/index.html.erb:12:in `each'
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (55.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:21:53) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 42ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:22:00) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `key' for "1":String) on line #13 of app/views/hosts/index.html.erb:
+10: 
+11: <% @hosts.each do |host| %>
+12:   <% host.each do |uri, host_prop| %>
+13:   	<%=h uri.key  %>
+14: 	
+15:   <% end %>
+16: <% end %>
+
+    app/views/hosts/index.html.erb:13
+    app/views/hosts/index.html.erb:12:in `each'
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (54.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:22:11) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 43ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:22:28) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+ERROR: compiling _run_erb_app47views47hosts47index46html46erb RAISED compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:16: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47hosts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hosts</h1>\n\n"
+
+;  form_tag '/hosts/index', :method => 'get' do ; @output_buffer.concat "\n  <p>\n\t"
+
+; @output_buffer.concat(( text_field_tag :filter, params[:filter]).to_s); @output_buffer.concat "\t\n\t"
+; @output_buffer.concat(( submit_tag "URL", :name => nil).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end 
+@output_buffer.concat "\n\n"
+
+;  @hosts.each do |uri, host| ; @output_buffer.concat "\n  \t"
+; @output_buffer.concat((h uri.class  ).to_s); @output_buffer.concat "\n\t\n  "
+
+;  end ; @output_buffer.concat "\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:16:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/controllers/hosts_controller.rb:6:in `index'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luisbrandao/Documents/GSoC10/code/main_app/app/views/hosts/index.html.erb:16: syntax error, unexpected kENSURE, expecting $end) on line #16 of app/views/hosts/index.html.erb:
+13: 	
+14:   <% end %>
+15: <% end %>
+
+    app/views/hosts/index.html.erb:16:in `compile!'
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (53.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:22:34) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 105ms (View: 71, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:23:10) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 41ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:23:25) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 41ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:23:38) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 42ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:24:20) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 101ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:24:45) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (undefined method `h1' for #<ActionView::Base:0x1044ab820>) on line #12 of app/views/hosts/index.html.erb:
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<%=h1 uri  %>  
+13: 	<% host_props.each do |host_prop| %>
+14:   		
+15: 	<%=h host_prop.name  %>
+
+    app/views/hosts/index.html.erb:12
+    app/views/hosts/index.html.erb:11:in `each'
+    app/views/hosts/index.html.erb:11
+    app/controllers/hosts_controller.rb:6:in `index'
+
+Rendered rescues/_trace (55.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:25:05) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 36ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:29:34) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 43ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/hosts/index]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:30:05) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 45ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/hosts/index?filter=werwer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-23 19:31:09) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 48ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:31:11) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 81ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/index?filter=werwer]

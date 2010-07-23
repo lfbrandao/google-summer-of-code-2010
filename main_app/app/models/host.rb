@@ -1,49 +1,76 @@
 require "rexml/document"
 
 class Host
-   attr_reader :id
-   attr_reader :url
-   attr_reader :label
-   attr_reader :description
+  attr_reader :uri
+  attr_writer :uri
+  attr_reader :uri_data
 
-   def self.all
-     host_list = ActiveRecord::Base.connection.execute("select * from websites")
+  def self.index
+    xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
+    doc, hosts = REXML::Document.new(xml), []
+    doc.elements.each('hosts/host') do |element|
+      uri = element.elements['uri'].text
+      plugin_type = element.elements['type'].text
+      hosts = eval("#{plugin_type}_query('http://0.0.0.0:3000/hosts/index.xml')")
+    end
+  end
+  
+  def self.search(search_params)
+    # create an hash to store temporary data per host
+    hosts_info = Hash.new
+    
+    # read data stores directory
+    xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
+    doc, data_store_info = REXML::Document.new(xml), []
+    
+    # for each data store
+    doc.elements.each('hosts/host') do |element|
+      database_uri = element.elements['uri'].text
+      database_plugin_type = element.elements['type'].text
+      
+      # query the data store and parse the returned XML
+      hosts = eval("#{database_plugin_type}_query('http://0.0.0.0:3000/hosts/index.xml')")
+      hosts_xml = REXML::Document.new(hosts)
 
-     hosts = Array.new
-     host_list.each do |host_info|
-       hosts.push([host_info[0], host_info[1], host_info[2], host_info[3]])
-     end
+      # each element is a different host, i.e a different URL
+      hosts_xml.elements.each('hosts/host') do |host_properties|
+        uri = host_properties.attributes['uri']
+        hosts_info[uri] = Array.new if hosts_info[uri].nil?
+        
+        host_properties.elements.each do |host_property|
+          property_name = host_property.name
+          property_value = host_property.text
+          hosts_info[uri] << HostProperty.new(database_uri, database_uri, property_name, property_value)
+        end
+      end  
+    end
+    
+    # map URIs data to the Host class
+    hosts_info.each do |host_uri, host_info|
+      new(host_uri, host_info)
+    end
+  end
 
-     hosts.map { |host_info| new(host_info)}
-   end
-
-   def self.xmltest
-     xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
-     # to-do - validation? schema,dtd
-     doc, hosts = REXML::Document.new(xml), []
-     doc.elements.each('hosts/host') do |element|
-         uri = element.elements['uri'].text
-         host_info = rest_query(uri)
-         hosts.map { |host_info| new(host_info)}
-         #query = element.elements['query'].text
-     end
-   end
+  def initialize(uri, uri_data)
+    @uri = uri
+    @uri_data = uri_data
+    puts "URI #{@uri}"
+    puts "URI data #{@uri_data}"
+  end
    
-   def self.xmlsmalltest
-     hosts = rest_query('http://0.0.0.0:3000/hosts.xml')
-     puts hosts.inspect
-     hosts.map { |host_info| new(host_info)}
-   end
-   
-   def initialize(host_info)
-     @id = host_info[0]
-     @url = host_info[1]
-     @label = host_info[2]
-     @description = host_info[3]
-   end
-   
-   def to_xml(options = {})
-     xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
-     xml.host { |b| b.id(@id); b.url(@url); b.label(@label); b.description(@description) }
-   end
+  def to_xml(options = {})
+    #xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
+    #xml.host { |b| b.id(@id); b.url(@url); b.label(@label); b.description(@description) }
+=begin
+    xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
+    xml.host(:uri => @info[APP_CONFIG['uri_field_name']]) do
+      field_names.each do |field|
+        if field != APP_CONFIG['uri_field_name']
+          eval("xml.#{field}(@info[field])")
+        end
+      end
+    end
+    xml
+=end
+  end
 end
