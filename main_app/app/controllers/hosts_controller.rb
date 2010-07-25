@@ -1,4 +1,5 @@
 class HostsController < ApplicationController
+=begin  
   # GET /hosts
   # GET /hosts.xml
   def index
@@ -8,11 +9,12 @@ class HostsController < ApplicationController
       format.xml  { render :xml => @hosts }
     end
   end
+=end
 
   # GET /hosts/1
   # GET /hosts/1.xml
   def show
-    @host = Host.find(params[:id])
+    @host = Host.find(params[:uri])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -21,8 +23,8 @@ class HostsController < ApplicationController
   end
   
   def search
-    @hosts = Host.search(params[:id])
-
+    @hosts = Host.search(params)
+    puts "Hosts #{@hosts}"
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @host }

@@ -1,9 +1,9 @@
 <h1>Listing hosts</h1>
 
-<% form_tag '/hosts/index', :method => 'get' do %>
+<% form_tag '/hosts/search', :method => 'get' do %>
   <p>
-	<%= text_field_tag :filter, params[:filter]%>	
-	<%= submit_tag "URL", :name => nil%>
+	<%= text_field_tag :uri, params[:uri]%>	
+	<%= submit_tag "URI", :name => nil%>
   </p>
 <% end -%>
 

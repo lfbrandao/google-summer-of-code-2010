@@ -8,6 +8,7 @@ class Host
   end
 
   def self.filter(*args)
+    puts "args #{args}"
     # todo - sanitize sql
     if args[0].nil?
       query = APP_CONFIG['base_query']

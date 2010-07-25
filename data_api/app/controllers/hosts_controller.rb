@@ -14,7 +14,8 @@ class HostsController < ApplicationController
   # GET /hosts/find
   # GET /hosts/find.xml
   def filter
-    @hosts = Host.filter(params[:url])
+    puts "params[:url] #{params[:uri]}"
+    @hosts = Host.filter(params[:uri])
 
     respond_to do |format|
       format.html # show.html.erb

@@ -11,7 +11,7 @@ class Host
     doc.elements.each('hosts/host') do |element|
       uri = element.elements['uri'].text
       plugin_type = element.elements['type'].text
-      hosts = eval("#{plugin_type}_query('http://0.0.0.0:3000/hosts/index.xml')")
+      hosts = eval("#{plugin_type}_query(#{uri})")
     end
   end
   
@@ -29,7 +29,8 @@ class Host
       database_plugin_type = element.elements['type'].text
       
       # query the data store and parse the returned XML
-      hosts = eval("#{database_plugin_type}_query('http://0.0.0.0:3000/hosts/index.xml')")
+      #hosts = eval("#{database_plugin_type}_query(#{'database_uri'},#{'search_params'})")
+      hosts = rest_query(database_uri, search_params)
       hosts_xml = REXML::Document.new(hosts)
 
       # each element is a different host, i.e a different URL
@@ -54,8 +55,6 @@ class Host
   def initialize(uri, uri_data)
     @uri = uri
     @uri_data = uri_data
-    puts "URI #{@uri}"
-    puts "URI data #{@uri_data}"
   end
    
   def to_xml(options = {})

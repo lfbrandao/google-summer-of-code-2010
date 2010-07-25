@@ -2638,3 +2638,1188 @@ Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:31:11) [GET]
 Rendering template within layouts/hosts
 Rendering hosts/index
 Completed in 81ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/index?filter=werwer]
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-23 19:51:21) [GET]
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-23 19:51:25) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 47ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:51:29) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 41ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/index?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:56:38) [GET]
+  Parameters: {"filter"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 45ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/hosts/index?filter=werwer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-23 19:56:40) [GET]
+  Parameters: {"filter"=>"werwerer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 39ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/index?filter=werwerer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 17:35:59) [GET]
+  Parameters: {"filter"=>"werwerer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 363ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/index?filter=werwerer]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 18:07:16) [GET]
+  Parameters: {"filter"=>"werwerer"}
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:29:in `search'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (102.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 18:07:53) [GET]
+  Parameters: {"filter"=>"werwerer"}
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:29:in `search'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (43.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-25 18:07:58) [GET]
+  Parameters: {"filter"=>"werwerer"}
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:29:in `search'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (105.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-25 18:08:28) [GET]
+  Parameters: {"filter"=>"werwerer"}
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:29:in `search'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-25 18:17:12) [GET]
+  Parameters: {"filter"=>"werwerer"}
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:29:in `search'
+  app/controllers/hosts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 18:17:15) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:17:19) [GET]
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:29:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (107.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:17:42) [GET]
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:29:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:18:00) [GET]
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:18:18) [GET]
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:18:46) [GET]
+
+NameError (undefined local variable or method `uri' for Host:Class):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (110.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:19:00) [GET]
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: no .<digit> floating literal anymore; put 0 before dot
+rest_query(http://0.0.0.0:3000/hosts.xml)
+                      ^
+(eval):1: syntax error, unexpected tFLOAT
+rest_query(http://0.0.0.0:3000/hosts.xml)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (105.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:19:23) [GET]
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: no .<digit> floating literal anymore; put 0 before dot
+rest_query(http://0.0.0.0:3000/hosts.xml)
+                      ^
+(eval):1: syntax error, unexpected tFLOAT
+rest_query(http://0.0.0.0:3000/hosts.xml)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:19:34) [GET]
+
+ArgumentError ((eval):1:in `rest_query': wrong number of arguments (1 for 2)):
+  /app/models/host.rb:32:in `search'
+  (eval):1:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (104.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:20:03) [GET]
+
+ArgumentError ((eval):1:in `rest_query': wrong number of arguments (1 for 2)):
+  /app/models/host.rb:32:in `search'
+  (eval):1:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:20:29) [GET]
+
+NameError (undefined local variable or method `params' for Host:Class):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (103.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:20:48) [GET]
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: syntax error, unexpected ')'
+rest_query(database_uri,)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:21:05) [GET]
+  Parameters: {"url"=>"aberer"}
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: syntax error, unexpected ')'
+rest_query(database_uri,)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:21:07) [GET]
+  Parameters: {"url"=>"aberer"}
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: syntax error, unexpected ')'
+rest_query(database_uri,)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (111.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:21:15) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: syntax error, unexpected ')'
+rest_query(database_uri,)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:21:16) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: syntax error, unexpected ')'
+rest_query(database_uri,)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (107.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:21:26) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+SyntaxError ((eval):1:in `search': compile error
+(eval):1: syntax error, unexpected ')'
+rest_query(database_uri,)
+                         ^):
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:32:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:22:41) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ArgumentError (/Users/luisbrandao/Documents/GSoC10/code/main_app/vendor/plugins/rest_connector/lib/rest_connector.rb:27:in `http_get': wrong number of arguments (2 for 3)):
+  /app/models/host.rb:33:in `search'
+  (eval):1:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `eval'
+  /app/models/host.rb:33:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (103.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 18:23:40) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ArgumentError (wrong number of arguments (2 for 3)):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:04:11) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (105.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:05:07) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (106.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:05:44) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NameError (undefined local variable or method `uri_parse' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (107.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:05:53) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NameError (undefined local variable or method `uri_parse' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (43.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:06:20) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NoMethodError (undefined method `post' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (118.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:07:15) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NoMethodError (undefined method `post' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (119.4ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:08:54) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NoMethodError (undefined method `post' for Host:Class):
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (60.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:09:39) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  /app/models/host.rb:34:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:28:in `search'
+  app/controllers/hosts_controller.rb:24:in `search'
+
+Rendered rescues/_trace (121.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:16:09) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:16:24) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:16:43) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:16:46) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:17:45) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:17:58) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 19:18:42) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 21:07:15) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 21:07:46) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 21:08:47) [GET]
+  Parameters: {"uri"=>"aberer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-25 21:13:57) [GET]
+  Parameters: {"filter"=>"werwerer"}
+Completed in 99ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml?filter=werwerer]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:16:27) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/filter.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 21:16:46) [GET]
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 21:16:53) [GET]
+  Parameters: {"uri"=>"werwer"}
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:28:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 21:18:42) [GET]
+  Parameters: {"uri"=>"werwer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 279ms (View: 244, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=werwer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 21:18:54) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 33ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 21:18:57) [GET]
+  Parameters: {"filter"=>"erwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/hosts/index.html.erb:
+8: <% end -%>
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<h1>
+13: 	<%=h uri  %>  
+14: 	</h1>
+
+    app/views/hosts/index.html.erb:11
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 21:26:54) [GET]
+  Parameters: {"filter"=>"erwer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/hosts/index.html.erb:
+8: <% end -%>
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<h1>
+13: 	<%=h uri  %>  
+14: 	</h1>
+
+    app/views/hosts/index.html.erb:11
+
+Rendered rescues/_trace (126.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-25 21:27:09) [GET]
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:30:in `search'
+  app/controllers/hosts_controller.rb:28:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 21:27:33) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 53ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 21:27:38) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/hosts/index.html.erb:
+8: <% end -%>
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<h1>
+13: 	<%=h uri  %>  
+14: 	</h1>
+
+    app/views/hosts/index.html.erb:11
+
+Rendered rescues/_trace (65.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 22:53:47) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/hosts/index.html.erb:
+8: <% end -%>
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<h1>
+13: 	<%=h uri  %>  
+14: 	</h1>
+
+    app/views/hosts/index.html.erb:11
+
+Rendered rescues/_trace (137.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 22:54:07) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/hosts/index.html.erb:
+8: <% end -%>
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<h1>
+13: 	<%=h uri  %>  
+14: 	</h1>
+
+    app/views/hosts/index.html.erb:11
+
+Rendered rescues/_trace (68.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 22:55:22) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/hosts/index.html.erb:
+8: <% end -%>
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<h1>
+13: 	<%=h uri  %>  
+14: 	</h1>
+
+    app/views/hosts/index.html.erb:11
+
+Rendered rescues/_trace (109.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-07-25 22:56:04) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #11 of app/views/hosts/index.html.erb:
+8: <% end -%>
+9: 
+10: 
+11: <% @hosts.each do |uri, host_props| %>
+12: 	<h1>
+13: 	<%=h uri  %>  
+14: 	</h1>
+
+    app/views/hosts/index.html.erb:11
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 22:56:23) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 203ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 22:56:25) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 38ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?filter=wer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:04:45) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 47ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?filter=wer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:07:39) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 35ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?filter=wer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:08:39) [GET]
+  Parameters: {"filter"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 172ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?filter=wer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:08:45) [GET]
+  Parameters: {"url"=>"werer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 37ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=werer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:08:51) [GET]
+  Parameters: {"url"=>"werer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 37ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=werer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:10:24) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 36ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:11:03) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 141ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:11:23) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 39ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:11:35) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 99ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:15:53) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 138ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:16:29) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 37ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:16:57) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 172ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:17:37) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 37ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:17:45) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 36ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:17:52) [GET]
+  Parameters: {"url"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 115ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?url=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:18:06) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 53ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:19:33) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 97ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:19:36) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 54ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:20:55) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 71ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:21:17) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 50ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:21:28) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 100ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:22:17) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 64ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:22:18) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 98ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:22:22) [GET]
+  Parameters: {"uri"=>"www.publico.pt, www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 54ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt%2C+www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:22:25) [GET]
+  Parameters: {"uri"=>""}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 214ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:22:28) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 97ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:22:29) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 51ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:22:33) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 105ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:23:06) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 54ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 23:25:00) [GET]
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 23:25:16) [GET]
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:27:13) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 71ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:27:15) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 54ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:27:18) [GET]
+  Parameters: {"uri"=>"wer"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 111ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=wer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:27:21) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 53ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:27:24) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 99ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]

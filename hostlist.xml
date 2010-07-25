@@ -3,8 +3,7 @@
   <host>
 	<name>Host1</name>	
 	<description>Test host 1</description>	
-    <uri>http://0.0.0.0:3000/hosts.xml</uri>
-    <type>MySql</type>
-	<query>select * from table1</query>
+    <uri>http://0.0.0.0:3000/hosts/filter.xml</uri>
+    <type>rest</type>
   </host>
 </hosts>

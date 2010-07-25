@@ -3885,3 +3885,614 @@ Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
 Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-23 19:31:11) [GET]
   [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
 Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-23 19:51:21) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-23 19:51:25) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-23 19:51:29) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-23 19:54:11) [GET]
+  Parameters: {"filter"=>"werwererer"}
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-23 19:54:30) [GET]
+  Parameters: {"filter"=>"werwererer"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?filter=werwererer]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-23 19:56:38) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-23 19:56:40) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2010-07-25 17:36:00) [GET]
+  [4;35;1mSQL (0.8ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/index.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 18:09:09) [GET]
+  Parameters: {"filter"=>"werwererer"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?filter=werwererer]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 19:16:09) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 19:16:24) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 19:16:43) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 19:16:46) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 19:17:45) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 19:17:58) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 19:18:42) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:07:16) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:08:47) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:12:50) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:13:25) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/search.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:13:57) [GET]
+  Parameters: {"werwerer"=>""}
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:13:57) [GET]
+  Parameters: {"werwerer"=>""}
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:16:46) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:16:53) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:18:42) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:18:54) [GET]
+
+ActionController::RoutingError (No route matches "/hosts.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 21:20:11) [GET]
+  Parameters: {"uri"=>"erwerwe"}
+  [4;36;1mSQL (18.3ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 39ms (View: 16, DB: 18) | 200 OK [http://0.0.0.0/hosts/filter.xml?uri=erwerwe]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 21:25:58) [GET]
+  Parameters: {"uri"=>"erwerwe"}
+  [4;35;1mSQL (0.7ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?uri=erwerwe]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-25 21:26:20) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/search.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 21:26:37) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 21:27:09) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 21:27:33) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 22:56:23) [GET]
+  [4;36;1mSQL (29.1ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 64ms (View: 30, DB: 29) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 22:56:25) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:04:45) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:07:39) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:08:39) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:08:45) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:08:51) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:10:24) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:11:03) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:11:23) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:11:35) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:11: syntax error, unexpected '}', expecting '='
+    puts "args[0] #{*args}"
+                          ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:34: syntax error, unexpected tIDENTIFIER, expecting '}'
+          eval("xml.#{field}(@info[field])")
+                   ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:36: syntax error, unexpected kEND, expecting '}'
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:49: syntax error, unexpected kDO_BLOCK, expecting kEND
+    host_list.each do |host_info|
+                     ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:51: syntax error, unexpected kDO_BLOCK, expecting kEND
+      field_names.each_with_index do |field, index|
+                                    ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:51: syntax error, unexpected '|', expecting '='
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:55: syntax error, unexpected kEND, expecting '}'
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:58: syntax error, unexpected kEND, expecting '}'
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:62: syntax error, unexpected kDO_BLOCK, expecting kEND
+    url_array.each do |arg|
+                     ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:67: syntax error, unexpected kEND, expecting '}'):
+  app/controllers/hosts_controller.rb:17:in `filter'
+
+Rendered rescues/_trace (48.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:15:53) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:11: syntax error, unexpected '}', expecting '='
+    puts "args[0] #{*args}"
+                          ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:34: syntax error, unexpected tIDENTIFIER, expecting '}'
+          eval("xml.#{field}(@info[field])")
+                   ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:36: syntax error, unexpected kEND, expecting '}'
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:49: syntax error, unexpected kDO_BLOCK, expecting kEND
+    host_list.each do |host_info|
+                     ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:51: syntax error, unexpected kDO_BLOCK, expecting kEND
+      field_names.each_with_index do |field, index|
+                                    ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:51: syntax error, unexpected '|', expecting '='
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:55: syntax error, unexpected kEND, expecting '}'
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:58: syntax error, unexpected kEND, expecting '}'
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:62: syntax error, unexpected kDO_BLOCK, expecting kEND
+    url_array.each do |arg|
+                     ^
+/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/host.rb:67: syntax error, unexpected kEND, expecting '}'):
+  app/controllers/hosts_controller.rb:17:in `filter'
+
+Rendered rescues/_trace (97.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:16:29) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:16:58) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:17:37) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:17:45) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:17:52) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:18:06) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:18:06) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:19:34) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:19:34) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:19:36) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:19:36) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:20:55) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:20:55) [GET]
+  Parameters: {"www.sapo.pt"=>""}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?www.sapo.pt=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:21:17) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:21:17) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:21:28) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:21:28) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:17) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:17) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:18) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:18) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:22) [GET]
+  Parameters: {"uri"=>"www.publico.pt, www.sapo.pt"}
+  [4;35;1mSQL (0.6ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt',' www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:22) [GET]
+  Parameters: {"uri"=>"www.publico.pt, www.sapo.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt',' www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:25) [GET]
+  Parameters: {"uri"=>""}
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )):
+  app/models/host.rb:44:in `run_query_and_process_results'
+  app/models/host.rb:21:in `filter'
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (44.9ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:25) [GET]
+  Parameters: {"uri"=>""}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )):
+  app/models/host.rb:44:in `run_query_and_process_results'
+  app/models/host.rb:21:in `filter'
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:28) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:28) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:29) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:29) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:33) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:22:33) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 58ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:23:06) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:23:06) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:13) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:13) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:15) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:15) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:18) [GET]
+  Parameters: {"uri"=>"wer"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('wer')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=wer]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:18) [GET]
+  Parameters: {"uri"=>"wer"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('wer')[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=wer]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:21) [GET]
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:21) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:24) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 54ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:25) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
