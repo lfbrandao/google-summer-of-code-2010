@@ -4496,3 +4496,263 @@ Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-25 23:27:25) 
   Parameters: {"uri"=>"www.publico.pt"}
   [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
 Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-26 12:25:59) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-26 12:25:59) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:26) [GET]
+  [4;35;1mSQL (17.7ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 120ms (View: 1, DB: 18) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&format=xml]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:27) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&format=xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 14:48:33) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/search.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:39) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:39) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:49) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;35;1mSQL (31.1ms)[0m   [0mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 36ms (View: 1, DB: 31) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:49) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:53) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 55ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:53) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:57) [GET]
+  Parameters: {"uri"=>""}
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )):
+  app/models/host.rb:44:in `run_query_and_process_results'
+  app/models/host.rb:21:in `filter'
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (19.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:48:57) [GET]
+  Parameters: {"uri"=>""}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ")": syntax error: select id, name, label, value from websites where id in )):
+  app/models/host.rb:44:in `run_query_and_process_results'
+  app/models/host.rb:21:in `filter'
+  app/controllers/hosts_controller.rb:18:in `filter'
+
+Rendered rescues/_trace (181.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:08) [GET]
+  Parameters: {"uri"=>"www.publico.pt, www.nytimes.com"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt',' www.nytimes.com')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+www.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:08) [GET]
+  Parameters: {"uri"=>"www.publico.pt, www.nytimes.com"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt',' www.nytimes.com')[0m
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+www.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:13) [GET]
+  Parameters: {"uri"=>"www.publico.pt, nytimes.com"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt',' nytimes.com')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:13) [GET]
+  Parameters: {"uri"=>"www.publico.pt, nytimes.com"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt',' nytimes.com')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:14) [GET]
+  Parameters: {"uri"=>"www.publico.pt, nytimes.com"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt',' nytimes.com')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:14) [GET]
+  Parameters: {"uri"=>"www.publico.pt, nytimes.com"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt',' nytimes.com')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2C+nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:24) [GET]
+  Parameters: {"uri"=>"www.publico.pt,nytimes.com"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt','nytimes.com')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2Cnytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:24) [GET]
+  Parameters: {"uri"=>"www.publico.pt,nytimes.com"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt','nytimes.com')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2Cnytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:28) [GET]
+  Parameters: {"uri"=>"www.publico.pt nytimes.com"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt nytimes.com')[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt+nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:28) [GET]
+  Parameters: {"uri"=>"www.publico.pt nytimes.com"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt nytimes.com')[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt+nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:34) [GET]
+  Parameters: {"uri"=>"www.publico.pt,www.sapo.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt','www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2Cwww.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:34) [GET]
+  Parameters: {"uri"=>"www.publico.pt,www.sapo.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt','www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2Cwww.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:43) [GET]
+  Parameters: {"uri"=>"www.publico.pt,http://www.nytimes.com"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt','http://www.nytimes.com')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 14:49:43) [GET]
+  Parameters: {"uri"=>"www.publico.pt,http://www.nytimes.com"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt','http://www.nytimes.com')[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:07:46) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;35;1mSQL (27.3ms)[0m   [0mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 51ms (View: 19, DB: 27) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:07:46) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.sapo.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.sapo.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:07:51) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:07:51) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:08:36) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:08:36) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 53ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:08:43) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:08:43) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:09:15) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:09:15) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:09:15) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:09:15) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:09:27) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;35;1mSQL (21.7ms)[0m   [0mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 26ms (View: 1, DB: 22) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-07-27 15:09:27) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect id, name, label, value from websites where id in ('www.publico.pt')[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=www.publico.pt]

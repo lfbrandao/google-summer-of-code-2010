@@ -6,4 +6,10 @@
     <uri>http://0.0.0.0:3000/hosts/filter.xml</uri>
     <type>rest</type>
   </host>
+  <host>
+	<name>Host2</name>	
+	<description>Test host 2</description>	
+    <uri>http://192.168.170.184:3000/hosts/filter.xml</uri>
+    <type>rest</type>
+  </host>
 </hosts>

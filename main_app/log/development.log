@@ -3823,3 +3823,172 @@ Processing HostsController#search (for 127.0.0.1 at 2010-07-25 23:27:24) [GET]
 Rendering template within layouts/hosts
 Rendering hosts/search
 Completed in 99ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-26 12:25:47) [GET]
+  Parameters: {"filter"=>"werwererer"}
+
+ActionController::RoutingError (No route matches "/hosts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-26 12:25:59) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 407ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-27 14:48:26) [GET]
+
+ActionView::MissingTemplate (Missing template hosts/search.erb in view path app/views):
+  app/controllers/hosts_controller.rb:30:in `search'
+  app/controllers/hosts_controller.rb:28:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:48:39) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 222ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:48:49) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 237ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:48:53) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 298ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:48:57) [GET]
+  Parameters: {"uri"=>""}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 631ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:49:08) [GET]
+  Parameters: {"uri"=>"www.publico.pt, www.nytimes.com"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 1198ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt%2C+www.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:49:13) [GET]
+  Parameters: {"uri"=>"www.publico.pt, nytimes.com"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 438ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt%2C+nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:49:14) [GET]
+  Parameters: {"uri"=>"www.publico.pt, nytimes.com"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 152ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt%2C+nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:49:24) [GET]
+  Parameters: {"uri"=>"www.publico.pt,nytimes.com"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 232ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt%2Cnytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:49:28) [GET]
+  Parameters: {"uri"=>"www.publico.pt nytimes.com"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 264ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt+nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:49:34) [GET]
+  Parameters: {"uri"=>"www.publico.pt,www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 166ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt%2Cwww.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 14:49:43) [GET]
+  Parameters: {"uri"=>"www.publico.pt,http://www.nytimes.com"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 151ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:07:46) [GET]
+  Parameters: {"uri"=>"www.sapo.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 864ms (View: 48, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.sapo.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:07:51) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 151ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:08:36) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:374:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:356:in `get'
+  /app/models/host.rb:33:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (10.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:08:43) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 680ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:09:15) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 165ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:09:15) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 122ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:09:27) [GET]
+  Parameters: {"uri"=>"www.publico.pt"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 178ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
