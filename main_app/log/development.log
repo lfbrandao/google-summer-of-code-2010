@@ -3992,3 +3992,332 @@ Processing HostsController#search (for 127.0.0.1 at 2010-07-27 15:09:27) [GET]
 Rendering template within layouts/hosts
 Rendering hosts/search
 Completed in 178ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWebsites (20100624202143)
+Migrating to InitialData (20100630195157)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100630195157')[0m
+Migrating to CreateHosts (20100701142630)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "hosts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100701142630')[0m
+Migrating to DeviseCreateUsers (20100729115400)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "confirmation_token" varchar(255), "confirmed_at" datetime, "confirmation_sent_at" datetime, "reset_password_token" varchar(255), "remember_token" varchar(255), "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100729115400')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("hosts")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_confirmation_token')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("websites")[0m
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-29 13:26:35) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.0ms)
+Completed in 61ms (View: 57, DB: 0) | 200 OK [http://0.0.0.0/users/sign_up]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 13:29:07) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (1.6ms)
+Completed in 34ms (View: 30, DB: 0) | 200 OK [http://0.0.0.0/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-29 13:29:13) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"n5Dek0FFVUjz7ybEiUsZl5BMQJgyBSJ+tCw9YTNpJrU=", "user"=>{"remember_me"=>"0", "password"=>"secret", "email"=>"luisbrandao@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'luisbrandao@gmail.com') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 82ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/users/sign_in]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-29 14:46:40) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search to xml (for 127.0.0.1 at 2010-07-29 14:46:50) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:47:19) [GET]
+
+Timeout::Error (execution expired):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2020:in `read_status_line'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2009:in `read_new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1050:in `request'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:948:in `request_get'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:375:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:543:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:374:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:356:in `get'
+  /app/models/host.rb:33:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (51.9ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#search (for 127.0.0.1 at 2010-07-29 14:48:19) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/filter.xml" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:48:19) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:48:37) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-29 14:49:32) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (2.0ms)
+Completed in 57ms (View: 53, DB: 0) | 200 OK [http://0.0.0.0/users/sign_up]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:49:36) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:50:03) [GET]
+
+Timeout::Error (execution expired):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2020:in `read_status_line'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2009:in `read_new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1050:in `request'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:948:in `request_get'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:375:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:543:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:374:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:356:in `get'
+  /app/models/host.rb:33:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (51.9ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#search (for 127.0.0.1 at 2010-07-29 14:51:03) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/filter.xml" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:52:09) [GET]
+
+Timeout::Error (execution expired):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2020:in `read_status_line'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2009:in `read_new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1050:in `request'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:948:in `request_get'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:375:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:543:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:374:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:356:in `get'
+  /app/models/host.rb:33:in `search'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/xpath.rb:53:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rexml/element.rb:891:in `each'
+  /app/models/host.rb:27:in `search'
+  app/controllers/hosts_controller.rb:26:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#search (for 127.0.0.1 at 2010-07-29 14:53:09) [GET]
+
+ActionController::RoutingError (No route matches "/hosts/filter.xml" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:53:47) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:53:58) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 51ms (View: 43, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:54:24) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:54:37) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-29 14:54:40) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+Rendering sessions/new
+Rendered shared/_devise_links (1.5ms)
+Completed in 82ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-29 14:54:49) [POST]
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"n5Dek0FFVUjz7ybEiUsZl5BMQJgyBSJ+tCw9YTNpJrU=", "user"=>{"remember_me"=>"0", "password"=>"secret", "email"=>"luisbrandao@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'luisbrandao@gmail.com') LIMIT 1[0m
+WARNING: Can't mass-assign these protected attributes: remember_me
+Rendering sessions/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 68ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/users/sign_in]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:56:00) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-07-29 14:56:04) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+Rendering registrations/new
+Rendered shared/_devise_links (0.5ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-07-29 14:56:13) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"n5Dek0FFVUjz7ybEiUsZl5BMQJgyBSJ+tCw9YTNpJrU=", "user"=>{"password_confirmation"=>"secret", "password"=>"secret", "email"=>"luis.brandao@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'luis.brandao@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('e2483c425366e8c783559ae24017ed2d93a2cdad', '2010-07-29 13:56:13', NULL, NULL, '2010-07-29 13:56:13', NULL, 0, 'pqAK-Vor55UdrPa_JEMz', NULL, NULL, NULL, NULL, NULL, NULL, 'luis.brandao@gmail.com', NULL)[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-07-29 13:56:13', "sign_in_count" = 1, "current_sign_in_at" = '2010-07-29 13:56:13', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-07-29 13:56:13', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 220ms (DB: 1) | 302 Found [http://0.0.0.0/users]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:56:13) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:56:24) [GET]
+  Parameters: {"uri"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/hosts/search?uri=hosts]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:56:25) [GET]
+  Parameters: {"uri"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/hosts/search?uri=hosts]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:56:26) [GET]
+  Parameters: {"uri"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/hosts/search?uri=hosts]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-07-29 14:56:27) [GET]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead.. (called from /Users/luisbrandao/Documents/GSoC10/code/main_app/app/models/user.rb:4)
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/users/sign_out]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-07-29 14:56:27) [GET]
+Rendering template within layouts/hosts
+Rendering hosts/search
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]

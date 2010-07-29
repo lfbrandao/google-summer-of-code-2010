@@ -19,9 +19,9 @@ module Berkman
       module SingletonMethods
         # Add class methods here
         def rest_query(host_address, params) 
-          require 'uri'
-          uri = URI.parse(host_address)
-          http_get(uri.host, uri.path , uri.port, params)
+          #require 'uri'
+          #uri = URI.parse(host_address)
+          #http_get(uri.host, uri.path , uri.port, params)
         end
         
         def http_get(domain, path, port, params)
