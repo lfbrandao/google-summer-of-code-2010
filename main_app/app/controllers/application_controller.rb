@@ -7,4 +7,17 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  layout :layout_by_resource
+
+  def layout_by_resource
+    if devise_controller?
+      puts "DEVISE CONTROLER"
+      #puts layout
+      # "user"
+      "users"
+    else
+      "application"
+      puts "NON DEVISE CONTROLER"
+    end
+  end  
 end

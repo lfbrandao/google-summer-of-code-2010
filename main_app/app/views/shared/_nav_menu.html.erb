@@ -1,0 +1,7 @@
+<div id="nav_nav">  
+	<%= link_to "Search", :controller => "hosts", :action => "search" %>  
+	|
+	<% if can? :manage, self.class%>
+		<%= link_to "Manage Repositories", repositories_path %>  
+	<% end %>
+</div>

@@ -1,19 +1,11 @@
-<%= render :partial => "shared/menu" %>
-
-
-<h1>Listing hosts</h1>
-
-<% form_tag '/hosts/search', :method => 'get' do %>
-  <p>
-	<%= text_field_tag :uri, params[:uri]%>	
-	<%= submit_tag "URI", :name => nil%>
-  </p>
-<% end -%>
-
+<% if !@hosts.empty? %>
+Search results:
+<% end %>
 
 <% @hosts.each do |uri, host_props| %>
+	<hr />
 	<h1>
-	<%=h uri  %>  
+	Host address: <%=h uri  %>  
 	</h1>
 	<table>
 	  <tr>

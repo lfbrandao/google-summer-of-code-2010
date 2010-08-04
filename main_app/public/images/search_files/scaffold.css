@@ -64,9 +64,9 @@ a:hover { color: #fff; background-color:#000; }
 
 #header
 {
-  /*border-bottom:1px solid #DDDDDD;*/
+  border-bottom:1px solid #DDDDDD;
   color:#31619f;
-  padding-bottom:40px;
+  padding-bottom:20px;
   font-size: 10px;
 }
 
@@ -81,10 +81,5 @@ a:hover { color: #fff; background-color:#000; }
   position: absolute;
   bottom: 0px;
   width: 99%;
-}
-
-#content
-{
-  margin-left: 20px;
 }
 
