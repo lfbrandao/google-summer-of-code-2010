@@ -14,6 +14,7 @@ class HostsController < ApplicationController
   # GET /hosts/1
   # GET /hosts/1.xml
   def show
+
     @host = Host.find(params[:uri])
 
     respond_to do |format|
@@ -30,5 +31,4 @@ class HostsController < ApplicationController
       format.xml  { render :xml => @host }
     end
   end
-  
 end

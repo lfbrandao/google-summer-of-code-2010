@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :roles
+
+  map.resources :repositories
+
+  map.resources :repositories
+
   map.devise_for :users
 
   #map.resources :hosts

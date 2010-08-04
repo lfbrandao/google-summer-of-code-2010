@@ -5,32 +5,23 @@ class Host
   attr_writer :uri
   attr_reader :uri_data
 
-  def self.index
-    xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
-    doc, hosts = REXML::Document.new(xml), []
-    doc.elements.each('hosts/host') do |element|
-      uri = element.elements['uri'].text
-      plugin_type = element.elements['type'].text
-      hosts = eval("#{plugin_type}_query(#{uri})")
-    end
-  end
-  
   def self.search(search_params)
     # create an hash to store temporary data per host
     hosts_info = Hash.new
     
-    # read data stores directory
-    xml = File.read('/Users/luisbrandao/Documents/GSoC10/code/hostlist.xml')
-    doc, data_store_info = REXML::Document.new(xml), []
-    
-    # for each data store
-    doc.elements.each('hosts/host') do |element|
-      database_uri = element.elements['uri'].text
-      database_plugin_type = element.elements['type'].text
+    # get repository list for user
+    repositories = Repository.user_repositories
+    puts "REPO #{repositories}"
+    puts "REPO each #{repositories.each}"
       
+    # for each repository
+    repositories.each do |repo|
+      repository_name = repo.name
+      repository_uri = repo.uri
+      repository_plugin_type = repo.plugin_type
+
       # query the data store and parse the returned XML
-      #hosts = eval("#{database_plugin_type}_query(#{'database_uri'},#{'search_params'})")
-      hosts = rest_query(database_uri, search_params)
+      hosts = eval("#{repository_plugin_type}_query(#{'repository_uri'},#{'search_params'})")
       hosts_xml = REXML::Document.new(hosts)
 
       # each element is a different host, i.e a different URL
@@ -41,7 +32,7 @@ class Host
         host_properties.elements.each do |host_property|
           property_name = host_property.name
           property_value = host_property.text
-          hosts_info[uri] << HostProperty.new(database_uri, database_uri, property_name, property_value)
+          hosts_info[uri] << HostProperty.new(repository_uri, repository_name, property_name, property_value)
         end
       end  
     end
@@ -56,20 +47,5 @@ class Host
     @uri = uri
     @uri_data = uri_data
   end
-   
-  def to_xml(options = {})
-    #xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
-    #xml.host { |b| b.id(@id); b.url(@url); b.label(@label); b.description(@description) }
-=begin
-    xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
-    xml.host(:uri => @info[APP_CONFIG['uri_field_name']]) do
-      field_names.each do |field|
-        if field != APP_CONFIG['uri_field_name']
-          eval("xml.#{field}(@info[field])")
-        end
-      end
-    end
-    xml
-=end
-  end
+  
 end

@@ -1,0 +1,10 @@
+Can query the following repositories
+<% for repository in Repository.find :all %>
+  <div>
+  	<%= check_box_tag "role[repository_ids][]", repository.id, @role.repositories.include?(repository)%>  
+ 	<%= h repository.name %>
+	(
+	<%= h repository.uri %>
+	)
+  </div>
+<% end %>
