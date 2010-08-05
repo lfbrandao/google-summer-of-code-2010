@@ -1,12 +1,12 @@
 <div id="user_nav">  
-	<% if user_signed_in? %>  
+	<% if current_user %>  
 		<%= current_user.email %> 
 		|
-		<%= link_to "Profile", edit_user_registration_path(current_user) %>  
-		<%= link_to "Sign out", destroy_user_session_path %>  
+		<%= link_to "Profile", edit_user_path(current_user.id) %>  
+		<%= link_to "Sign out", logout_path %>  
 	<% else %>  
-		<%= link_to "Sign up", new_user_registration_path %>  
+		<%= link_to "Sign up", new_user_path %>  
 		|
-		<%= link_to "Sign in", new_user_session_path %>  
+		<%= link_to "Sign in", login_path %>  
 	<% end %>
 </div>
