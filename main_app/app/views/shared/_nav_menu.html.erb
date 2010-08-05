@@ -3,5 +3,6 @@
 	|
 	<% if can? :manage, self.class%>
 		<%= link_to "Manage Repositories", repositories_path %>  
+		<%= link_to "Manage Users", :controller => "users", :action => "index" %>  
 	<% end %>
 </div>
