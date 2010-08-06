@@ -1,23 +1,27 @@
 <% title "Users List" %>
 
-	<table>
-	  <tr>
-	    <th class="first">Email</th>
-		<th class="last"></th>
-	  </tr>
-
-	<% @users.each do |user| %>
-	  <tr>
-	    <td><%=h user.email %></td>
-	    <td class="last">
-			<%= link_to 'Edit', edit_user_path(user) %>
-			|
-	    	<%= link_to 'Destroy',user, :confirm => 'Are you sure?', :method => :delete%>
-		</td>
-	  </tr>
-	<% end %>
+<div class="innerInnerContent">
+	<table class="managementListTable">
+		<tr>
+	   		<th class="first">Email</th>
+			<th class="first">Roles</th>
+			<th class="last"></th>
+	 	</tr>
+		<% @users.each do |user| %>
+	  	<tr>
+	    	<td><%=h user.email %></td>
+			<td><%=h user.roles.join (",") %></td>	
+	    	<td class="last">
+				<%= link_to 'Show', user %>
+				|
+				<%= link_to 'Edit', edit_user_path(user) %>
+				|
+	    		<%= link_to 'Destroy',user, :confirm => 'Are you sure?', :method => :delete%>
+			</td>
+	  	</tr>
+		<% end %>
 	</table>
+</div>
+<br />
 
-	<br />
-
-	<%= link_to 'New user', new_user_path %>
+<%= link_to 'New user', new_user_path %>

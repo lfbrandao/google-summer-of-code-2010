@@ -1,6 +1,5 @@
 <div id="user_nav">
-  	
-	<% if current_user %>  
+ 	<% if current_user %>  
 		<%= current_user.email %> 
 		|
 		<%= link_to "Profile", edit_user_path(current_user.id) %>  

@@ -1,13 +1,11 @@
-<% title "Search" %>
-
-<% if !@hosts.empty? %>
-Search results:
-<% end %>
+<% if @hosts.nil? or @hosts.empty?%>
+	No results fetched.
+<% else %>
 
 <% @hosts.each do |uri, host_props| %>
 
 	<h1>
-	Host address: <%=h uri  %>  
+		Host address: <%=h uri  %>  
 	</h1>
 	<table>
 	  <tr>
@@ -25,4 +23,5 @@ Search results:
 		</tr>		
   	<% end %>
 	</table>
+<% end %>
 <% end %>

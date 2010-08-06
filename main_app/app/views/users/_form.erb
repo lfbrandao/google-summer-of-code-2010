@@ -1,8 +1,12 @@
-<table class="managementTable">
+<table class="managementEditTable">
 	<tr>
 		<th>User details</th>
-		<th>Roles</th>
-		<th>Repositories</th>
+		<% if can? :manage, Role and  @current_user != @user %>
+			<th>Roles</th>
+		<% end %>
+		<% if can? :manage, Repository and  @current_user != @user %>
+			<th>Repositories</th>
+		<% end %>		
 	</tr>
 	<tr>
 		<td>	
@@ -15,7 +19,7 @@
 			<%= form.label :password_confirmation %><br />
 			<%= form.password_field :password_confirmation %><br />
 		</td>	
-<% if can? :manage, Role %>
+<% if can? :manage, Role and  @current_user != @user %>
 	<td>	
 	<% for role in Role.find :all %>
 		<div>
@@ -28,7 +32,7 @@
 	</td>
 <% end %>  
 
-<% if can? :manage, Repository %>
+<% if can? :manage, Repository and  @current_user != @user  %>
 	<td>
 	<% for repository in Repository.find :all %>
 	  <div>

@@ -33442,3 +33442,786 @@ Rendered shared/_nav_menu (17.1ms)
 Rendered shared/_user_menu (0.5ms)
 Rendered shared/_footer (0.1ms)
 Completed in 38ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/users]
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'role') LIMIT 1[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = NULL ) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = NULL ) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = NULL ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = NULL ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:53:05) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'EPe9xjPRTvvJQDeOCf', "last_request_at" = '2010-08-06 22:53:06' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (146.5ms)
+Rendered shared/_user_menu (1.3ms)
+Rendered shared/_footer (0.5ms)
+Completed in 379ms (View: 176, DB: 2) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:53:39) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+  /app/models/host.rb:10:in `search'
+  app/controllers/hosts_controller.rb:15:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (47.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:53:56) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+  /app/models/host.rb:10:in `search'
+  app/controllers/hosts_controller.rb:15:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (125.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:53:57) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+  /app/models/host.rb:10:in `search'
+  app/controllers/hosts_controller.rb:15:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (44.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:54:02) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+  /app/models/host.rb:10:in `search'
+  app/controllers/hosts_controller.rb:15:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (113.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:55:26) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+  /app/models/host.rb:10:in `search'
+  app/controllers/hosts_controller.rb:16:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (43.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:55:27) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+  /app/models/host.rb:10:in `search'
+  app/controllers/hosts_controller.rb:16:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (126.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:55:45) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    app/controllers/hosts_controller.rb:20:in `search'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (59.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:56:03) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    app/controllers/hosts_controller.rb:20:in `search'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (59.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:56:20) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    app/controllers/hosts_controller.rb:20:in `search'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (132.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:56:21) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    app/controllers/hosts_controller.rb:20:in `search'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (129.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:56:34) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    app/controllers/hosts_controller.rb:20:in `search'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (59.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#search (for 127.0.0.1 at 2010-08-06 23:57:09) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/main_app/app/controllers/hosts_controller.rb:28: syntax error, unexpected kEND, expecting $end):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (118.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-06 23:57:16) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Redirected to http://0.0.0.0:3000/
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/hosts_controller.rb:22:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:04:47) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+ActionController::RedirectBackError (No HTTP_REFERER was set in the request to this action, so redirect_to :back could not be called successfully. If this is a test, make sure to specify request.env["HTTP_REFERER"].):
+  app/controllers/hosts_controller.rb:18:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:05:18) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+ArgumentError (too few arguments):
+  app/controllers/hosts_controller.rb:18:in `format'
+  app/controllers/hosts_controller.rb:18:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:05:28) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+
+ArgumentError (too few arguments):
+  app/controllers/hosts_controller.rb:18:in `format'
+  app/controllers/hosts_controller.rb:18:in `search'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:05:58) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (116.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:05:59) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:06:15) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #1 of app/views/hosts/search.html.erb:
+1: <% if @hosts.empty? %>
+2: 	No results fetched.
+3: <% end %>
+4: 
+
+    app/views/hosts/search.html.erb:1
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (51.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:06:41) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/hosts/search.html.erb:
+2: 	No results fetched.
+3: <% end %>
+4: 
+5: <% @hosts.each do |uri, host_props| %>
+6: 
+7: 	<h1>
+8: 		Host address: <%=h uri  %>  
+
+    app/views/hosts/search.html.erb:5
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (50.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:07:07) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'Ak1AVTYUZJa4b2M7fXo', "last_request_at" = '2010-08-06 23:07:07' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (162.4ms)
+Rendered shared/_user_menu (1.1ms)
+Rendered shared/_footer (0.4ms)
+Completed in 192ms (View: 189, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:07:12) [GET]
+  Parameters: {"uri"=>"nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'A9jW8lmGaAF3Caqye3', "last_request_at" = '2010-08-06 23:07:12' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (16.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 95ms (View: 19, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:07:58) [GET]
+  Parameters: {"uri"=>"nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'E2E3lQXMzCdRyYwnzK6', "last_request_at" = '2010-08-06 23:07:58' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.8ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 150ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:03) [GET]
+  Parameters: {"uri"=>"http://nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.9ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'lS4JQVB7Ho2b4y7vCo', "last_request_at" = '2010-08-06 23:08:04' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (21.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 108ms (View: 24, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fnytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:06) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "perishable_token" = '642rtBJmxYLKiITF1dyj', "last_request_at" = '2010-08-06 23:08:06' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (16.5ms)
+Rendered shared/_user_menu (1.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 93ms (View: 19, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:10) [GET]
+  Parameters: {"uri"=>"www.publico.pt", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'E3JtFkfEcB87tZIAn4ee', "last_request_at" = '2010-08-06 23:08:10' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.8ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 150ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=www.publico.pt]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:13) [GET]
+  Parameters: {"uri"=>"", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'h4YQQUbGHj8r8sbHMzvc', "last_request_at" = '2010-08-06 23:08:13' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (16.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 292ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:17) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'DFgtL5sk2f2TvYprvIR9', "last_request_at" = '2010-08-06 23:08:17' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (45.3ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 50ms (View: 47, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-07 00:08:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 5 ) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '03qa47CeNmKilLFWyB', "last_request_at" = '2010-08-06 23:08:19' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (19.6ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 123ms (View: 50, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-07 00:08:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 5 ) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'ZYdyVOOISWEqQK9lICf', "last_request_at" = '2010-08-06 23:08:32' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (83.2ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 113ms (View: 97, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:34) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'DTbcFdNklqqlcCXlMu', "last_request_at" = '2010-08-06 23:08:34' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (39.5ms)
+Rendered shared/_user_menu (0.6ms)
+Rendered shared/_footer (0.1ms)
+Completed in 106ms (View: 103, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:35) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'B1wzOA7TgZlATAX1I063', "last_request_at" = '2010-08-06 23:08:35' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (41.5ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 47ms (View: 44, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:35) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'zEyKrvrBDFGMdZM7GJmT', "last_request_at" = '2010-08-06 23:08:35' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (39.0ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 111ms (View: 41, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:35) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '7GDTLDZOJ5eRMt1Hfte', "last_request_at" = '2010-08-06 23:08:35' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (104.3ms)
+Rendered shared/_user_menu (0.7ms)
+Rendered shared/_footer (0.1ms)
+Completed in 111ms (View: 107, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:38) [GET]
+  Parameters: {"uri"=>"ewrwer", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'qJ0MfhoRHEkaLs0SI1m7', "last_request_at" = '2010-08-06 23:08:38' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (16.2ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 154ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=ewrwer]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:41) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (2.5ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'Yt3Ztcm8IDR3KgbVAEV', "last_request_at" = '2010-08-06 23:08:42' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (20.5ms)
+Rendered shared/_user_menu (1.0ms)
+Rendered shared/_footer (0.1ms)
+Completed in 108ms (View: 21, DB: 4) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:44) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'FYfiAaSdrie3fUlXFJkl', "last_request_at" = '2010-08-06 23:08:45' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (41.7ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 111ms (View: 44, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-07 00:08:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 5 ) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (43.6ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'EOyIiUl14ICh7mVOWxzL', "last_request_at" = '2010-08-06 23:08:45' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (141.7ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 234ms (View: 174, DB: 45) | 200 OK [http://0.0.0.0/users]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-07 00:08:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;35;1mRole Load (0.6ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (25.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'yUra2X2kERZEKHitNTNs', "last_request_at" = '2010-08-06 23:08:46' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (159.1ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 349ms (View: 317, DB: 27) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-07 00:08:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;35;1mRepository Load (0.7ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (53.1ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'lVAxwu4ug7l2VqFQZIj', "last_request_at" = '2010-08-06 23:08:47' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+Rendered shared/_nav_menu (0.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 396ms (View: 219, DB: 54) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-07 00:08:48) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (64.5ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'xx3BMCeAppiZ11ddOev', "last_request_at" = '2010-08-06 23:08:48' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (103.1ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 177ms (View: 41, DB: 65) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-07 00:09:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mRole Load (1.0ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 5 ) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'Gjm93c73xM4SexohSmfN', "last_request_at" = '2010-08-06 23:09:10' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (19.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 114ms (View: 98, DB: 3) | 200 OK [http://0.0.0.0/users]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-07 00:09:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.8ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'WBBxVeklPwonBzNg7Dh', "last_request_at" = '2010-08-06 23:09:11' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (94.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 111ms (View: 103, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-07 00:09:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;36;1mRepository Load (0.7ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'gZpMgn5GcmHgtRKGW98G', "last_request_at" = '2010-08-06 23:09:12' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+Rendered shared/_nav_menu (0.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 48ms (View: 9, DB: 2) | 200 OK [http://0.0.0.0/repositories]

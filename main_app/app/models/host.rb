@@ -6,13 +6,15 @@ class Host
   attr_reader :uri_data
 
   def self.search(search_params)
+    puts "SEARCH PARAMS #{search_params}"
+    if search_params.nil?
+      return
+    end
     # create an hash to store temporary data per host
     hosts_info = Hash.new
     
     # get repository list for user
     repositories = Repository.user_repositories
-    puts "REPO #{repositories}"
-    puts "REPO each #{repositories.each}"
       
     # for each repository
     repositories.each do |repo|

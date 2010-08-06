@@ -1,13 +1,17 @@
-<h1>Editing role</h1>
+<% title "Edit Role" %>
 
 <% form_for(@role) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <%= render :partial => "repositories" %>
+  	<%= f.error_messages %>
+	<table class="managementEditTable">
+		<tr>
+			<th>Name</th>
+			<th>Repositories available for the user</th>
+		</tr>	
+    	<tr>
+			<td><%= f.text_field :name %></td>
+			<td><%= render :partial => "repositories" %></td>
+		</tr>
+	</table>	
   <p>
     <%= f.submit 'Update' %>
   </p>

@@ -33,54 +33,6 @@ a:hover { color: #fff; background-color:#000; }
   display: table;
 }
 
-/*
-table, th
-{
-  border-style: solid;
-  border-width: 1px;
-  padding: 0px;
-  border-collapse: collapse;
-  margin: 0px auto 0px auto;
-}*/
-
-/* tables */
-table {
-  width: 100%;
-  border-collapse: collapse;  
-  margin-bottom: 15px;
-  text-align: center;
-}
-th 
-{
-  border-bottom: 1px solid #6f8a96;;
-  border-top: 1px solid #6f8a96;;
-  color: #000000;
-  font-weight:bold;
-  padding:3px;
-}
-
-th.first 
-{
-  text-align: center;
-}
-td.last 
-{
-  text-align: right;
-  
-}
-td.last a
-{
-  color:#88619f;
-}
-th.last 
-{
-  text-align: right;
-}
-
-td {
-  border-bottom: 1px solid #AAA;
-}
-
 #errorExplanation {
   width: 400px;
   border: 2px solid red;
@@ -176,22 +128,105 @@ td {
   padding: 30px 40px 30px 40px;
 }
 
-table.managementTable
+.innerInnerContent
+{
+  padding: 30px 60px 30px 60px;
+}
+
+/* tables */
+table 
+{
+  width: 100%;
+  border-collapse: collapse;  
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid #6f8a96;
+}
+
+th 
+{
+  border-bottom: 1px solid #6f8a96;
+  border-top: 1px solid #6f8a96;;
+  color: #000000;
+  font-weight:bold;
+  padding:3px;
+}
+
+td.last 
+{
+  text-align: right;
+  padding-right: 5px;
+}
+
+td.last a
+{
+  color:#88619f;
+}
+
+td 
+{
+  border-bottom: 1px solid #AAA;
+  padding: 2px;
+}
+
+
+table.managementListTable
+{
+  width: 100%;
+  border-collapse: collapse;  
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+table.managementListTable th 
+{
+  border-bottom: 1px solid #AAA;
+  padding: 0px 0px 5px 0px;
+  background-color:#f2f2f2;
+}
+
+
+
+table.managementEditTable
 {
   width: 100%;
   border-collapse: collapse;  
   margin-bottom: 15px;
   text-align: left;
+  border: none;
+  background-color: #fff;
 }
 
-table.managementTable th 
+table.managementEditTable th 
 {
   border: none;
   padding: 0px 0px 5px 0px;
 }
 
 
-table.managementTable td {
+table.managementEditTable td {
   border-bottom: none;
   vertical-align: top;
+}
+
+.searchDiv
+{
+  margin: 20px auto 0px auto;
+  text-align: center;
+}
+
+#siteName
+{
+  float:left; 
+  padding:0px; 
+  margin:0; 
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+/* menus */
+#nav_nav
+{
+  float:left; 
+  margin-top: 2px
 }

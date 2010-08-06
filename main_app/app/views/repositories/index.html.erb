@@ -1,28 +1,32 @@
-<h1>Listing repositories</h1>
+<% title "Repository List" %>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Uri</th>
-    <th>Path</th>
-    <th>Plugin Type</th>
-    <th>Description</th>
-  </tr>
+<div class="innerInnerContent">
+	<table class="managementListTable">
+  		<tr>
+		    <th>Name</th>
+		    <th>Uri</th>
+		    <th>Path</th>
+		    <th>Plugin Type</th>
+		    <th>Description</th>
+			<th class="last"></th>
+		</tr>
 
-<% @repositories.each do |repository| %>
-  <tr>
-    <td><%=h repository.name %></td>
-    <td><%=h repository.uri %></td>
-    <td><%=h repository.path %></td>
-    <td><%=h repository.plugin_type %></td>
-    <td><%=h repository.description %></td>
-    <td><%= link_to 'Show', repository %></td>
-    <td><%= link_to 'Edit', edit_repository_path(repository) %></td>
-    <td><%= link_to 'Destroy', repository, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+		<% @repositories.each do |repository| %>
+		<tr>
+		    <td><%=h repository.name %></td>
+		    <td><%=h repository.uri %></td>
+		    <td><%=h repository.path %></td>
+		    <td><%=h repository.plugin_type %></td>
+		    <td><%=h repository.description %></td>
+		    <td class="last">
+				<%= link_to 'Show', repository %>
+				<%= link_to 'Edit', edit_repository_path(repository) %>
+				<%= link_to 'Destroy', repository, :confirm => 'Are you sure?', :method => :delete %>
+			</td>
+		</tr>
+		<% end %>
+	</table>
+</div>
 <br />
 
 <%= link_to 'New repository', new_repository_path %>

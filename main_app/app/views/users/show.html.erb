@@ -37,8 +37,9 @@
 
 <p>
   <b>Roles:</b>
-  <%=h @user.roles %>
+  <%=h @user.roles.join (",") %>
 </p>
 
 
 <%= link_to 'Edit', edit_account_path %>
+<%= link_to 'Back', users_path %>

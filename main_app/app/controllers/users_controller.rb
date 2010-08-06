@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_filter :require_no_user, :only => [:new, :create]
   before_filter :require_user, :only => [:show, :edit, :update, :destroy]
   
   def index
@@ -35,7 +34,7 @@ class UsersController < ApplicationController
   end
   
   def update
-    @user = @current_user # makes our views "cleaner" and more consistent
+    @user = get_user_based_on_role
     puts "params[:user] #{params[:user]}"
     if @user.update_attributes(params[:user])
       flash[:notice] = "Account updated!"
@@ -59,7 +58,7 @@ class UsersController < ApplicationController
     @user = @current_user
     
     respond_to do |format|
-      format.html { redirect_to(account_url) }
+      format.html { redirect_to(users_path) }
       format.xml  { head :ok }
     end
   end
