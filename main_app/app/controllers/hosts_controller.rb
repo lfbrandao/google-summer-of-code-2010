@@ -1,4 +1,5 @@
 class HostsController < ApplicationController
+
 =begin  
   # GET /hosts
   # GET /hosts.xml

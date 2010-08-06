@@ -1,19 +1,23 @@
-<h1>Listing users</h1>
+<% title "Users List" %>
 
-<table>
-  <tr>
-    <th>Email</th>
-  </tr>
+	<table>
+	  <tr>
+	    <th class="first">Email</th>
+		<th class="last"></th>
+	  </tr>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%=h user.email %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy',user, :confirm => 'Are you sure?', :method => :delete%></td>
-  </tr>
-<% end %>
-</table>
+	<% @users.each do |user| %>
+	  <tr>
+	    <td><%=h user.email %></td>
+	    <td class="last">
+			<%= link_to 'Edit', edit_user_path(user) %>
+			|
+	    	<%= link_to 'Destroy',user, :confirm => 'Are you sure?', :method => :delete%>
+		</td>
+	  </tr>
+	<% end %>
+	</table>
 
-<br />
+	<br />
 
-<%= link_to 'New user', new_user_path %>
+	<%= link_to 'New user', new_user_path %>

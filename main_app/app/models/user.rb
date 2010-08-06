@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :repositories
   
   # Setup accessible (or protected) attributes for your model
-  #attr_accessible :email, :password, :password_confirmation, :role_ids, :repository_ids
+  attr_accessible :role_ids, :repository_ids, :password_confirmation, :password, :email
   
   # Authlogic
   acts_as_authentic do |c|

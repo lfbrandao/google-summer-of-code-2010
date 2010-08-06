@@ -1,3 +1,5 @@
+<% title "User details" %>
+
 <p>
   <b>Login:</b>
   <%=h @user.email %>
@@ -31,6 +33,11 @@
 <p>
   <b>Current login ip:</b>
   <%=h @user.current_login_ip %>
+</p>
+
+<p>
+  <b>Roles:</b>
+  <%=h @user.roles %>
 </p>
 
 

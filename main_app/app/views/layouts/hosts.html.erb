@@ -1,19 +1,18 @@
 <%= render :file => 'layouts/application' %> 
 
-
-<center>
-<% form_tag '/hosts/search', :method => 'get' do %>
-  <p>
-	<%= text_field_tag :uri, params[:uri], :size => "75", :style => "height: 20px"%>	
-	<%= submit_tag "Search", :name => nil, :style => "height: 28px" %>
-	<br>
-	<label>(Comma separated list of URLs. E.g. - http://www.nytimes.com, http://www.guardian.co.uk)</label>
-  </p>
-<% end -%>
-</center>
-
 <div id="content">
-<%= yield %>
+	<center>
+		<% form_tag '/hosts/search', :method => 'get' do %>
+		  <p>
+			<%= text_field_tag :uri, params[:uri], :size => "75", :style => "height: 20px"%>	
+			<%= submit_tag "Search", :name => nil, :style => "height: 28px" %>
+			<br>
+			<label>(Comma separated list of URLs. E.g. - http://www.nytimes.com, http://www.guardian.co.uk)</label>
+		  </p>
+		<% end -%>
+	</center>
+
+	<%= yield %>
 </div>
 
 <%= render :partial => "shared/footer" %>

@@ -1,8 +1,44 @@
-<%= form.label :email %><br />
-<%= form.text_field :email %><br />
-<br />
-<%= form.label :password, form.object.new_record? ? nil : "Change password" %><br />
-<%= form.password_field :password %><br />
-<br />
-<%= form.label :password_confirmation %><br />
-<%= form.password_field :password_confirmation %><br />
+<table class="managementTable">
+	<tr>
+		<th>User details</th>
+		<th>Roles</th>
+		<th>Repositories</th>
+	</tr>
+	<tr>
+		<td>	
+			<%= form.label :email %><br />
+			<%= form.text_field :email %><br />
+			<br />
+			<%= form.label :password, form.object.new_record? ? nil : "Change password" %><br />
+			<%= form.password_field :password %><br />
+			<br />
+			<%= form.label :password_confirmation %><br />
+			<%= form.password_field :password_confirmation %><br />
+		</td>	
+<% if can? :manage, Role %>
+	<td>	
+	<% for role in Role.find :all %>
+		<div>
+	    	<%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role)%>  
+	  	  	<%= h role.name %> 
+		</div>
+	<% end %>  
+
+	<%= hidden_field_tag "user[roles][]"%>	
+	</td>
+<% end %>  
+
+<% if can? :manage, Repository %>
+	<td>
+	<% for repository in Repository.find :all %>
+	  <div>
+	  	<%= check_box_tag "user[repository_ids][]", repository.id, @user.repositories.include?(repository)%>  
+	 	<%= h repository.name %>
+		(
+		<%= h repository.uri %>
+		)
+	  </div>
+	<% end %>
+	</td>
+<% end %>
+</table>

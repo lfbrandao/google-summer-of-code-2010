@@ -1,9 +1,11 @@
+<% title "Search" %>
+
 <% if !@hosts.empty? %>
 Search results:
 <% end %>
 
 <% @hosts.each do |uri, host_props| %>
-	<hr />
+
 	<h1>
 	Host address: <%=h uri  %>  
 	</h1>
