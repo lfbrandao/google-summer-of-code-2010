@@ -6,7 +6,6 @@ class Host
   attr_reader :uri_data
 
   def self.search(search_params)
-    puts "SEARCH PARAMS #{search_params}"
     if search_params.nil?
       return
     end
@@ -23,19 +22,23 @@ class Host
       repository_plugin_type = repo.plugin_type
 
       # query the data store and parse the returned XML
-      hosts = eval("#{repository_plugin_type}_query(#{'repository_uri'},#{'search_params'})")
-      hosts_xml = REXML::Document.new(hosts)
+      begin
+        hosts = eval("#{repository_plugin_type}_query(#{'repository_uri'},#{'search_params'})")
+        hosts_xml = REXML::Document.new(hosts)
 
-      # each element is a different host, i.e a different URL
-      hosts_xml.elements.each('hosts/host') do |host_properties|
-        uri = host_properties.attributes['uri']
-        hosts_info[uri] = Array.new if hosts_info[uri].nil?
+        # each element is a different host, i.e a different URL
+        hosts_xml.elements.each('hosts/host') do |host_properties|
+          uri = host_properties.attributes['uri']
+          hosts_info[uri] = Array.new if hosts_info[uri].nil?
         
-        host_properties.elements.each do |host_property|
-          property_name = host_property.name
-          property_value = host_property.text
-          hosts_info[uri] << HostProperty.new(repository_uri, repository_name, property_name, property_value)
+          host_properties.elements.each do |host_property|
+            property_name = host_property.name
+            property_value = host_property.text
+            hosts_info[uri] << HostProperty.new(repository_uri, repository_name, property_name, property_value)
+          end
         end
+      rescue Exception => exc
+        Rails.logger.error("Failed to connect to repository - #{repository_name} - #{exc.message}")
       end  
     end
     

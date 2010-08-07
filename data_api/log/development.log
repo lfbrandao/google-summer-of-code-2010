@@ -10912,3 +10912,21 @@ Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-07 00:08:41) 
   Parameters: {"uri"=>"http://www.nytimes.com"}
   [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com')[0m
 Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-07 01:14:48) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com"}
+  [4;36;1mSQL (0.7ms)[0m   [0;1mselect id, name, label, value from websites where id in ('http://www.nytimes.com')[0m
+Completed in 52ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-07 01:16:10) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect id, name, label, value from websites where id in ('http://www.nytimes.com')[0m
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-07 16:50:47) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com"}
+  [4;36;1mSQL (29.8ms)[0m   [0;1mselect id, name, label, value from websites where id in ('http://www.nytimes.com')[0m
+Completed in 110ms (View: 49, DB: 30) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com]

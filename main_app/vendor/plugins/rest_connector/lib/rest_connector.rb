@@ -25,12 +25,7 @@ module Berkman
         end
         
         def http_get(domain, path, port, params)
-          puts "domain #{domain}"
-          puts "path #{path}"
-          puts "port #{port}"
-          puts "params #{params}"
           require 'net/http'
-          puts Net::HTTP.get(domain, "#{path}?".concat(params.collect { |k,v| "#{k}=#{CGI::escape(v.to_s)}" }.reverse.join('&')),port) if not params.nil?
           return Net::HTTP.get(domain, "#{path}?".concat(params.collect { |k,v| "#{k}=#{CGI::escape(v.to_s)}" }.reverse.join('&')),port) if not params.nil?
           return Net::HTTP.get(domain, path, port)
         end
