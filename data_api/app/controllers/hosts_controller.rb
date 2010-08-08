@@ -1,26 +1,16 @@
 class HostsController < ApplicationController
-  # GET /hosts/index
-  # GET /hosts/index.xml
-  def index
-    @hosts = Host.index
-    
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @hosts.to_xml(:root => "hosts")}
-      format.json  { render :json => @hosts.to_json}
-    end
-  end
-
-  # GET /hosts/find
-  # GET /hosts/find.xml
+  before_filter :authenticate
+  
+  # GET /hosts/filter.xml?uri=uri1,uri2
   def filter
-    puts "params[:url] #{params[:uri]}"
-    @hosts = Host.filter(params[:uri])
+    if not params[:uri].nil? and not params[:uri].empty?
+        @hosts = Host.filter(params[:uri])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @hosts.to_xml(:root => "hosts")}
-      format.json  { render :json => @hosts.to_json}
+        respond_to do |format|
+          format.xml  { render :xml => @hosts.to_xml(:root => "hosts")}
+        end
+    else
+      render :text => "Please submit a list of URIs."
     end
   end
 end

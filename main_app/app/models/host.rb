@@ -20,10 +20,12 @@ class Host
       repository_name = repo.name
       repository_uri = repo.uri
       repository_plugin_type = repo.plugin_type
+      username = repo.username
+      password = repo.password
 
       # query the data store and parse the returned XML
       begin
-        hosts = eval("#{repository_plugin_type}_query(#{'repository_uri'},#{'search_params'})")
+        hosts = eval("#{repository_plugin_type}_query(#{'repository_uri'},#{'search_params'}, #{'username'}, #{'password'})")
         hosts_xml = REXML::Document.new(hosts)
 
         # each element is a different host, i.e a different URL

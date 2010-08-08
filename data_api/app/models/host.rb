@@ -1,24 +1,15 @@
 class Host
   attr_reader :info
     
-  def self.index
-    puts 'index'
-    query = APP_CONFIG['base_query']
-    self.run_query_and_process_results(query)
-  end
-
   def self.filter(*args)
-    puts "args #{args}"
     # todo - sanitize sql
-    if args[0].nil?
-      query = APP_CONFIG['base_query']
-    else
+    if not args[0].nil?
       urls_from_args = args[0].split(',')  
       base_query = APP_CONFIG['base_query'] + ' ' + APP_CONFIG['where_clause']
       query = self.add_where_to_query(base_query, urls_from_args)
+      
+      self.run_query_and_process_results(query)
     end
-    
-    self.run_query_and_process_results(query)
   end
 
   def initialize(host_info)

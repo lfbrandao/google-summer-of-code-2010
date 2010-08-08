@@ -1,0 +1,34 @@
+<% title "Configuration" %>
+
+<p>
+  <b>Query base:</b>
+  <%=h @configuration.query_base %>
+</p>
+
+<p>
+  <b>Query where:</b>
+  <%=h @configuration.query_where %>
+</p>
+
+<p>
+  <b>Data field names:</b>
+  <%=h @configuration.data_field_names %>
+</p>
+
+<p>
+  <b>Data field friendly name:</b>
+  <%=h @configuration.data_field_friendly_name %>
+</p>
+
+<p>
+  <b>Filter field name:</b>
+  <%=h @configuration.filter_field_name %>
+</p>
+
+<p>
+  <b>User name:</b>
+  <%=h @configuration.user_name %>
+</p>
+
+<%= link_to 'Edit', edit_configuration_path(@configuration) %> |
+<%= link_to 'Back', configurations_path %>

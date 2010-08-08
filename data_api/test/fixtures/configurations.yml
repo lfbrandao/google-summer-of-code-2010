@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  query_base: MyString
+  query_where: MyString
+  data_field_names: MyString
+  data_field_friendly_name: MyString
+  filter_field_name: MyString
+  user_name: MyString
+  password: MyString
+
+two:
+  query_base: MyString
+  query_where: MyString
+  data_field_names: MyString
+  data_field_friendly_name: MyString
+  filter_field_name: MyString
+  user_name: MyString
+  password: MyString

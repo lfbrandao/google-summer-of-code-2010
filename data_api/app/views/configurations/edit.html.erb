@@ -1,0 +1,42 @@
+<% title "Edit Configuration" %>
+
+<% form_for(@configuration) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :query_base %><br />
+    <%= f.text_field :query_base %>
+	(Base query. Ex. select id, name from websites)
+  </p>
+  <p>
+    <%= f.label :query_where %><br />
+    <%= f.text_field :query_where %>
+	(Filtering clause. Ex. where id)
+  </p>
+  <p>
+    <%= f.label :data_field_names %><br />
+    <%= f.text_field :data_field_names %>
+  </p>
+  <p>
+    <%= f.label :data_field_friendly_name %><br />
+    <%= f.text_field :data_field_friendly_name %>
+  </p>
+  <p>
+    <%= f.label :filter_field_name %><br />
+    <%= f.text_field :filter_field_name %>
+  </p>
+  <p>
+    <%= f.label :user_name %><br />
+    <%= f.text_field :user_name %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @configuration %> |
+<%= link_to 'Back', configurations_path %>

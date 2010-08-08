@@ -1,0 +1,24 @@
+<% title "Configuration" %>
+
+<div class="innerInnerContent">
+	<table class="managementListTable">
+	  <tr>
+	    <th>Query</th>
+	    <th>Data field friendly name</th>
+		<th class="last"></th>
+	  </tr>
+			<% @configurations.each do |configuration| %>
+			  <tr>
+			    <td><%=h configuration.query_base + " " + configuration.query_where%></td>
+			    <td><%=h configuration.data_field_friendly_name %></td>
+			    <td class="last"><%= link_to 'Show', configuration %>
+			    <%= link_to 'Edit', edit_configuration_path(configuration) %>
+			    <%= link_to 'Destroy', configuration, :confirm => 'Are you sure?', :method => :delete %></td>
+			  </tr>
+			<% end %>
+	</table>
+</div>
+<br />
+<% if Configuration.find(:all).empty? %>
+	<%= link_to 'New configuration', new_configuration_path %>
+<% end %>

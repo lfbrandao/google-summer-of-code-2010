@@ -9,12 +9,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100624202143) do
+ActiveRecord::Schema.define(:version => 20100807232802) do
+
+  create_table "configurations", :force => true do |t|
+    t.string   "query_base"
+    t.string   "query_where"
+    t.string   "data_field_names"
+    t.string   "data_field_friendly_name"
+    t.string   "filter_field_name"
+    t.string   "user_name"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "websites", :force => true do |t|
     t.string "name"
     t.string "label"
     t.text   "value"
   end
+
+  add_index "websites", ["id"], :name => "sqlite_autoindex_websites_1", :unique => true
 
 end

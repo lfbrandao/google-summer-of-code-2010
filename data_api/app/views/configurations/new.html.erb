@@ -1,0 +1,39 @@
+<% title "Configure" %>
+
+<% form_for(@configuration) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :query_base %><br />
+    <%= f.text_field :query_base %>
+  </p>
+  <p>
+    <%= f.label :query_where %><br />
+    <%= f.text_field :query_where %>
+  </p>
+  <p>
+    <%= f.label :data_field_names %><br />
+    <%= f.text_field :data_field_names %>
+  </p>
+  <p>
+    <%= f.label :data_field_friendly_name %><br />
+    <%= f.text_field :data_field_friendly_name %>
+  </p>
+  <p>
+    <%= f.label :filter_field_name %><br />
+    <%= f.text_field :filter_field_name %>
+  </p>
+  <p>
+    <%= f.label :user_name %><br />
+    <%= f.text_field :user_name %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', configurations_path %>

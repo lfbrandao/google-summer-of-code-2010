@@ -1,4 +1,5 @@
 module HostsHelper
+=begin
   def get_url_variations(url)
     url = url.downcase
     if url.starts_with? 'http://' or url.starts_with? 'https://'
@@ -24,4 +25,5 @@ module HostsHelper
   def get_url_key(url_variations_list)
     
   end
+=end
 end
