@@ -14105,3 +14105,406 @@ Rendering template within layouts/configurations
 Rendering configurations/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
 Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:37:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 83ms (View: 75, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:37:41) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"update select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Redirected to http://0.0.0.0:3600/configurations/3
+Completed in 11ms (DB: 1) | 302 Found [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:37:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:37:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:37:49) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"delete select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+  [4;36;1mConfiguration Update (0.3ms)[0m   [0;1mUPDATE "configurations" SET "updated_at" = '2010-08-13 19:37:49', "query_base" = 'delete select id, name, label, value from websites' WHERE "id" = 3[0m
+Redirected to http://0.0.0.0:3600/configurations/3
+Completed in 13ms (DB: 1) | 302 Found [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:37:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mConfiguration Load (0.6ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:38:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:38:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:38:30) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"update select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.4ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+  [4;35;1mConfiguration Update (0.4ms)[0m   [0mUPDATE "configurations" SET "updated_at" = '2010-08-13 19:38:30', "query_base" = 'update select id, name, label, value from websites' WHERE "id" = 3[0m
+Redirected to http://0.0.0.0:3600/configurations/3
+Completed in 18ms (DB: 1) | 302 Found [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:38:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.7ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:44:56) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:44:58) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"update select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Redirected to http://0.0.0.0:3600/configurations/3
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:44:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:45:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 62ms (View: 56, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:45:23) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"update select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.2ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:45:30) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+  [4;36;1mConfiguration Update (0.3ms)[0m   [0;1mUPDATE "configurations" SET "updated_at" = '2010-08-13 19:45:30', "query_base" = 'select id, name, label, value from websites' WHERE "id" = 3[0m
+Redirected to http://0.0.0.0:3600/configurations/3
+Completed in 12ms (DB: 1) | 302 Found [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:45:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:48:56) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (103.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:50:06) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (60.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:50:22) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (52.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:50:36) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (109.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:50:51) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (54.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:51:14) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (52.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:51:26) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (99.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:51:27) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:8: syntax error, unexpected $end, expecting kEND):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (55.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:51:42) [GET]
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:51:52) [GET]
+
+SyntaxError (/Users/luisbrandao/Documents/GSoC10/code/data_api/app/models/configuration.rb:6: syntax error, unexpected kEND, expecting kTHEN or ':' or '\n' or ';'):
+  app/controllers/application_controller.rb:7:in `authenticate'
+  app/controllers/application_controller.rb:6:in `authenticate'
+
+Rendered rescues/_trace (51.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:52:08) [GET]
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "configurations" [0m
+Completed in 65ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:52:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:52:16) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"delete select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/models/configuration.rb:5:in `include?'
+  app/models/configuration.rb:5:in `validate_query_base'
+  app/controllers/configurations_controller.rb:65:in `update'
+  app/controllers/configurations_controller.rb:64:in `update'
+
+Rendered rescues/_trace (59.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:52:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:52:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:52:52) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"delete select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (1.0ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 26ms (View: 11, DB: 2) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:54:07) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in", "query_base"=>"updateselect id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:54:16) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in update", "query_base"=>"select id, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:54:26) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in update", "query_base"=>"select id, name, label, delete value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:55:11) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in update", "query_base"=>"select id, name, label, delete value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:55:33) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in update", "query_base"=>"select id, name, label, delete value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+
+NoMethodError (undefined method `sanitize_sql' for #<Configuration:0x101d471d0>):
+  app/controllers/configurations_controller.rb:65:in `update'
+  app/controllers/configurations_controller.rb:64:in `update'
+
+Rendered rescues/_trace (113.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:55:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:55:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#update (for 127.0.0.1 at 2010-08-13 15:55:52) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"3", "configuration"=>{"user_name"=>"user", "data_field_names"=>"id, name, label, value", "query_where"=>"where id in update", "query_base"=>"select delete d, name, label, value from websites", "password"=>"password", "data_field_friendly_name"=>"Id, Name, Label, Value"}}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
