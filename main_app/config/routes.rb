@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :plugins
+
   # Application root
   map.root :controller => 'hosts', :action => 'search'
 

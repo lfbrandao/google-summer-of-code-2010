@@ -1,29 +1,29 @@
 module HostsHelper
-=begin
-  def get_url_variations(url)
-    url = url.downcase
-    if url.starts_with? 'http://' or url.starts_with? 'https://'
-      # add http:// version
-      # add a non http:// version
+  def get_url_variations(uri)
+    uri = uri.downcase
+    uri_variations = Array[uri]
+    
+    if uri.starts_with? 'http://www.' or url.starts_with? 'https://www.'
+      uri_temp = uri.gsub('https://www.', 'https://')
+      uri_temp = uri_temp.gsub('http://www.', 'http://')
+      variations << uri_temp
     else
-      # add http:// version
-      # add a non http:// version
+      uri_temp = uri.gsub('https://', 'https://www.')
+      uri_temp = uri_temp.gsub('http://', 'http://www.')
+      variations << uri_temp
     end  
-      
-    if url.starts_with? 'http://www.' or url.starts_with? 'https://www.'
-        
+    
+    if uri.ends_with? '/'
+      variations << uri.chop
+      variations << uri_temp.chop
     else
-        
+      variations << uri.chop + '/'
+      variations << uri_temp.chop + '/'
     end
-    
-    else if
-    
-    end
-    #'http://nytimes.com', 'http://www.nytimes.com', 'http://nytimes.com/', 'http://www.nytimes.com/'
+    uri_variations = Array[uri]
   end
   
   def get_url_key(url_variations_list)
-    
+    return uri_variations.first
   end
-=end
 end

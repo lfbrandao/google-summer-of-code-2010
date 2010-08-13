@@ -17,7 +17,7 @@
 
 <p>
   <b>Plugin Type:</b>
-  <%=h @repository.plugin_type %>
+  <%=h @repository.plugin.name %>
 </p>
 
 <p>
@@ -29,6 +29,12 @@
   <b>Username:</b>
   <%=h @repository.username %>
 </p>
+<p>
+  <b>Password:</b>
+  ********
+</p>
+
+
 
 <%= link_to 'Edit', edit_repository_path(@repository) %> |
 <%= link_to 'Back', repositories_path %>

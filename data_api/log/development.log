@@ -13407,3 +13407,701 @@ Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-08 22:58:48) 
 Rendering template within layouts/configurations
 Rendering configurations/show
 Completed in 9ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations/2]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-08 23:03:20) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com')[0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-08 23:03:22) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.co"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.co')[0m
+Completed in 71ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.co]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-08 23:03:25) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-12 23:05:26) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com"}
+  [4;36;1mConfiguration Load (1.0ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com')[0m
+Completed in 17ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-12 23:05:29) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.coms"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.coms')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.coms]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-12 23:05:30) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:15:58) [GET]
+  Parameters: {"uri"=>"http://www.sapo.com"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.com')[0m
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:16:01) [GET]
+  Parameters: {"uri"=>"http://www.sapo.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.com')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:16:02) [GET]
+  Parameters: {"uri"=>"http://www.sapo.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:16:25) [GET]
+  Parameters: {"uri"=>""}
+  [4;36;1mConfiguration Load (1.1ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:16:35) [GET]
+  Parameters: {"uri"=>""}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:17:16) [GET]
+  Parameters: {"uri"=>""}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:17:19) [GET]
+  Parameters: {"uri"=>""}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:17:59) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pthttp://sapo.pthttp://www.sapo.p/http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pthttp://sapo.pthttp://www.sapo.p/http://sapo.p/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pthttp%3A%2F%2Fsapo.pthttp%3A%2F%2Fwww.sapo.p%2Fhttp%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:22:22) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt,http://sapo.pt,http://www.sapo.p/,http://sapo.p/"}
+  [4;36;1mConfiguration Load (1.2ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt','http://sapo.pt','http://www.sapo.p/','http://sapo.p/')[0m
+Completed in 36ms (View: 1, DB: 2) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2Chttp%3A%2F%2Fsapo.pt%2Chttp%3A%2F%2Fwww.sapo.p%2F%2Chttp%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:22:39) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 57ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:30:54) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:31:17) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:31:20) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (1.0ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:31:22) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:32:15) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:32:16) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:32:17) [GET]
+  Parameters: {"uri"=>"http://www.sapo.pt, http://sapo.pt, http://www.sapo.p/, http://sapo.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.sapo.pt',' http://sapo.pt',' http://www.sapo.p/',' http://sapo.p/')[0m
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.sapo.pt%2C+http%3A%2F%2Fsapo.pt%2C+http%3A%2F%2Fwww.sapo.p%2F%2C+http%3A%2F%2Fsapo.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:32:30) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com/, http://nytimes.com/, http://www.nytimes.com, http://nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com/',' http://nytimes.com/',' http://www.nytimes.com',' http://nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2F%2C+http%3A%2F%2Fnytimes.com%2F%2C+http%3A%2F%2Fwww.nytimes.com%2C+http%3A%2F%2Fnytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:32:32) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com/, http://nytimes.com/, http://www.nytimes.com, http://nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com/',' http://nytimes.com/',' http://www.nytimes.com',' http://nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2F%2C+http%3A%2F%2Fnytimes.com%2F%2C+http%3A%2F%2Fwww.nytimes.com%2C+http%3A%2F%2Fnytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:33:01) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com/,http://nytimes.com/,http://www.nytimes.com,http://nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com/','http://nytimes.com/','http://www.nytimes.com','http://nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:33:54) [GET]
+  Parameters: {"uri"=>"http://nytimes.com/,http://www.nytimes.com/,http://nytimes.com,http://www.nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://nytimes.com/','http://www.nytimes.com/','http://nytimes.com','http://www.nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:33:57) [GET]
+  Parameters: {"uri"=>"http://nytimes.com/,http://www.nytimes.com/,http://nytimes.com,http://www.nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://nytimes.com/','http://www.nytimes.com/','http://nytimes.com','http://www.nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:34:00) [GET]
+  Parameters: {"uri"=>"https://nytimes.com/,https://www.nytimes.com/,https://nytimes.com,https://www.nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('https://nytimes.com/','https://www.nytimes.com/','https://nytimes.com','https://www.nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=https%3A%2F%2Fnytimes.com%2F%2Chttps%3A%2F%2Fwww.nytimes.com%2F%2Chttps%3A%2F%2Fnytimes.com%2Chttps%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:34:03) [GET]
+  Parameters: {"uri"=>"http://nytimes.com/,http://www.nytimes.com/,http://nytimes.com,http://www.nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://nytimes.com/','http://www.nytimes.com/','http://nytimes.com','http://www.nytimes.com')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:34:07) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com/,http://nytimes.com/,http://www.nytimes.com,http://nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com/','http://nytimes.com/','http://www.nytimes.com','http://nytimes.com')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:34:08) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.co/,http://nytimes.co/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.co/','http://nytimes.co/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.co%2F%2Chttp%3A%2F%2Fnytimes.co%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:34:12) [GET]
+  Parameters: {"uri"=>"http://nytimes.com,http://www.nytimes.com,http://nytimes.co/,http://www.nytimes.co/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://nytimes.com','http://www.nytimes.com','http://nytimes.co/','http://www.nytimes.co/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.co%2F%2Chttp%3A%2F%2Fwww.nytimes.co%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 11:34:55) [GET]
+  Parameters: {"uri"=>"http://www.publico.pt,http://publico.pt,http://www.publico.p/,http://publico.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.publico.pt','http://publico.pt','http://www.publico.p/','http://publico.p/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.p%2F%2Chttp%3A%2F%2Fpublico.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:01:49) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.co/,http://nytimes.co/,http://publico.pt,http://www.publico.p/,http://publico.p/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.co/','http://nytimes.co/','http://publico.pt','http://www.publico.p/','http://publico.p/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.co%2F%2Chttp%3A%2F%2Fnytimes.co%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.p%2F%2Chttp%3A%2F%2Fpublico.p%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:03:09) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:07:30) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:15:12) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 57ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:15:13) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:15:14) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:15:36) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:15:37) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:15:54) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:16:20) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:16:35) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 59ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:16:38) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:17:11) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:18:16) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:18:17) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:18:34) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:18:35) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:18:41) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 56ms (View: 47, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:19:09) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:19:11) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:19:17) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:20:18) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:20:23) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:21:05) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:21:10) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:23:15) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 26ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:23:18) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 54ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:23:32) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:23:36) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:24:09) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:24:54) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:26:28) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:27:07) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 52ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:28:13) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:29:02) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:29:05) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com, http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com',' http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2C+http%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:29:06) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com, http://www.publico.pt,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/,http://publico.pt,http://www.publico.pt/,http://publico.pt/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com',' http://www.publico.pt','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/','http://publico.pt','http://www.publico.pt/','http://publico.pt/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2C+http%3A%2F%2Fwww.publico.pt%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fpublico.pt%2Chttp%3A%2F%2Fwww.publico.pt%2F%2Chttp%3A%2F%2Fpublico.pt%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-13 12:29:18) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:12:59) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 3ms (View: 3, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:13:05) [GET]
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Completed in 94ms (View: 85, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:13:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 2) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 38ms (View: 31, DB: 1) | 200 OK [http://0.0.0.0/configurations/2/edit]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:16:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.7ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 2) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/configurations/2/edit]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:18:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 2) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/configurations/2/edit]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:18:50) [GET]
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "configurations" [0m
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:18:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 2) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations/2/edit]
+
+
+Processing ConfigurationsController#destroy (for 127.0.0.1 at 2010-08-13 15:18:58) [DELETE]
+  Parameters: {"authenticity_token"=>"/epFfE1Nny8X4eHf8UWphgLRavprlhnsWmRQsM0GvTY=", "id"=>"2"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.6ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 2) [0m
+  [4;36;1mConfiguration Destroy (0.4ms)[0m   [0;1mDELETE FROM "configurations" WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3600/configurations
+Completed in 17ms (DB: 2) | 302 Found [http://0.0.0.0/configurations/2]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:18:58) [GET]
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 3ms (View: 1, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:19:08) [GET]
+  [4;36;1mConfiguration Load (0.4ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 5ms (View: 1, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:19:12) [GET]
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 4ms (View: 1, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:19:16) [GET]
+  [4;36;1mConfiguration Load (1.7ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 6ms (View: 1, DB: 2) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:19:21) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:19:24) [GET]
+  [4;35;1mConfiguration Load (0.4ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 5ms (View: 2, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:21:29) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:21:36) [GET]
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Completed in 67ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:21:55) [GET]
+  [4;35;1mConfiguration Load (0.6ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "configurations" [0m
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:21:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 38ms (View: 31, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:22:00) [GET]
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.2ms)[0m   [0mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:22:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:22:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:22:10) [GET]
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.3ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "configurations" [0m
+Completed in 58ms (View: 51, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#show (for 127.0.0.1 at 2010-08-13 15:22:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/show
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/configurations/3]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-13 15:22:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-13 15:25:11) [GET]
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/configurations]

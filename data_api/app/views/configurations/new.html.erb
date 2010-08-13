@@ -3,33 +3,35 @@
 <% form_for(@configuration) do |f| %>
   <%= f.error_messages %>
 
-  <p>
+ <p>
     <%= f.label :query_base %><br />
     <%= f.text_field :query_base %>
+	(Base query. Ex. select id, name from websites)
   </p>
   <p>
     <%= f.label :query_where %><br />
     <%= f.text_field :query_where %>
+	(Filtering clause. Ex. where id)
   </p>
   <p>
     <%= f.label :data_field_names %><br />
     <%= f.text_field :data_field_names %>
+	(Data columns names in the same order used on the base query. Ex. id, name)
   </p>
   <p>
     <%= f.label :data_field_friendly_name %><br />
     <%= f.text_field :data_field_friendly_name %>
-  </p>
-  <p>
-    <%= f.label :filter_field_name %><br />
-    <%= f.text_field :filter_field_name %>
+	(Data columns friendly names in the same order used for the base query. Ex. Id, Name)
   </p>
   <p>
     <%= f.label :user_name %><br />
     <%= f.text_field :user_name %>
+	(User name for authentication)
   </p>
   <p>
     <%= f.label :password %><br />
-    <%= f.text_field :password %>
+    <%= f.password_field :password %>
+	(Password for authentication)
   </p>
   <p>
     <%= f.submit 'Create' %>

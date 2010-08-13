@@ -1,0 +1,19 @@
+<% title "Editing plugin" %>
+
+<% form_for(@plugin) do |f| %>
+  <%= f.error_messages %>
+<p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>	
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @plugin %> |
+<%= link_to 'Back', plugins_path %>

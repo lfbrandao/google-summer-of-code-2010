@@ -16,7 +16,11 @@
 		    <td><%=h repository.name %></td>
 		    <td><%=h repository.uri %></td>
 		    <td><%=h repository.path %></td>
-		    <td><%=h repository.plugin_type %></td>
+		    <td>
+				<% if not repository.plugin.nil? %>
+					<%=h repository.plugin.name %>
+				<% end %>
+			</td>
 		    <td><%=h repository.description %></td>
 		    <td class="last">
 				<%= link_to 'Show', repository %>

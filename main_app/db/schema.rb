@@ -9,9 +9,43 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100808194611) do
+ActiveRecord::Schema.define(:version => 20100812213117) do
 
   create_table "hosts", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plugin_datas", :force => true do |t|
+    t.integer  "plugin_id"
+    t.integer  "plugin_configuration_id"
+    t.integer  "repository_id"
+    t.string   "field_value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pluginconfigurations", :force => true do |t|
+    t.integer  "plugin_id"
+    t.integer  "plugin_description_id"
+    t.integer  "repository_id"
+    t.string   "field_value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plugindefinitions", :force => true do |t|
+    t.integer  "plugin_id"
+    t.string   "field_name"
+    t.string   "field_data_type"
+    t.string   "field_visual_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plugins", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -20,7 +54,7 @@ ActiveRecord::Schema.define(:version => 20100808194611) do
     t.string   "name"
     t.string   "uri"
     t.string   "path"
-    t.string   "plugin_type"
+    t.integer  "plugin_id",   :limit => 255
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"

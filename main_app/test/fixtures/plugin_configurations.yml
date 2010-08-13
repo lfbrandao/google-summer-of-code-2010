@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  plugin_id: 
+  field_name: 
+  field_data_type: 
+  field_visual_type: MyString
+
+two:
+  plugin_id: 
+  field_name: 
+  field_data_type: 
+  field_visual_type: MyString

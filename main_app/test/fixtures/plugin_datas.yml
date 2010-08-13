@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  plugin_id: 1
+  plugin_configuration_id: 1
+  repository_id: 1
+  field_value: MyString
+
+two:
+  plugin_id: 1
+  plugin_configuration_id: 1
+  repository_id: 1
+  field_value: MyString

@@ -16,22 +16,22 @@
   <p>
     <%= f.label :data_field_names %><br />
     <%= f.text_field :data_field_names %>
+	(Data columns names in the same order used on the base query. Ex. id, name)
   </p>
   <p>
     <%= f.label :data_field_friendly_name %><br />
     <%= f.text_field :data_field_friendly_name %>
-  </p>
-  <p>
-    <%= f.label :filter_field_name %><br />
-    <%= f.text_field :filter_field_name %>
+	(Data columns friendly names in the same order used for the base query. Ex. Id, Name)
   </p>
   <p>
     <%= f.label :user_name %><br />
     <%= f.text_field :user_name %>
+	(User name for authentication)
   </p>
   <p>
     <%= f.label :password %><br />
     <%= f.password_field :password %>
+	(Password for authentication)
   </p>
   <p>
     <%= f.submit 'Update' %>

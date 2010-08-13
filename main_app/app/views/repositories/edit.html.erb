@@ -16,8 +16,8 @@
     <%= f.text_field :path %>
   </p>
   <p>
-    <%= f.label :plugin_type %><br />
-    <%= f.text_field :plugin_type %>
+    <%= f.label :plugin_id %><br />
+    <%=collection_select(:repository, :plugin_id, Plugin.all, :id, :name )%>
   </p>
   <p>
     <%= f.label :description %><br />

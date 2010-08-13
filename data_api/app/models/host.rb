@@ -2,7 +2,6 @@ class Host
   attr_reader :info
     
   def self.filter(*args)
-    # todo - sanitize sql
     if not args[0].nil?
       urls_from_args = args[0].split(',')  
       base_query = APP_CONFIG['base_query'] + ' ' + APP_CONFIG['where_clause']

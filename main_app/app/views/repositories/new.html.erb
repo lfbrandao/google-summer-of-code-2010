@@ -1,11 +1,11 @@
-<h1>New repository</h1>
+<% title "New Repository" %>
 
 <% form_for(@repository) do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+	<%= f.text_field :name %>
   </p>
   <p>
     <%= f.label :uri %><br />
@@ -16,8 +16,8 @@
     <%= f.text_field :path %>
   </p>
   <p>
-    <%= f.label :plugin_type %><br />
-    <%= f.text_field :plugin_type %>
+    <%= f.label :plugin_id %><br />
+    <%=collection_select(:repository, :plugin_id, Plugin.all, :id, :name )%>
   </p>
   <p>
     <%= f.label :description %><br />

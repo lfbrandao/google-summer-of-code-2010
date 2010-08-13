@@ -1,0 +1,27 @@
+<% title "Plugin List" %>
+
+<div class="innerInnerContent">
+	<table class="managementListTable">
+  		<tr>
+		    <th>Name</th>
+		    <th>Description</th>
+			<th class="last"></th>
+		</tr>
+  		<tr>
+  		</tr>
+
+		<% @plugins.each do |plugin| %>
+		  <tr>
+			<td><%=h plugin.name %></td>
+			<td><%=h plugin.description %></td>
+		    <td><%= link_to 'Show', plugin %>
+				<%= link_to 'Edit', edit_plugin_path(plugin) %>
+				<%= link_to 'Destroy', plugin, :confirm => 'Are you sure?', :method => :delete %>
+			</td>
+		  </tr>
+		<% end %>
+	</table>
+</div>
+<br />
+
+<%= link_to 'New plugin', new_plugin_path %>

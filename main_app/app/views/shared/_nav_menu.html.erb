@@ -16,4 +16,7 @@
 	<% if can? :manage, Repository%>
 		<%= link_to "Repositories", repositories_path %>  
 	<% end %>
+	<% if can? :manage, Plugins%>
+		<%= link_to "Plugins", plugins_path %>  
+	<% end %>
 </div>

@@ -1,6 +1,9 @@
 class Repository < ActiveRecord::Base
   has_and_belongs_to_many :users
   has_and_belongs_to_many :roles
+  belongs_to :plugin
+  
+  validates_presence_of :name, :uri, :plugin_id
   
   def self.user_repositories
     current_user ||= User.new :role_ids => [3]
@@ -15,7 +18,6 @@ class Repository < ActiveRecord::Base
     end
     
     # remove duplicates and return repositories
-    puts "Repository roles #{repositories_for_user.uniq}"
     repositories_for_user.uniq
   end
 end
