@@ -16,9 +16,13 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(params[:user])
+    if @user.role_ids.empty? 
+      @user.role_ids = Array.[](Role.find_by_name("Subscriber").id)
+    end
+    
     if @user.save
       flash[:notice] = "Account registered!"
-      redirect_back_or_default account_url
+      redirect_to root_path
     else
       render :action => :new
     end
@@ -26,7 +30,6 @@ class UsersController < ApplicationController
   
   def show
     @user = get_user_based_on_role
-    puts "@user #{@user}"
   end
 
   def edit
@@ -34,11 +37,12 @@ class UsersController < ApplicationController
   end
   
   def update
+    userid = User.find(params[:id]).id
+    puts "USER ID #{userid}"
     @user = get_user_based_on_role
-    puts "params[:user] #{params[:user]}"
     if @user.update_attributes(params[:user])
       flash[:notice] = "Account updated!"
-      redirect_to account_url
+      redirect_to users_path
     else
       render :action => :edit
     end
@@ -66,9 +70,13 @@ class UsersController < ApplicationController
   private
   
   def get_user_based_on_role
+    puts "can manage users - #{can? :manage_users, @current_user}"
     if can? :manage_users, @current_user and not params[:id].blank?
+      u = User.find(params[:id])
+      puts "OK #{u.id} #{@current_user.id}"
       return User.find(params[:id])
     else
+      puts "User - #{@current_user}"
       return @current_user
     end
   end
