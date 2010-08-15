@@ -9,7 +9,7 @@ The Data Integration System is a set of two applications that can be used to con
 
 == Dependencies
 The applications are configured to run on the version 2.5.5 of Ruby on Rails, and have the following dependencies:
-* Central Application
+* Main Application
 	- to-do ...
 * Data API
 	- to-do ...
@@ -22,7 +22,7 @@ In the main application a user can search for information on a set of databases.
 * Repositories - database management area
 * Plugins - plugin management area
 
-= Users and Roles
+= Main Application - Users and Roles
 To distinguish users by what they are allowed to see and manage, three types of user groups or roles are defined:
 1. Administrators - registered user. Can:
 	* Search/query repositories
@@ -44,7 +44,30 @@ The Guest role should be used to define a set of publicly queriable repositories
 
 By default, new registered users get the Subscriber role. Unregistered users have the Guest role assigned by default.
 
-= Repositories
-Repositories are searchable data sources are queried on a search made on the application.
+= Main Application - Repositories and Plugins
+Repositories are searchable data sources are queried on a search made on the application. Each repository is defined by the following information:
+* Name - name of the repository
+* Uri - uri of the repository
+* Plugin - plugin used to connect to the repository
+* Description (optional)
+* Username and password (optional) - authentication credentials 
+
+The connection to a repository is made by using a plugin. Currently the application contains one plugin to connect to the REST API mentioned before. New types of data sources can be added to the system either by defining a new plugin on the main application or by creating new REST apis that can read from data sources other than the ones currently supported.
+
+= Main Application - Guidelines for implementing a plugins for a new type of repository
+New plugins must be deployed at the folder vendor/plugins and must follow the following conventions
+* The name of the plugin should be suffixed by "_connector"
+* When configuring a user on the web application, the name used should be the name of the plugin with the "_connector" suffix removed (Ex. for the rest_connector plugin, rest is the name given to the plugin on the web interface)
+* The plugin should add a new method to the Host model that is suffixed by "_query" and starts with the name of the plugin
+* Example plugin naming:
+	- Plugin name: rest_connector
+	- Web interface name: rest
+	- Method that the plugin add to the Host model: rest_query
 
 == Data API
+The Data API is an application that can be used to expose a read-only REST interface for a MySQL, PostgreSQL or SQLlite database. It allows a user to 
+
+== To-dos
+* 
+
+
