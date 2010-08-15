@@ -1,17 +1,16 @@
-(Work in progress)
-
 == Google Summer of Code 2010 - Data Integration System - Berkman Center for Internet and Society
 * Project description - http://cyber.law.harvard.edu/gsoc/Data_Integration_DB
 * Berkman Center - http://cyber.law.harvard.edu/
 * Google Summer of Code - http://code.google.com/soc/
 
-The Data Integration System is a set of two applications that can be used to connect and combine data from several databases. It comprises a central application that enables users to search for information on a configurable set of databases and a REST API that can be deployed on the databases (MySQL, PostgreSQL, SQLite) to enable read-only access to the data.
+The Data Integration System is a set of two applications that can be used to search for and aggregate data about one or more URLs from several databases. It comprises a central application that enables users to search for information on a configurable set of databases and a REST API that can be deployed on the databases (MySQL, PostgreSQL, SQLite) to enable partial read-only access to the data.
 
-== Dependencies
+== Configuration and dependencies
 The applications are configured to run on the version 2.5.5 of Ruby on Rails, and have the following dependencies:
 * Main Application
 	- cancan gem for authentication
 	- authlogic gem for authentication 
+	- database for configuration (MySQL, PostgreSQL, SQLite)
 * Data API
 	- SQLite for storing the configuration
 	- install and configure the rails database driver for the type of repository being queried (MySQL, PostgreSQL, SQLite)
@@ -21,11 +20,11 @@ In the main application a user can search for information on a set of databases.
 * Search - search for information in the directory of repositories
 * Users - user management area
 * Roles - roles management area
-* Repositories - database management area
+* Repositories - datasource management area
 * Plugins - plugin management area
 
 = Main Application - Search
-The search interface is configured to parse one or more URLs. The URLs should be inserted in the search text box separated by commas. Since the URL may not be normalized across the data silos, four variations of the URL are created. Considering a search for data for the URL http://www.nytimes.com, the following URL variations would be submitted to the repositories:
+In the search page, a user can submit one or more URLs that are sent to data repositories for querying. The URLs should be inserted in the search text box separated by commas. Since the URL may not be normalized across the data silos, four variations of the URL are created at each search. Considering a search for data where the URL http://www.nytimes.com is submitted by the user, the following URL variations will be submitted to the repositories:
 * http://www.nytimes.com
 * http://www.nytimes.com/
 * http://nytimes.com
@@ -45,18 +44,20 @@ To distinguish users by what they are allowed to see and manage, three types of 
 	* Search/query repositories
 
 While all users have access to the search screen, the repositories that are queried on a search depend on the role of the user and on the permissions granted by the administrators. This association is made by role (each role has a set of repositories that its users can query) and by user (in addition to repositories defined in the user role, a user can have access to more repositories). Considering the following User A and Subscriber role:
+
 * User A - has access to Repository1; belongs to the Role Subscriber
-* Role Subscriber - has access to Repository2, Repository3
+* Role Subscriber - grants access to Repository2, Repository3
+
 if the User A makes a search on the directory the repositories Repository1, Repository2 and Repository3 are queried.
 
-The Guest role should be used to define a set of publicly queriable repositories. While the search screen will always be accessible to everyone, if the Guest role has no repositories assigned to it no repositories will queried.
+The Guest role should be used to define a set of publicly queriable repositories. While the search screen will always be accessible to everyone, if the Guest role has no repositories assigned to it no repositories will queried if a non-authenticated user makes a search.
 
 By default, new registered users get the Subscriber role. Unregistered users have the Guest role assigned by default.
 
 = Main Application - Repositories and Plugins
-Repositories are searchable data sources are queried on a search made on the application. Each repository is defined by the following information:
+Repositories are searchable data sources that are queried when a user submits one or more URLs for searching. Each repository is defined as follows:
 * Name - name of the repository
-* Uri - uri of the repository
+* Uri - URI of the repository
 * Plugin - plugin used to connect to the repository
 * Description (optional)
 * Username and password (optional) - authentication credentials
@@ -64,17 +65,22 @@ Repositories are searchable data sources are queried on a search made on the app
 The connection to a repository is made by using a plugin. Currently the application contains one plugin to connect to the REST API mentioned before. New types of data sources can be added to the system either by defining a new plugin on the main application or by creating new REST apis that can read from data sources other than the ones currently supported.
 
 = Main Application - Guidelines for implementing a plugins for a new type of repository
-New plugins must be deployed at the folder vendor/plugins and must follow the following conventions
-* The name of the plugin should be suffixed by "_connector"
-* When configuring a user on the web application, the name used should be the name of the plugin with the "_connector" suffix removed (Ex. for the rest_connector plugin, rest is the name given to the plugin on the web interface)
-* The plugin should add a new method to the Host model that is suffixed by "_query" and starts with the name of the plugin
+The following steps are required to the add a new plugin to the system:
+1. Implement a new plugin following the naming conventions described below
+2. Add the plugin to the vendor/plugins folder of the application
+3. Register the plugin on the web interface (administrator privileges required)
+
+New plugins must follow the following name conventions:
+* The name of the plugin SHOULD be suffixed by "_connector"
+* The plugin MUST add a new method to the Host model that is suffixed by "_query" and starts with the prefix of the name of the plugin
+* When configuring a plugin on the web application, the name used MUST be the name of the "_query" suffixed method added to the Host model with the "_query" suffix removed
 * Example plugin naming:
 	- Plugin name: rest_connector
 	- Web interface name: rest
 	- Method that the plugin add to the Host model: rest_query
 
 == Data API
-The Data API is an application that can be used to expose a read-only REST interface for a MySQL, PostgreSQL or SQLlite database. The application defines a configurable SQL query that is expanded with a URI list included at each get request made to the application. If the application is configured with the query "select name from websites where id in", a get request made to the application with the parameters {uri: "www.nytimes.com, www.guardian.co.uk"} would return the results of the query "select name from websites where id in ('www.nytimes.com', 'www.guardian.co.uk')". Only SELECT clauses are allowed in the SQL queries, being UPDATE and DELETE clauses blocked.
+The Data API is an application that can be used to expose a read-only REST interface for a MySQL, PostgreSQL or SQLlite database. The application defines a configurable SQL query that is expanded with a URI list included at each get request made to the application. For example, if the application is configured with the query "select name from websites where id in", a get request made to the application with the parameters {uri: "www.nytimes.com, www.guardian.co.uk"} would return the results of the query "select name from websites where id in ('www.nytimes.com', 'www.guardian.co.uk')". Only SELECT clauses are allowed in the SQL queries, being UPDATE and DELETE clauses blocked.
 
 The application must be configured using the web interface (http://hostname/configurations) after deployment as follows:
 * Query base - partial SQL query for search excluding the where clause
