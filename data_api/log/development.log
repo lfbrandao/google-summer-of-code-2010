@@ -14533,3 +14533,117 @@ Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-15 16:19:48) 
 Rendering template within layouts/configurations
 Rendering configurations/edit
 Completed in 44ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-16 13:00:18) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 3ms (View: 3, DB: 0) | 401 Unauthorized [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-16 13:00:23) [GET]
+  [4;36;1mConfiguration Load (0.8ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Completed in 59ms (View: 30, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-16 13:00:38) [GET]
+  Parameters: {"uri"=>"www.nytimes.com"}
+
+ActionController::RoutingError (No route matches "/filter" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-16 13:00:41) [GET]
+  Parameters: {"uri"=>"www.nytimes.com"}
+
+ActionController::RoutingError (No route matches "/search" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-16 13:00:46) [GET]
+
+ActionController::RoutingError (No route matches "/search.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-16 13:00:51) [GET]
+
+ActionController::RoutingError (No route matches "/filter.xml" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-16 14:42:50) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com/,http://nytimes.com/,http://www.nytimes.com,http://nytimes.com"}
+  [4;35;1mConfiguration Load (0.6ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+
+NameError (uninitialized constant Host::APP_CONFIG):
+  app/models/host.rb:7:in `filter'
+  app/controllers/hosts_controller.rb:7:in `filter'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-16 14:42:53) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com/,http://nytimes.com/,http://www.nytimes.com,http://nytimes.com"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+
+NameError (uninitialized constant Host::APP_CONFIG):
+  app/models/host.rb:7:in `filter'
+  app/controllers/hosts_controller.rb:7:in `filter'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-16 14:42:55) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+
+NameError (uninitialized constant Host::APP_CONFIG):
+  app/models/host.rb:7:in `filter'
+  app/controllers/hosts_controller.rb:7:in `filter'
+
+Rendered rescues/_trace (104.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-16 14:54:55) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+
+NameError (uninitialized constant Host::APP_CONFIG):
+  app/models/host.rb:7:in `filter'
+  app/controllers/hosts_controller.rb:7:in `filter'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-16 14:55:03) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.6ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (23.0ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 36ms (View: 3, DB: 24) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
+
+
+Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-16 15:04:51) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com,http://nytimes.com,http://www.nytimes.com/,http://nytimes.com/"}
+  [4;36;1mConfiguration Load (0.5ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com','http://nytimes.com','http://www.nytimes.com/','http://nytimes.com/')[0m
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F]
