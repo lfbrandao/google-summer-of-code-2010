@@ -14515,3 +14515,21 @@ Processing HostsController#filter to xml (for 127.0.0.1 at 2010-08-14 15:00:17) 
   [4;36;1mConfiguration Load (1.3ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
   [4;35;1mSQL (0.7ms)[0m   [0mselect id, name, label, value from websites where id in ('http://www.nytimes.com/','http://nytimes.com/','http://www.nytimes.com','http://nytimes.com')[0m
 Completed in 52ms (View: 14, DB: 2) | 200 OK [http://0.0.0.0/hosts/filter.xml?controller=hosts&action=search&uri=http%3A%2F%2Fwww.nytimes.com%2F%2Chttp%3A%2F%2Fnytimes.com%2F%2Chttp%3A%2F%2Fwww.nytimes.com%2Chttp%3A%2F%2Fnytimes.com]
+
+
+Processing ConfigurationsController#index (for 127.0.0.1 at 2010-08-15 16:19:39) [GET]
+  [4;36;1mConfiguration Load (1.1ms)[0m   [0;1mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.3ms)[0m   [0mSELECT * FROM "configurations" [0m
+Rendering template within layouts/configurations
+Rendering configurations/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "configurations" [0m
+Completed in 75ms (View: 45, DB: 1) | 200 OK [http://0.0.0.0/configurations]
+
+
+Processing ConfigurationsController#edit (for 127.0.0.1 at 2010-08-15 16:19:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mConfiguration Load (0.5ms)[0m   [0mSELECT * FROM "configurations" LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.4ms)[0m   [0;1mSELECT * FROM "configurations" WHERE ("configurations"."id" = 3) [0m
+Rendering template within layouts/configurations
+Rendering configurations/edit
+Completed in 44ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/configurations/3/edit]

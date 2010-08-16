@@ -45575,3 +45575,63 @@ Rendered shared/_nav_menu (32.6ms)
 Rendered shared/_user_menu (0.5ms)
 Rendered shared/_footer (0.1ms)
 Completed in 155ms (View: 69, DB: 2) | 200 OK [http://0.0.0.0/repositories/1/edit]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 12:54:59) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (28.1ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (235.2ms)
+Rendered shared/_user_menu (1.2ms)
+Rendered shared/_footer (0.7ms)
+Completed in 450ms (View: 418, DB: 29) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 12:57:18) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (107.6ms)
+Rendered shared/_user_menu (0.9ms)
+Rendered shared/_footer (0.4ms)
+Completed in 141ms (View: 138, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 12:57:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (21.0ms)
+Rendered shared/_user_menu (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 175ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 12:57:24) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"administrator@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'administrator@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE "users" SET "login_count" = 13, "perishable_token" = 'c6ovXJOkiiDpXCF5v4lt', "last_request_at" = '2010-08-16 16:57:24', "last_login_at" = '2010-08-15 18:58:59', "current_login_at" = '2010-08-16 16:57:24' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 381ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 12:57:24) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'WR9BtSnMnwRjQsx1jc93', "last_request_at" = '2010-08-16 16:57:24' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (40.8ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 46ms (View: 43, DB: 1) | 200 OK [http://0.0.0.0/]
