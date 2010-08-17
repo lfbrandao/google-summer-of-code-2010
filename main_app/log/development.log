@@ -45792,3 +45792,2402 @@ Rendered shared/_nav_menu (22.5ms)
 Rendered shared/_user_menu (0.4ms)
 Rendered shared/_footer (0.1ms)
 Completed in 405ms (View: 25, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 16:27:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;36;1mRepository Load (1.2ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'sYrCxirnlsATpRUCA73', "last_request_at" = '2010-08-16 20:27:22' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (3.8ms)
+Rendered shared/_user_menu (17.1ms)
+Rendered shared/_footer (25.0ms)
+Completed in 1050ms (View: 151, DB: 3) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing RepositoriesController#new (for 127.0.0.1 at 2010-08-16 16:27:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"repositories"}
+Rendering template within layouts/repositories
+Rendering repositories/new
+  [4;36;1mPlugin Load (0.3ms)[0m   [0;1mSELECT * FROM "plugins" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'TOsGSZtz7mrDSHCLurj', "last_request_at" = '2010-08-16 20:27:24' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (100.0ms)
+Rendered shared/_user_menu (0.6ms)
+Rendered shared/_footer (0.1ms)
+Completed in 144ms (View: 136, DB: 1) | 200 OK [http://0.0.0.0/repositories/new]
+
+
+Processing RepositoriesController#create (for 127.0.0.1 at 2010-08-16 16:27:52) [POST]
+  Parameters: {"repository"=>{"plugin_id"=>"1", "name"=>"Mediacloud", "uri"=>"http://192.168.170.184:3000/hosts/filter.xml", "username"=>"", "path"=>"", "description"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create", "action"=>"create", "controller"=>"repositories"}
+  [4;36;1mRepository Create (18.6ms)[0m   [0;1mINSERT INTO "repositories" ("name", "plugin_id", "uri", "created_at", "updated_at", "username", "path", "description", "password") VALUES('Mediacloud', 1, 'http://192.168.170.184:3000/hosts/filter.xml', '2010-08-16 20:27:52', '2010-08-16 20:27:52', '', '', '', '')[0m
+Redirected to http://0.0.0.0:3000/repositories/8
+Completed in 32ms (DB: 19) | 302 Found [http://0.0.0.0/repositories]
+
+
+Processing RepositoriesController#show (for 127.0.0.1 at 2010-08-16 16:27:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"repositories"}
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+Rendering template within layouts/repositories
+Rendering repositories/show
+  [4;36;1mPlugin Load (0.3ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'hV6dzvBvREyRJDdf5FY', "last_request_at" = '2010-08-16 20:27:53' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (97.5ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 122ms (View: 114, DB: 2) | 200 OK [http://0.0.0.0/repositories/8]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 16:27:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;36;1mRepository Load (0.8ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'mbfwulaK2uwxUPB9CmcJ', "last_request_at" = '2010-08-16 20:27:55' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 117ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:27:58) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'WpAtLQfBxdHwcaNpveCX', "last_request_at" = '2010-08-16 20:27:58' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (93.8ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 145ms (View: 143, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:28:04) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'MOcXhkqBh18WxUyffTc', "last_request_at" = '2010-08-16 20:28:04' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.6ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 281ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 16:28:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'yf8TgSeOLU1owf3G14J', "last_request_at" = '2010-08-16 20:28:23' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (22.2ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 159ms (View: 145, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:28:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;35;1mRole Load (0.7ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'z4hlFZs3rJqJ13ME7MK3', "last_request_at" = '2010-08-16 20:28:27' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (94.6ms)
+Rendered shared/_user_menu (0.9ms)
+Rendered shared/_footer (0.1ms)
+Completed in 145ms (View: 138, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 16:28:29) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"roles"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+Rendered roles/_repositories (12.8ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'k6Wuj4khLPWqmHWFGnH5', "last_request_at" = '2010-08-16 20:28:29' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (90.2ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 264ms (View: 256, DB: 2) | 200 OK [http://0.0.0.0/roles/1/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 16:28:32) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Admin", "repository_ids"=>["1", "8"]}, "id"=>"1", "controller"=>"roles"}
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."id" IN (1,8)) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 1 ) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO "repositories_roles" ("role_id", "repository_id") VALUES (1, 8)[0m
+Redirected to http://0.0.0.0:3000/roles/1
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/roles/1]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 16:28:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"roles"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'T6AV4y7CYaRWPvEgH5A', "last_request_at" = '2010-08-16 20:28:32' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (99.0ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 129ms (View: 122, DB: 1) | 200 OK [http://0.0.0.0/roles/1]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:28:33) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '8H7eIkPvagwB9xuQrLll', "last_request_at" = '2010-08-16 20:28:33' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (94.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 99ms (View: 97, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:28:38) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'tT6wfkoimHGAKjUl5r', "last_request_at" = '2010-08-16 20:28:38' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (85.0ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 192ms (View: 87, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:28:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;35;1mRole Load (0.7ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'GgIcFJ5qYqDtWl0xo4lA', "last_request_at" = '2010-08-16 20:28:42' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (33.1ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 49ms (View: 42, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 16:28:44) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"roles"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+Rendered roles/_repositories (11.3ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'Km6qlx5cBtZoUjcDtQjy', "last_request_at" = '2010-08-16 20:28:44' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (27.1ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 50ms (View: 42, DB: 2) | 200 OK [http://0.0.0.0/roles/1/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 16:28:47) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Admin", "repository_ids"=>["8"]}, "id"=>"1", "controller"=>"roles"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 1 ) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM "repositories_roles" WHERE role_id = 1 AND repository_id IN (1)[0m
+Redirected to http://0.0.0.0:3000/roles/1
+Completed in 78ms (DB: 1) | 302 Found [http://0.0.0.0/roles/1]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 16:28:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"roles"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'kvrwNk4So55L0BDOpDWY', "last_request_at" = '2010-08-16 20:28:47' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (34.0ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 43ms (View: 36, DB: 1) | 200 OK [http://0.0.0.0/roles/1]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:28:49) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'XVyKrTJt2eO7vxBensW', "last_request_at" = '2010-08-16 20:28:49' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (38.0ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 43ms (View: 40, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:28:51) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'BzRH5ckkV006NFkYotry', "last_request_at" = '2010-08-16 20:28:51' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.8ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 140ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 16:28:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'R6kFvyCCSvC6V5GMRKMc', "last_request_at" = '2010-08-16 20:28:56' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (79.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 108ms (View: 93, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 16:29:01) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'N3zJSxYKb4EDYNuK5Vki', "last_request_at" = '2010-08-16 20:29:02' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (22.9ms)
+Rendered shared/_nav_menu (1.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 91ms (View: 60, DB: 1) | 200 OK [http://0.0.0.0/users/4/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 16:29:05) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"users"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'Nab6qZx7NSWPTzj9zI73', "last_request_at" = '2010-08-16 20:29:06' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/users
+Rendering users/edit
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 1) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 2) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 3) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+Rendered users/_form (17.3ms)
+Rendered shared/_nav_menu (1.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 119ms (View: 21, DB: 3) | 200 OK [http://0.0.0.0/users/7/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-08-16 16:29:09) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "id"=>"7", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "role_ids"=>["2"], "repository_ids"=>["8"], "roles"=>[""], "password"=>"[FILTERED]", "email"=>"subscriber@gmail.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'QD2JxXFKevPas1b9oJC', "last_request_at" = '2010-08-16 20:29:09' WHERE "id" = 4[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+WARNING: Can't mass-assign these protected attributes: roles
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 7 ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (7, 8)[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'EI1OOKoAilxcNNQCelL8' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/users
+Completed in 52ms (DB: 3) | 302 Found [http://0.0.0.0/users/7]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 16:29:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'nirNmztJ6vFMabOD08', "last_request_at" = '2010-08-16 20:29:09' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (44.4ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 72ms (View: 58, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 16:29:12) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '3ODKxzu54JlRKfWxew4g', "last_request_at" = '2010-08-16 20:29:12' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 16:29:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (138.1ms)
+Rendered shared/_user_menu (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 192ms (View: 177, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 16:29:20) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"subscriber@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'subscriber@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "login_count" = 2, "perishable_token" = 'cKplDQYaksQf7K0knE3', "last_request_at" = '2010-08-16 20:29:20', "last_login_at" = '2010-08-14 16:46:27', "last_login_ip" = '127.0.0.1', "current_login_at" = '2010-08-16 20:29:20' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 379ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:29:20) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'lyrbTTQBiGwjF50npw0y', "last_request_at" = '2010-08-16 20:29:20' WHERE "id" = 7[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (101.6ms)
+Rendered shared/_user_menu (0.6ms)
+Rendered shared/_footer (0.1ms)
+Completed in 107ms (View: 104, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:29:22) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'ns0RRcmVF5GIThd5Fpg', "last_request_at" = '2010-08-16 20:29:22' WHERE "id" = 7[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.1ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 78ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 16:29:39) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'egN1JBm15XccQdXMheCd', "last_request_at" = '2010-08-16 20:29:39' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 97ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 16:29:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.4ms)
+Rendered shared/_user_menu (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 36ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 16:29:44) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"administrator@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'administrator@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "login_count" = 14, "perishable_token" = 'GDvZ5FDid8dIf82xDxfp', "last_request_at" = '2010-08-16 20:29:44', "last_login_at" = '2010-08-16 16:57:24', "current_login_at" = '2010-08-16 20:29:44' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 25ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:29:44) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '7utueaDYDGjVxGqRRnz', "last_request_at" = '2010-08-16 20:29:44' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (42.8ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 48ms (View: 45, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:29:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'QH1iJeFpFo1kiRCpU7E', "last_request_at" = '2010-08-16 20:29:46' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (34.2ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 120ms (View: 43, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 16:29:48) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;35;1mRepository Load (0.5ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 2 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 2 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 2 ) LIMIT 1[0m
+Rendered roles/_repositories (77.0ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'JyxJ9CRZjCFR4a1JypBR', "last_request_at" = '2010-08-16 20:29:48' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (27.0ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 115ms (View: 108, DB: 2) | 200 OK [http://0.0.0.0/roles/2/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 16:29:51) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Subscriber", "repository_ids"=>["8"]}, "id"=>"2", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 2 ) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO "repositories_roles" ("role_id", "repository_id") VALUES (2, 8)[0m
+Redirected to http://0.0.0.0:3000/roles/2
+Completed in 19ms (DB: 1) | 302 Found [http://0.0.0.0/roles/2]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 16:29:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'LaeHYUUoSZXw1CQNW', "last_request_at" = '2010-08-16 20:29:51' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (32.7ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 117ms (View: 36, DB: 1) | 200 OK [http://0.0.0.0/roles/2]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:29:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '3lUYLSUcbWZHHNpFgqFZ', "last_request_at" = '2010-08-16 20:29:52' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (103.2ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 118ms (View: 111, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:29:58) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'ghuGB1kxCs9q6qTJT810', "last_request_at" = '2010-08-16 20:29:58' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (104.6ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 110ms (View: 107, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 16:30:01) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'eSlitggj1YTXGQ2KgwB', "last_request_at" = '2010-08-16 20:30:01' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 16:30:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (16.6ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 113ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 16:30:05) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"subscriber@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'subscriber@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "login_count" = 3, "perishable_token" = 'NPg5tUffGefZzjSnLeuQ', "last_request_at" = '2010-08-16 20:30:05', "last_login_at" = '2010-08-16 20:29:20', "current_login_at" = '2010-08-16 20:30:05' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 25ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:30:05) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'ZVRq19IoHMp8b4ZFjLtA', "last_request_at" = '2010-08-16 20:30:05' WHERE "id" = 7[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (116.9ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 122ms (View: 119, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:30:09) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.3ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'Zt7521zaUhq0VIrK0Os', "last_request_at" = '2010-08-16 20:30:10' WHERE "id" = 7[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.7ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 272ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 16:30:38) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'W4S69OO71ufLhjygW5M', "last_request_at" = '2010-08-16 20:30:38' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 16:30:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (87.8ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 107ms (View: 93, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 16:30:42) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"administrator@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'administrator@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.8ms)[0m   [0;1mUPDATE "users" SET "login_count" = 15, "perishable_token" = 'PM5fJiikS9YYLxl2cWZW', "last_request_at" = '2010-08-16 20:30:42', "last_login_at" = '2010-08-16 20:29:44', "current_login_at" = '2010-08-16 20:30:42' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 30ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:30:42) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'jkB6cn9iKC3v1KabT18u', "last_request_at" = '2010-08-16 20:30:42' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (123.8ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 129ms (View: 126, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 16:30:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;36;1mRepository Load (0.9ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '1ZiPaJZ1HU3OTTLjXT3r', "last_request_at" = '2010-08-16 20:30:44' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (1.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 51ms (View: 17, DB: 2) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing RepositoriesController#edit (for 127.0.0.1 at 2010-08-16 16:30:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"8", "controller"=>"repositories"}
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+Rendering template within layouts/repositories
+Rendering repositories/edit
+  [4;36;1mPlugin Load (0.3ms)[0m   [0;1mSELECT * FROM "plugins" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'bfRtwre1l0sqdZbfK', "last_request_at" = '2010-08-16 20:30:45' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (31.1ms)
+Rendered shared/_user_menu (0.7ms)
+Rendered shared/_footer (0.1ms)
+Completed in 75ms (View: 66, DB: 2) | 200 OK [http://0.0.0.0/repositories/8/edit]
+
+
+Processing RepositoriesController#update (for 127.0.0.1 at 2010-08-16 16:30:55) [PUT]
+  Parameters: {"repository"=>{"plugin_id"=>"1", "name"=>"Mediacloud", "uri"=>"http://192.168.170.184:3000/hosts/filter.xml", "username"=>"", "path"=>"", "description"=>"", "password"=>"[FILTERED]"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "id"=>"8", "controller"=>"repositories"}
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+Redirected to http://0.0.0.0:3000/repositories/8
+Completed in 82ms (DB: 0) | 302 Found [http://0.0.0.0/repositories/8]
+
+
+Processing RepositoriesController#show (for 127.0.0.1 at 2010-08-16 16:30:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"repositories"}
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+Rendering template within layouts/repositories
+Rendering repositories/show
+  [4;36;1mPlugin Load (0.4ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'd2lkI5NwqwWicjplkGz', "last_request_at" = '2010-08-16 20:30:55' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (32.9ms)
+Rendered shared/_user_menu (0.6ms)
+Rendered shared/_footer (0.1ms)
+Completed in 59ms (View: 42, DB: 2) | 200 OK [http://0.0.0.0/repositories/8]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 16:31:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'taDc6sIPUahpY0LTprF0', "last_request_at" = '2010-08-16 20:31:00' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (17.7ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 45ms (View: 31, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:31:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'PfdKX1f4Zv4e052xqDHs', "last_request_at" = '2010-08-16 20:31:02' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (100.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 115ms (View: 108, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 16:31:04) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;35;1mRepository Load (0.5ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+Rendered roles/_repositories (11.7ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'yUW9Vphbf8TKfMzSF4N', "last_request_at" = '2010-08-16 20:31:04' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (95.7ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 120ms (View: 112, DB: 2) | 200 OK [http://0.0.0.0/roles/1/edit]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:31:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '2lOGCGyMpg3lPBkoZCx', "last_request_at" = '2010-08-16 20:31:07' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (100.4ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 116ms (View: 109, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:31:09) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = '2MhFIFoqdELvzFy9Kurl', "last_request_at" = '2010-08-16 20:31:09' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (105.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 110ms (View: 107, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:31:12) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.3ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'yhuc0EcjbImste9Mj6k', "last_request_at" = '2010-08-16 20:31:12' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.9ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 128ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:35:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'silppRE38DcwlES37p55', "last_request_at" = '2010-08-16 20:35:46' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (451.4ms)
+Rendered shared/_user_menu (0.7ms)
+Rendered shared/_footer (0.1ms)
+Completed in 467ms (View: 460, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 16:35:48) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;35;1mRepository Load (0.5ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+Rendered roles/_repositories (77.4ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'TSqIue0fkTXy5zTMIUgH', "last_request_at" = '2010-08-16 20:35:48' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (29.6ms)
+Rendered shared/_user_menu (0.6ms)
+Rendered shared/_footer (0.1ms)
+Completed in 120ms (View: 112, DB: 2) | 200 OK [http://0.0.0.0/roles/3/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 16:35:50) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Guest", "repository_ids"=>["1", "8"]}, "id"=>"3", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" IN (1,8)) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 3 ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_roles" ("role_id", "repository_id") VALUES (3, 8)[0m
+Redirected to http://0.0.0.0:3000/roles/3
+Completed in 29ms (DB: 1) | 302 Found [http://0.0.0.0/roles/3]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 16:35:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'WirQV6oxb0XtyJJ6iOdn', "last_request_at" = '2010-08-16 20:35:50' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (107.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 117ms (View: 110, DB: 1) | 200 OK [http://0.0.0.0/roles/3]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:35:52) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'kOexDRsaBmZt8JnjXUnG', "last_request_at" = '2010-08-16 20:35:52' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (103.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 108ms (View: 105, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:35:55) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill': execution expired
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = '9qRdeyi86oQVYLRPwsN3', "last_request_at" = '2010-08-16 20:36:05' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (18.1ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 10205ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 16:36:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;35;1mRepository Load (0.8ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'c7XjsUmJPp10iCc7adup', "last_request_at" = '2010-08-16 20:36:41' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (1.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 50ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 16:36:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'Oed5kZUBbYRmwyy5L1X', "last_request_at" = '2010-08-16 20:36:44' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (106.2ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 122ms (View: 115, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 16:36:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;35;1mRepository Load (0.5ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+Rendered roles/_repositories (11.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '3JovYiZRRef6ZdEEcs1S', "last_request_at" = '2010-08-16 20:36:45' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (96.9ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 121ms (View: 111, DB: 2) | 200 OK [http://0.0.0.0/roles/3/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 16:36:48) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Guest", "repository_ids"=>["8"]}, "id"=>"3", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 8) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 3 ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM "repositories_roles" WHERE role_id = 3 AND repository_id IN (1)[0m
+Redirected to http://0.0.0.0:3000/roles/3
+Completed in 23ms (DB: 1) | 302 Found [http://0.0.0.0/roles/3]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 16:36:48) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"roles"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'A8sEtEyZyf5M8km7Ty', "last_request_at" = '2010-08-16 20:36:48' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (107.1ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 117ms (View: 110, DB: 1) | 200 OK [http://0.0.0.0/roles/3]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:36:50) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = '23IFWatfacugpDhek2im', "last_request_at" = '2010-08-16 20:36:50' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (103.1ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 108ms (View: 106, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:36:53) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.7ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill': execution expired
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'bYMYarUTsutVtLdme6', "last_request_at" = '2010-08-16 20:37:03' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (96.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 10136ms (View: 99, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:37:20) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill': execution expired
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'TwNqD4o6ySGit1Z9I0n', "last_request_at" = '2010-08-16 20:37:30' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (20.6ms)
+Rendered shared/_user_menu (1.8ms)
+Rendered shared/_footer (0.1ms)
+Completed in 10062ms (View: 25, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:38:14) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill': execution expired
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (11.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'BHvfH9LPPvj1420kdk4Q', "last_request_at" = '2010-08-16 20:38:25' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (33.8ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 10171ms (View: 52, DB: 13) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:40:45) [GET]
+  Parameters: {"uri"=>"http://nytimes.com,http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill': execution expired
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (11.7ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'cSFrcJQRmgpXZjmd61TZ', "last_request_at" = '2010-08-16 20:40:55' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (27.7ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 10154ms (View: 43, DB: 13) | 200 OK [http://0.0.0.0/hosts/search?uri=http://nytimes.com,http://www.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:43:27) [GET]
+  Parameters: {"uri"=>"http://nytimes.com,http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.3ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "perishable_token" = '0VQuR7LlWYwFwTBJy96B', "last_request_at" = '2010-08-16 20:44:47' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (408.1ms)
+Rendered shared/_user_menu (27.2ms)
+Rendered shared/_footer (41.3ms)
+Completed in 80088ms (View: 3738, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http://nytimes.com,http://www.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 16:45:32) [GET]
+  Parameters: {"uri"=>"http://nytimes.com,http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (98.7ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'mfegrnce9K65cuSbTO9', "last_request_at" = '2010-08-16 20:46:35' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (125.2ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 63728ms (View: 3949, DB: 100) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 19:43:54) [GET]
+  Parameters: {"uri"=>"http://nytimes.com,http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.3ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize': Operation timed out - connect(2)
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'bqQsiWrmZe6S45p8KZ', "last_request_at" = '2010-08-16 23:45:09' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (385.2ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 75363ms (View: 420, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fnytimes.com%2Chttp%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 19:45:09) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.3ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize': Operation timed out - connect(2)
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '4qelmZUaGKmp6odkehWc', "last_request_at" = '2010-08-16 23:46:24' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (17.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 75060ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 20:46:47) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 20:47:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;36;1mRole Load (0.9ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'CR02RNNJB0BOb3nTsg', "last_request_at" = '2010-08-17 00:47:35' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (142.2ms)
+Rendered shared/_user_menu (1.5ms)
+Rendered shared/_footer (10.8ms)
+Completed in 266ms (View: 213, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 20:48:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;36;1mRepository Load (0.9ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'vzXTmQwD4hnY3DcHdSRE', "last_request_at" = '2010-08-17 00:48:59' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (3.3ms)
+Rendered shared/_user_menu (1.0ms)
+Rendered shared/_footer (0.4ms)
+Completed in 229ms (View: 84, DB: 2) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing RepositoriesController#edit (for 127.0.0.1 at 2010-08-16 20:49:02) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"repositories"}
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 1) [0m
+Rendering template within layouts/repositories
+Rendering repositories/edit
+  [4;36;1mPlugin Load (0.3ms)[0m   [0;1mSELECT * FROM "plugins" [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'LUDTNK4dp7h1206zsNeo', "last_request_at" = '2010-08-17 00:49:02' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (108.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 164ms (View: 155, DB: 2) | 200 OK [http://0.0.0.0/repositories/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 20:49:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'wXIPnezSRd81ETaZ3Hvd', "last_request_at" = '2010-08-17 00:49:09' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (83.1ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 142ms (View: 128, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 20:49:12) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = '47PrXGLBOUWC8tE7aI', "last_request_at" = '2010-08-17 00:49:12' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.5ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (10.3ms)
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 72ms (View: 42, DB: 1) | 200 OK [http://0.0.0.0/users/4/edit]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 20:49:24) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'GObFso11VYPKAnrLAOuq', "last_request_at" = '2010-08-17 00:49:24' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (37.9ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 160ms (View: 157, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 20:49:28) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `current_user' for #<Class:0x1034b1460>):
+  app/models/repository.rb:10:in `user_repositories'
+  /app/models/host.rb:16:in `search'
+  app/controllers/hosts_controller.rb:14:in `search'
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 20:54:33) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 20:55:09) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+
+NoMethodError (private method `current_user' called for #<HostsController:0x10341d058>):
+  app/controllers/application_controller.rb:8
+
+Rendered rescues/_trace (99.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:02:57) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:04:07) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize': Operation timed out - connect(2)
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'rinDzIqjRLHVBHtq8Q8', "last_request_at" = '2010-08-17 01:05:22' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (56.3ms)
+Rendered shared/_user_menu (1.1ms)
+Rendered shared/_footer (0.4ms)
+Completed in 74852ms (View: 139, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:05:22) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'AB15DSUnMzf6HzmBWxgY', "last_request_at" = '2010-08-17 01:05:22' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (88.3ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 104ms (View: 90, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:06:49) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'TAxSaA3pdaLSGDPMgQ7', "last_request_at" = '2010-08-17 01:06:49' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (122.9ms)
+Rendered shared/_user_menu (1.0ms)
+Rendered shared/_footer (0.4ms)
+Completed in 180ms (View: 149, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 21:06:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'Bbm48jKAUPjYVUA8XI4', "last_request_at" = '2010-08-17 01:06:50' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (19.7ms)
+Rendered shared/_user_menu (0.6ms)
+Rendered shared/_footer (0.1ms)
+Completed in 117ms (View: 102, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 21:06:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'cC56EpxcxNlvb0Muft', "last_request_at" = '2010-08-17 01:06:51' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 120ms (View: 86, DB: 2) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:06:53) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'JizNxUPZ6LZyyo0896Q', "last_request_at" = '2010-08-17 01:06:53' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (25.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 41ms (View: 27, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:06:56) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `current_user' for #<Class:0x103338c00>):
+  app/models/repository.rb:12:in `user_repositories'
+  /app/models/host.rb:16:in `search'
+  app/controllers/hosts_controller.rb:14:in `search'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:09:49) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:10:11) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'ceJSdUfrQcXY7UOfrM3T', "last_request_at" = '2010-08-17 01:10:11' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (122.5ms)
+Rendered shared/_user_menu (1.1ms)
+Rendered shared/_footer (0.4ms)
+Completed in 178ms (View: 147, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 21:10:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'rBRdNlYIl0LhT7NRLbd4', "last_request_at" = '2010-08-17 01:10:13' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (19.7ms)
+Rendered shared/_user_menu (0.7ms)
+Rendered shared/_footer (0.1ms)
+Completed in 118ms (View: 102, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 21:10:15) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'hRgENdnTbUY5MaCMuQU', "last_request_at" = '2010-08-17 01:10:15' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (72.4ms)
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 117ms (View: 85, DB: 2) | 200 OK [http://0.0.0.0/users/4/edit]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 21:10:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'lj6XQ2uBiKhhrVqIgFZ', "last_request_at" = '2010-08-17 01:10:21' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 62ms (View: 27, DB: 2) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 21:10:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'XaxDBgVmd5WKiv5pSDSf', "last_request_at" = '2010-08-17 01:10:24' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (23.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 123ms (View: 106, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 21:10:25) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"roles"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 1 ) LIMIT 1[0m
+Rendered roles/_repositories (75.3ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'UM9Y8YTs3dHyLvQbhQq', "last_request_at" = '2010-08-17 01:10:26' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.7ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 137ms (View: 118, DB: 3) | 200 OK [http://0.0.0.0/roles/1/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 21:10:28) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Admin", "repository_ids"=>["1"]}, "id"=>"1", "controller"=>"roles"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 1) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 1 ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM "repositories_roles" WHERE role_id = 1 AND repository_id IN (8)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "repositories_roles" ("role_id", "repository_id") VALUES (1, 1)[0m
+Redirected to http://0.0.0.0:3000/roles/1
+Completed in 32ms (DB: 1) | 302 Found [http://0.0.0.0/roles/1]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 21:10:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"roles"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mRole Load (0.8ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 1) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'xsq5abN9WtGAJK1t8F27', "last_request_at" = '2010-08-17 01:10:29' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (85.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 113ms (View: 93, DB: 2) | 200 OK [http://0.0.0.0/roles/1]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:10:31) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'nNQg0uUH0THJlveZvYyq', "last_request_at" = '2010-08-17 01:10:31' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (23.1ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 40ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:10:33) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:11:32) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:11:54) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize': Host is down - connect(2)
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '2AXm6Musk6YW0QD2yRy0', "last_request_at" = '2010-08-17 01:11:55' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (57.8ms)
+Rendered shared/_user_menu (1.3ms)
+Rendered shared/_footer (0.4ms)
+Completed in 198ms (View: 140, DB: 2) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:12:23) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/application_controller.rb:14:in `put_current_user_into_model'
+
+Rendered rescues/_trace (97.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:15:33) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'qSgGklDRe7NVE68gHbVs', "last_request_at" = '2010-08-17 01:15:33' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" IN (1,2)) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id IN (1,2)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (4, 1)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (4, 8)[0m
+  [4;35;1mRepository Load (0.6ms)[0m   [0mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 4 ) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:16:16) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'eVySYII2UNAYDKfKyG', "last_request_at" = '2010-08-17 01:16:16' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" IN (1,2)) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id IN (1,2)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (4, 1)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (4, 8)[0m
+  [4;35;1mRepository Load (0.8ms)[0m   [0mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 4 ) [0m
+  [4;36;1mPlugin Load (0.2ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:16:48) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'tdsYU477cQ9sAG3ygJ', "last_request_at" = '2010-08-17 01:16:48' WHERE "id" = 4[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (16.7ms)
+Rendered shared/_user_menu (1.1ms)
+Rendered shared/_footer (0.4ms)
+Completed in 175ms (View: 42, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 21:16:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'WiKBizlc1MUwIkAAWF6', "last_request_at" = '2010-08-17 01:16:51' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (10.0ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 116ms (View: 89, DB: 1) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 21:16:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"roles"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'Doffk2hRMMuD5Llyq3yU', "last_request_at" = '2010-08-17 01:16:53' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 2 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 2 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 2 ) LIMIT 1[0m
+Rendered roles/_repositories (12.3ms)
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (4.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 56ms (View: 28, DB: 2) | 200 OK [http://0.0.0.0/roles/2/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 21:16:58) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Subscriber", "repository_ids"=>["1"]}, "id"=>"2", "controller"=>"roles"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '94oqEiOZXvyLcf0PCP2', "last_request_at" = '2010-08-17 01:16:58' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."id" = 1) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 2 ) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM "repositories_roles" WHERE role_id = 2 AND repository_id IN (8)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "repositories_roles" ("role_id", "repository_id") VALUES (2, 1)[0m
+Redirected to http://0.0.0.0:3000/roles/2
+Completed in 41ms (DB: 2) | 302 Found [http://0.0.0.0/roles/2]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 21:16:58) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"roles"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'QhFS7nfQHymola09MVa', "last_request_at" = '2010-08-17 01:16:58' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (68.4ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 104ms (View: 75, DB: 1) | 200 OK [http://0.0.0.0/roles/2]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:17:00) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'mrBWqQsjrVBUFHPkyBFi', "last_request_at" = '2010-08-17 01:17:00' WHERE "id" = 4[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (13.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 39ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 21:17:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'xGMngdZry3XFfkBaCmkM', "last_request_at" = '2010-08-17 01:17:06' WHERE "id" = 4[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (10.4ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 118ms (View: 94, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 21:17:09) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'oMWmisQtlmp7tpACxHLZ', "last_request_at" = '2010-08-17 01:17:09' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/users
+Rendering users/edit
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 1) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 2) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 3) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+Rendered users/_form (83.5ms)
+Rendered shared/_nav_menu (1.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 125ms (View: 93, DB: 3) | 200 OK [http://0.0.0.0/users/7/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-08-16 21:17:12) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "id"=>"7", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "role_ids"=>["2"], "roles"=>[""], "password"=>"[FILTERED]", "email"=>"subscriber@gmail.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'h0rkXIw425xW1GW3FTm', "last_request_at" = '2010-08-17 01:17:12' WHERE "id" = 4[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+WARNING: Can't mass-assign these protected attributes: roles
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'WUgjUyviG0Jw4VOoWMr' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/users
+Completed in 37ms (DB: 2) | 302 Found [http://0.0.0.0/users/7]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 21:17:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'tmURJD1bIW3tWICUTj5i', "last_request_at" = '2010-08-17 01:17:12' WHERE "id" = 4[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (74.5ms)
+Rendered shared/_user_menu (0.9ms)
+Rendered shared/_footer (0.1ms)
+Completed in 111ms (View: 87, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 21:17:18) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'MdEV3rho5uLlryEx2p9', "last_request_at" = '2010-08-17 01:17:18' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 21:17:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (79.5ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 122ms (View: 108, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 21:17:25) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"subscriber@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'subscriber@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "login_count" = 4, "perishable_token" = '75tMs0csWocKCnhtQW', "last_request_at" = '2010-08-17 01:17:25', "last_login_at" = '2010-08-16 20:30:05', "current_login_at" = '2010-08-17 01:17:25' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 258ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:17:25) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = '1Ma22l3UPB7RFENk7rt2', "last_request_at" = '2010-08-17 01:17:25' WHERE "id" = 7[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (72.5ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 99ms (View: 76, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:17:51) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'ZoCIomoDyErgtjRwLk6g', "last_request_at" = '2010-08-17 01:17:51' WHERE "id" = 7[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (7, 1)[0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 7 ) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:18:08) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'FGJmQjWh4OyqJklVN5Wo', "last_request_at" = '2010-08-17 01:18:08' WHERE "id" = 7[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (7, 1)[0m
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 7 ) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Failed to connect to repository - Mediacloud - /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize': Host is down - connect(2)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (5.4ms)
+Rendered shared/_user_menu (192.1ms)
+Rendered shared/_footer (15.5ms)
+Completed in 441ms (View: 239, DB: 3) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:18:39) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'DNuGeSqiSmpg1F8X9N', "last_request_at" = '2010-08-17 01:18:39' WHERE "id" = 7[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (7, 1)[0m
+  [4;36;1mRepository Load (0.7ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 7 ) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:19:51) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = '0Jr3DGEAt3Tqp7cFUaq', "last_request_at" = '2010-08-17 01:19:51' WHERE "id" = 7[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.4ms)
+Rendered shared/_user_menu (1.2ms)
+Rendered shared/_footer (0.5ms)
+Completed in 175ms (View: 42, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 21:19:56) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'ZyT09doHOjorVywooCN', "last_request_at" = '2010-08-17 01:19:56' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 21:19:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (17.1ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 43ms (View: 28, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 21:20:04) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"administrator@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'administrator@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "login_count" = 16, "perishable_token" = '3hdrbqSUvgsfTDqU3u', "last_request_at" = '2010-08-17 01:20:04', "last_login_at" = '2010-08-16 20:30:42', "current_login_at" = '2010-08-17 01:20:04' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 241ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:20:04) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'L13KVQlSlxIcosbkQ2TS', "last_request_at" = '2010-08-17 01:20:04' WHERE "id" = 4[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (14.8ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 42ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 21:20:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'ecJnUfi3MvGXT4bn8WWn', "last_request_at" = '2010-08-17 01:20:06' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (10.3ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 120ms (View: 28, DB: 2) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RepositoriesController#index (for 127.0.0.1 at 2010-08-16 21:20:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"repositories"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'cPlJN72yHzzls1D5gN2W', "last_request_at" = '2010-08-17 01:20:07' WHERE "id" = 4[0m
+  [4;35;1mRepository Load (0.5ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendering template within layouts/repositories
+Rendering repositories/index
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendered shared/_nav_menu (1.6ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 129ms (View: 97, DB: 2) | 200 OK [http://0.0.0.0/repositories]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 21:20:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'Hm76E1nio4JJBVlidbS', "last_request_at" = '2010-08-17 01:20:08' WHERE "id" = 4[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (9.8ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 53ms (View: 29, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 21:20:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"users"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'gZEKjaFvVQJatV7aX', "last_request_at" = '2010-08-17 01:20:11' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/users
+Rendering users/edit
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 1) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 2) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 3) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT * FROM "repositories" [0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.2ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+Rendered users/_form (18.5ms)
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 138ms (View: 29, DB: 3) | 200 OK [http://0.0.0.0/users/7/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-08-16 21:20:18) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "id"=>"7", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "role_ids"=>["2"], "repository_ids"=>["1"], "roles"=>[""], "password"=>"[FILTERED]", "email"=>"subscriber@gmail.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '2upoZOhF5qscGC5PswJ', "last_request_at" = '2010-08-17 01:20:18' WHERE "id" = 4[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+WARNING: Can't mass-assign these protected attributes: roles
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 1) [0m
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 7 ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM "repositories_users" WHERE user_id = 7 AND repository_id IN (8)[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '7c3oHXWbF6BeOmUucPk' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/users
+Completed in 122ms (DB: 3) | 302 Found [http://0.0.0.0/users/7]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-16 21:20:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'pMBWhQeTB2tYSM7l5ZH', "last_request_at" = '2010-08-17 01:20:18' WHERE "id" = 4[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 4 ) [0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (9.4ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 47ms (View: 22, DB: 2) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 21:20:27) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'UWfpecT2i3e8rPixgBC6', "last_request_at" = '2010-08-17 01:20:27' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/users
+Rendering users/edit
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 1) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 2) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 3) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+Rendered users/_form (17.5ms)
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 125ms (View: 22, DB: 3) | 200 OK [http://0.0.0.0/users/7/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 21:20:34) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'RAVpvZQcuWVHxlhlrkQ', "last_request_at" = '2010-08-17 01:20:34' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.7ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Rendered users/_form (6.1ms)
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 43ms (View: 12, DB: 2) | 200 OK [http://0.0.0.0/users/4/edit]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-08-16 21:20:36) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (50.7ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'fRBnc8Dax4It8MiDMaz9', "last_request_at" = '2010-08-17 01:20:36' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/users
+Rendering users/edit
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" [0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 1) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 2) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."id" = 3) AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.3ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.1ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_users".user_id = 7 ) LIMIT 1[0m
+Rendered users/_form (17.2ms)
+Rendered shared/_nav_menu (1.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 190ms (View: 22, DB: 54) | 200 OK [http://0.0.0.0/users/7/edit]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 21:20:38) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = '3GLKCHMtUJj0BPr63ORt', "last_request_at" = '2010-08-17 01:20:38' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 21:20:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (17.0ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 109ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 21:20:43) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"subscriber@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'subscriber@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "login_count" = 5, "perishable_token" = 'cy94lZJ3WhVTEcieM7Nz', "last_request_at" = '2010-08-17 01:20:43', "last_login_at" = '2010-08-17 01:17:25', "current_login_at" = '2010-08-17 01:20:43' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 28ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:20:43) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'kdS2pDA2jyOyZwG1EvcU', "last_request_at" = '2010-08-17 01:20:43' WHERE "id" = 7[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (18.1ms)
+Rendered shared/_user_menu (0.6ms)
+Rendered shared/_footer (0.1ms)
+Completed in 128ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:20:45) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'c9HQV99o0sJo1wGq2ZF', "last_request_at" = '2010-08-17 01:20:45' WHERE "id" = 7[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".id FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles_users".user_id = 7 ) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 2) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "repositories_users" ("user_id", "repository_id") VALUES (7, 1)[0m
+  [4;36;1mRepository Load (0.7ms)[0m   [0;1mSELECT * FROM "repositories" INNER JOIN "repositories_users" ON "repositories".id = "repositories_users".repository_id WHERE ("repositories_users".user_id = 7 ) [0m
+  [4;35;1mPlugin Load (0.3ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (4.3ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 112ms (View: 8, DB: 3) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:21:01) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'D6kC8Bq2vtxVZfCL1t', "last_request_at" = '2010-08-17 01:21:01' WHERE "id" = 7[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 7 ) LIMIT 1[0m
+Rendered shared/_nav_menu (13.0ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 39ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 21:21:02) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'RvdSq5kJC3O0KR54DALI', "last_request_at" = '2010-08-17 01:21:02' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 21:21:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.9ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 107ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:21:06) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (80.2ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 97ms (View: 83, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:21:08) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/models/repository.rb:10:in `user_repositories'
+  /app/models/host.rb:16:in `search'
+  app/controllers/hosts_controller.rb:14:in `search'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:21:50) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:22:02) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (85.9ms)
+Rendered shared/_user_menu (0.9ms)
+Rendered shared/_footer (0.4ms)
+Completed in 135ms (View: 111, DB: 1) | 200 OK [http://0.0.0.0/hosts/search]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 21:22:04) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (79.2ms)
+Rendered shared/_user_menu (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 107ms (View: 92, DB: 1) | 200 OK [http://0.0.0.0/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-16 21:22:08) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"administrator@gmail.com"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'administrator@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "login_count" = 17, "perishable_token" = 'ugHqwSDJN0oCg2sFeRZ', "last_request_at" = '2010-08-17 01:22:08', "last_login_at" = '2010-08-17 01:20:04', "current_login_at" = '2010-08-17 01:22:08' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 226ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:22:08) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'NsOW85wvfvpXDDed2m', "last_request_at" = '2010-08-17 01:22:08' WHERE "id" = 4[0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (13.8ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 101ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2010-08-16 21:22:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = '7O62xF0T3XVGpvOrjRaW', "last_request_at" = '2010-08-17 01:22:11' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.4ms)[0m   [0mSELECT * FROM "roles" [0m
+Rendering template within layouts/roles
+Rendering roles/index
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (75.4ms)
+Rendered shared/_user_menu (0.5ms)
+Rendered shared/_footer (0.1ms)
+Completed in 120ms (View: 92, DB: 1) | 200 OK [http://0.0.0.0/roles]
+
+
+Processing RolesController#edit (for 127.0.0.1 at 2010-08-16 21:22:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"roles"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'oMhX95zuNqUruyU0OAyd', "last_request_at" = '2010-08-17 01:22:13' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+Rendering template within layouts/roles
+Rendering roles/edit
+  [4;36;1mRepository Load (0.5ms)[0m   [0;1mSELECT * FROM "repositories" [0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 1) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+  [4;36;1mRepository Load (0.1ms)[0m   [0;1mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 2) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+  [4;35;1mRepository Load (0.2ms)[0m   [0mSELECT "repositories".id FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories"."id" = 8) AND ("repositories_roles".role_id = 3 ) LIMIT 1[0m
+Rendered roles/_repositories (11.8ms)
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (4.5ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 54ms (View: 26, DB: 2) | 200 OK [http://0.0.0.0/roles/3/edit]
+
+
+Processing RolesController#update (for 127.0.0.1 at 2010-08-16 21:22:16) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "role"=>{"name"=>"Guest", "repository_ids"=>["1"]}, "id"=>"3", "controller"=>"roles"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "perishable_token" = 'qbNX18JWjzoTa1Oqp4jw', "last_request_at" = '2010-08-17 01:22:16' WHERE "id" = 4[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.4ms)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."id" = 1) [0m
+  [4;35;1mRepository Load (0.4ms)[0m   [0mSELECT * FROM "repositories" INNER JOIN "repositories_roles" ON "repositories".id = "repositories_roles".repository_id WHERE ("repositories_roles".role_id = 3 ) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM "repositories_roles" WHERE role_id = 3 AND repository_id IN (8)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "repositories_roles" ("role_id", "repository_id") VALUES (3, 1)[0m
+Redirected to http://0.0.0.0:3000/roles/3
+Completed in 128ms (DB: 2) | 302 Found [http://0.0.0.0/roles/3]
+
+
+Processing RolesController#show (for 127.0.0.1 at 2010-08-16 21:22:16) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"roles"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'N12R7oJrGpV5bipyiLb', "last_request_at" = '2010-08-17 01:22:16' WHERE "id" = 4[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+Rendering template within layouts/roles
+Rendering roles/show
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = 4 ) LIMIT 1[0m
+Rendered shared/_nav_menu (9.0ms)
+Rendered shared/_user_menu (0.4ms)
+Rendered shared/_footer (0.1ms)
+Completed in 42ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/roles/3]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-16 21:22:18) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = '8CC67lhbUXgq63TXbxgI', "last_request_at" = '2010-08-17 01:22:18' WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 23ms (DB: 1) | 302 Found [http://0.0.0.0/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-16 21:22:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/user_sessions
+Rendering user_sessions/new
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (16.7ms)
+Rendered shared/_user_menu (0.3ms)
+Rendered shared/_footer (0.1ms)
+Completed in 36ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:22:19) [GET]
+  Parameters: {"action"=>"search", "controller"=>"hosts"}
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (15.8ms)
+Rendered shared/_user_menu (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 102ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing HostsController#search (for 127.0.0.1 at 2010-08-16 21:22:22) [GET]
+  Parameters: {"uri"=>"http://www.nytimes.com", "action"=>"search", "controller"=>"hosts"}
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRepository Load (0.3ms)[0m   [0;1mSELECT "repositories".*, t0.role_id as the_parent_record_id FROM "repositories" INNER JOIN "repositories_roles" t0 ON "repositories".id = t0.repository_id WHERE (t0.role_id = 3) [0m
+  [4;35;1mPlugin Load (0.2ms)[0m   [0mSELECT * FROM "plugins" WHERE ("plugins"."id" = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/search
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM "roles" WHERE ("roles"."name" = 'Guest') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "roles" WHERE ("roles"."id" = 3) [0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles".id = "roles_users".role_id WHERE ("roles"."name" = 'Admin') AND ("roles_users".user_id = NULL ) LIMIT 1[0m
+Rendered shared/_nav_menu (73.2ms)
+Rendered shared/_user_menu (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 152ms (View: 76, DB: 1) | 200 OK [http://0.0.0.0/hosts/search?uri=http%3A%2F%2Fwww.nytimes.com]

@@ -27,8 +27,8 @@ module Berkman
         def http_get(domain, path, port, params, username, password)
           require 'net/http'
           http = Net::HTTP.new(domain, port)
-          http.open_timeout = 10 # in seconds
-          http.read_timeout = 10 # in seconds
+          http.open_timeout = 100 # in seconds
+          http.read_timeout = 100 # in seconds
           
           if not params.nil?
             request = Net::HTTP::Get.new("#{path}?".concat(params.collect { |k,v| "#{k}=#{CGI::escape(v.to_s)}" }.reverse.join('&')))

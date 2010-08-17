@@ -2,12 +2,14 @@ class Host
   attr_reader :info
     
   def self.filter(*args)
+    config = Configuration.find :first
+    
     if not args[0].nil?
       urls_from_args = args[0].split(',')  
-      base_query = APP_CONFIG['base_query'] + ' ' + APP_CONFIG['where_clause']
+      base_query = config.query_base + ' ' + config.query_where
       query = self.add_where_to_query(base_query, urls_from_args)
       
-      self.run_query_and_process_results(query)
+      self.run_query_and_process_results(query, config)
     end
   end
 
@@ -16,11 +18,13 @@ class Host
   end
    
   def to_xml(options = {})
+    config = Configuration.find :first
+    
     xml = options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
-    field_names = APP_CONFIG['field_friendly_names']
-    xml.host(:uri => @info[APP_CONFIG['uri_field_name']]) do
+    field_names = config.data_field_friendly_name.split(",")
+    xml.host(:uri => @info[config.filter_field_name]) do
       field_names.each do |field|
-        if field != APP_CONFIG['uri_field_name']
+        if field != config.filter_field_name
           eval("xml.#{field}(@info[field])")
         end
       end
@@ -30,11 +34,11 @@ class Host
   
   private
   
-  def self.run_query_and_process_results(query)
+  def self.run_query_and_process_results(query, config)
     host_list = ActiveRecord::Base.connection.execute(query)
      
     hosts = Array.new
-    field_names = APP_CONFIG['field_friendly_names']
+    field_names = config.data_field_friendly_name.split(",")
          
     host_list.each do |host_info|
       host_data = Hash.new

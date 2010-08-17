@@ -5,8 +5,18 @@ class ApplicationController < ActionController::Base
   helper :all
   helper_method :current_user_session, :current_user
   filter_parameter_logging :password, :password_confirmation
+  before_filter :put_current_user_into_model
   
   private
+    def put_current_user_into_model
+      if defined?(@current_user)
+        @user = @current_user 
+      else
+        @user = current_user_session && current_user_session.record
+      end
+      User.current_user = @user
+    end
+    
     def current_user_session
       return @current_user_session if defined?(@current_user_session)
       @current_user_session = UserSession.find

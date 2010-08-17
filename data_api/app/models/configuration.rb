@@ -1,4 +1,6 @@
 class Configuration < ActiveRecord::Base
+  establish_connection "configuration_#{RAILS_ENV}"
+  
   validate :sanitize_sql
   
   def sanitize_sql

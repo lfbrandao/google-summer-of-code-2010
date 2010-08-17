@@ -6,6 +6,7 @@ class Repository < ActiveRecord::Base
   validates_presence_of :name, :uri, :plugin_id
   
   def self.user_repositories
+    current_user = User.current_user
     current_user ||= User.new :role_ids => [3]
     
     # repositories associated with the user
@@ -18,6 +19,7 @@ class Repository < ActiveRecord::Base
     end
     
     # remove duplicates and return repositories
+    puts "repositories_for_user.uniq #{repositories_for_user.uniq}"
     repositories_for_user.uniq
   end
 end

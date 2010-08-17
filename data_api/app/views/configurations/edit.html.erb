@@ -24,6 +24,11 @@
 	(Data columns friendly names in the same order used for the base query. Ex. Id, Name)
   </p>
   <p>
+    <%= f.label :filter_field_name %><br />
+    <%= f.text_field :filter_field_name %>
+	(Name of the field used on the where query.)
+  </p>
+  <p>
     <%= f.label :user_name %><br />
     <%= f.text_field :user_name %>
 	(User name for authentication)
