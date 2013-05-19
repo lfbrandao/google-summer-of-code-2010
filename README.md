@@ -1,12 +1,14 @@
-#Google Summer of Code 2010 - Data Integration System for the Berkman Center at Harvard for Internet and Society
-
-__Project description__ - http://cyber.law.harvard.edu/gsoc/Data_Integration_DB
-
-__Berkman Center__ - http://cyber.law.harvard.edu/
-
-__Google Summer of Code__ - http://code.google.com/soc/
+###Google Summer of Code 2010
+####Data Integration System for the Berkman Center at Harvard for Internet and Society
 
 The Data Integration System is a set of two applications that can be used to search for and aggregate data about one or more URLs from several databases. It comprises a central application that enables users to search for information on a configurable set of databases and a REST API that can be deployed on the databases (MySQL, PostgreSQL, SQLite) to enable partial read-only access to the data.
+
+* Project description - http://cyber.law.harvard.edu/gsoc/Data_Integration_DB
+
+* Berkman Center - http://cyber.law.harvard.edu/
+
+* Google Summer of Code - http://code.google.com/soc/
+
 
 ####Configuration and dependencies
 The applications are configured to run on the version 2.5.5 of Ruby on Rails, and have the following dependencies:
